@@ -6,7 +6,7 @@
 - 반경 **600m**(직선거리), 가게 **54곳**: 음식점 25, 카페 15, 편의점·마트 14
 - 대표메뉴는 음식점·카페 40곳 모두 있음. **2026-11-18 사용자 지시로 네이버 지도 가격 기준으로 통일**(38곳, `build_data.py`의 `N`, 원본 `tools/naver_menus_20261118.json`). 네이버로 못 바꾼 곳: 파리바게뜨 상무역점(대표메뉴가 수능 선물세트뿐 → 카카오 기준 유지), 꾸다(네이버 메뉴가 저녁 안주뿐 → 리뷰의 점심 메뉴 유지). KFC는 네이버에 가격이 "가격 변동"이라 이름만. 주문형 메뉴(서가앤쿡, 박홍열갈비탕, 보배반점, 용쓰91김밥, 크리스피크림, 파리바게뜨 상무마륵점)는 매장 가격과 다를 수 있음
 - 지도는 **카카오맵 Web SDK**를 쓴다(2026-11-18 Leaflet·OSM에서 교체). 키는 `index.html`의 `window.KAKAO_JS_KEY`. 키가 없거나 SDK를 못 불러오면 지도 자리에 안내 문구가 나오고 목록은 그대로 동작한다. 마우스 휠 확대는 끔(확대·축소 버튼 있음)
-  - 2026-11-18 현재 키 자리는 `여기에_내_JavaScript_키`(사용자가 아직 실제 키를 안 줌). 실제 키를 넣고 GitHub Pages 주소에서 지도·마커·팝업 동작을 확인해야 한다
+  - 2026-11-18 실제 JavaScript 키를 넣었다(앱 이름 "CJ아카데미점심"). 이때 카카오 SDK 응답: `http://localhost:8000` → 401 "domain mismatched"(웹 도메인 미등록), `https://seonn1010.github.io` → 403 "disabled OPEN_MAP_AND_LOCAL service"(카카오맵 사용 설정 꺼짐). 사용자가 카카오 디벨로퍼스에서 두 가지를 켠 뒤 다시 확인해야 한다. 확인 명령: `curl -H "Referer: <도메인>/" "https://dapi.kakao.com/v2/maps/sdk.js?appkey=<키>&autoload=false"`
   - Artifact 미리보기용 도구(`make_artifact.py`, `embed.py`, `tiles.py`)는 Leaflet·OSM 기준이라 더 이상 맞지 않는다
 - 화면 디자인(2026-11-18): 사용자가 준 학습 대시보드 레퍼런스(파스텔 카드, 둥근 타일, 검은 포인트, 큰 제목)에 맞춰 바꿨다. PC는 왼쪽 목록·오른쪽 고정 지도, 휴대폰은 제목·카테고리 → 지도 → 목록 순서. 글꼴 Pretendard + 숫자 Poppins
 - 미리보기(Artifact, 비공개): https://claude.ai/artifact/EMtVQks6yqPmZuMgAkJgyG
