@@ -16,12 +16,11 @@ window.STORES = [
   "kakaoId": "8125665",
   "naverId": "16277608",
   "menu": [
-   "단팥빵(1,800원)",
-   "실키롤케익(13,900원)"
+   "후레쉬식빵(2,700원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/8125665",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/16277608",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -40,12 +39,12 @@ window.STORES = [
   "naverId": "1719573143",
   "menu": [
    "동태탕(12,000원)",
-   "고기왕창 김치찌개(11,000원)",
-   "알탕(14,000원)"
+   "통돼지 김치찌개(11,000원)",
+   "코다리 조림정식(11,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1784943015",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1719573143",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -63,16 +62,15 @@ window.STORES = [
   "kakaoId": "1207665176",
   "naverId": "1203136900",
   "menu": [
-   "왕메가카페라떼",
-   "헛개리카노",
-   "딸기라떼"
+   "아메리카노 핫(1,500원)",
+   "아메리카노 아이스(2,000원)",
+   "쿠키프라페(3,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1207665176",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1203136900",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "가격 미확인"
+  }
  },
  {
   "name": "봉구스밥버거 상무점",
@@ -88,13 +86,13 @@ window.STORES = [
   "kakaoId": "1754876219",
   "naverId": "1868182064",
   "menu": [
-   "몬스터봉구(7,800원)",
-   "봉구킹(7,800원)",
-   "더블치즈닭갈비(5,700원)"
+   "봉구스밥버거(3,500원)",
+   "햄밥버거(4,500원)",
+   "치즈밥버거(4,100원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1754876219",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1868182064",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -112,13 +110,13 @@ window.STORES = [
   "kakaoId": "1025382476",
   "naverId": "1047072870",
   "menu": [
+   "바질치즈치아바타(4,800원)",
    "댄싱커피(3,500원)",
-   "바닐라 빈 라떼(4,300원)",
-   "아메리카노(2,000원)"
+   "바닐라빈라떼(4,300원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1025382476",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1047072870",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -136,13 +134,13 @@ window.STORES = [
   "kakaoId": "1113376476",
   "naverId": "1595458919",
   "menu": [
-   "프랭크버거 세트(10,100원)",
-   "쉬림프버거 세트(10,500원)",
-   "100% 한우버거 세트(13,600원)"
+   "파닭파닭치킨버거(6,600원)",
+   "깐쇼새우비프버거(8,900원)",
+   "맥앤치즈비프버거(9,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1113376476",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1595458919",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -174,16 +172,15 @@ window.STORES = [
   "kakaoId": "933790811",
   "naverId": "1868162510",
   "menu": [
-   "전주 물갈비(18,000원)",
-   "숯불물냉면(15,000원)",
-   "갈비탕(17,000원)"
+   "물냉면(11,000원)",
+   "비빔냉면(11,000원)",
+   "고기국수(9,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/933790811",
-   "label": "카카오맵 주문 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1868162510",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음"
+  }
  },
  {
   "name": "서가앤쿡",
@@ -200,14 +197,14 @@ window.STORES = [
   "naverId": "32316842",
   "menu": [
    "베이컨 까르보나라 1인(15,900원)",
-   "게살 오이스터 파스타 1인(17,900원)",
-   "새우 필라프 1인(15,900원)"
+   "게살 오이스터 파스타 1인(17,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/19626816",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/32316842",
+   "label": "네이버 지도 주문 메뉴",
    "checked": "2026-11-18"
-  }
+  },
+  "menuNote": "네이버 주문 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "왓더버거 광주상무점",
@@ -223,13 +220,11 @@ window.STORES = [
   "kakaoId": "1185391934",
   "naverId": "2025249037",
   "menu": [
-   "아메리칸 치즈버거 세트(11,500원)",
-   "새우카츠버거 세트(11,100원)",
-   "직화 통새우버거 세트(13,600원)"
+   "아메리칸 치즈버거(6,200원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1185391934",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2025249037",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -247,13 +242,13 @@ window.STORES = [
   "kakaoId": "10417509",
   "naverId": "32061971",
   "menu": [
-   "직화 돼지갈비 300g(33,000원)",
-   "김치찌개(9,000원)",
-   "청국장(9,000원)"
+   "직화 돼지갈비 300g(16,500원)",
+   "매운 직화 돼지갈비 300g(18,000원)",
+   "직화불고기쌈밥 1인분(12,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/10417509",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/32061971",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -285,16 +280,15 @@ window.STORES = [
   "kakaoId": "1655655146",
   "naverId": "1639754822",
   "menu": [
-   "왕메가카페라떼",
-   "헛개리카노",
-   "딸기라떼"
+   "아메리카노 아이스(2,000원)",
+   "메가리카노(3,000원)",
+   "딸기라떼(3,700원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1655655146",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1639754822",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "가격 미확인"
+  }
  },
  {
   "name": "박홍열갈비탕",
@@ -310,13 +304,16 @@ window.STORES = [
   "kakaoId": "1539196609",
   "naverId": "1134919514",
   "menu": [
-   "갈비탕정식(16,000원)"
+   "갈비탕정식(18,000원)",
+   "얼큰갈비탕정식(18,000원)",
+   "전복갈비탕(22,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1539196609",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1134919514",
+   "label": "네이버 지도 주문 메뉴",
    "checked": "2026-11-18"
-  }
+  },
+  "menuNote": "네이버 주문 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "현완단겸 상추튀김 상무점",
@@ -332,12 +329,13 @@ window.STORES = [
   "kakaoId": "850712337",
   "naverId": "20037459",
   "menu": [
-   "오징어 상추튀김 1BOX(17,800원)",
-   "돼지고기 상추튀김 1BOX(17,800원)"
+   "돼지고기 상추튀김(8,000원)",
+   "오징어 상추튀김(8,000원)",
+   "떡볶이(6,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/850712337",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/20037459",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -369,13 +367,13 @@ window.STORES = [
   "kakaoId": "2010722896",
   "naverId": "2014921451",
   "menu": [
-   "탕수육(10,000원)",
-   "할멈김밥(4,200원)",
-   "참치고추김밥(5,900원)"
+   "탕수육 간단하게(8,000원)",
+   "할멈김밥(3,500원)",
+   "참치김밥(4,800원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/2010722896",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2014921451",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -393,15 +391,16 @@ window.STORES = [
   "kakaoId": "1265231932",
   "naverId": "1090179228",
   "menu": [
-   "보배짜장면(6,500원)",
-   "보배짬뽕(8,000원)",
-   "차돌짬뽕(11,000원)"
+   "짬뽕(11,500원)",
+   "짜장면(9,500원)",
+   "탕수육 미니 1인(15,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1265231932",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1090179228",
+   "label": "네이버 지도 주문 메뉴",
    "checked": "2026-11-18"
-  }
+  },
+  "menuNote": "네이버 주문 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "GS25 상무평화점",
@@ -445,13 +444,13 @@ window.STORES = [
   "kakaoId": "1432145029",
   "naverId": "1603148864",
   "menu": [
-   "왕할메가커피 아이스(3,900원)",
-   "아메리카노 아이스(2,500원)",
-   "큐브라떼 아이스(4,700원)"
+   "아메리카노 핫(1,500원)",
+   "아메리카노 아이스(2,000원)",
+   "쿠키프라페(3,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1432145029",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1603148864",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -469,16 +468,15 @@ window.STORES = [
   "kakaoId": "2037976532",
   "naverId": "1842597387",
   "menu": [
-   "91김밥(4,000원)",
    "91라이스김밥(5,500원)",
    "91떡볶이(8,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/2037976532",
-   "label": "카카오맵 주문 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1842597387",
+   "label": "네이버 지도 주문 메뉴",
    "checked": "2026-11-18"
   },
-  "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음"
+  "menuNote": "네이버 주문 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "세븐일레븐 광주상무운천점",
@@ -508,14 +506,15 @@ window.STORES = [
   "kakaoId": "1074323230",
   "naverId": "1123897907",
   "menu": [
-   "치즈갈비찜"
+   "치즈김치 갈비찜(20,000원)",
+   "우주선 치즈 갈비찜(18,500원)",
+   "명품김치 갈비찜(18,500원)"
   ],
   "menuSrc": {
-   "url": "https://polle.com/place/4b3S1y/%EB%A7%A4%EC%9A%B4%EB%82%A0",
-   "label": "폴레 (광주 첨단 지점)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "다른 지점 메뉴 기준"
+   "url": "https://map.naver.com/p/entry/place/1123897907",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "상무쌈밥",
@@ -531,13 +530,13 @@ window.STORES = [
   "kakaoId": "1269496616",
   "naverId": "2010895298",
   "menu": [
-   "수육쌈밥(28,000원·2인부터)",
-   "제육쌈밥(28,000원·2인부터)",
-   "광주식 애호박찌개(12,000원)"
+   "쌈밥정식(12,000원)",
+   "제육정식(12,000원)",
+   "돌솥비빔밥(10,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1269496616",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2010895298",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -555,13 +554,13 @@ window.STORES = [
   "kakaoId": "85778267",
   "naverId": "1808245580",
   "menu": [
-   "고흥유자차(3,500원)",
-   "딸기주스(4,500원)",
-   "피치아이스티(3,200원)"
+   "딥바닐라라떼(4,500원)",
+   "밀키라떼(4,500원)",
+   "코코라떼(4,800원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/85778267",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1808245580",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -584,11 +583,10 @@ window.STORES = [
    "흑임자라떼 아이스(5,500원)"
   ],
   "menuSrc": {
-   "url": "https://m.place.naver.com/place/2084971709/menu/list",
+   "url": "https://map.naver.com/p/entry/place/2084971709",
    "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "네이버 지도 업종은 '테이크아웃커피'"
+  }
  },
  {
   "name": "채가곰탕",
@@ -607,8 +605,8 @@ window.STORES = [
    "한우곰탕(11,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/8596212",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/16055351",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -640,15 +638,15 @@ window.STORES = [
   "kakaoId": "1285174598",
   "naverId": "2037418524",
   "menu": [
-   "차돌박이",
-   "육회"
+   "차돌박이 100g(9,900원)",
+   "육회 100g(10,900원)",
+   "육회비빔밥(9,800원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1285174598",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2037418524",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "가격 미확인"
+  }
  },
  {
   "name": "크리스피크림도넛 광주상무점",
@@ -664,15 +662,16 @@ window.STORES = [
   "kakaoId": "684084470",
   "naverId": "2096911190",
   "menu": [
-   "오리지널 글레이즈드",
-   "BEST 뉴욕세트(9,100원)"
+   "오리지널 글레이즈드(1,900원)",
+   "오리지널 하프더즌(11,400원)",
+   "뉴욕 치즈케익(2,500원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/684084470",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2096911190",
+   "label": "네이버 지도 주문 메뉴",
    "checked": "2026-11-18"
   },
-  "menuNote": "뉴욕세트 = 오리지널 글레이즈드 포함 도넛 4개"
+  "menuNote": "네이버 주문 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "파리바게뜨 상무역점",
@@ -713,11 +712,11 @@ window.STORES = [
   "kakaoId": "759324156",
   "naverId": "2051131421",
   "menu": [
-   "한식뷔페 1인(7,000원)"
+   "한식뷔페(7,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/759324156",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2051131421",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -737,11 +736,11 @@ window.STORES = [
   "menu": [
    "추어탕+돌솥밥(14,000원)",
    "추어탕+공기밥(12,000원)",
-   "고추추어튀김 소(9,000원)"
+   "우렁추어탕+돌솥밥(16,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1254093742",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1577852235",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -759,16 +758,15 @@ window.STORES = [
   "kakaoId": "1980019379",
   "naverId": "1513122510",
   "menu": [
-   "딥카페라떼",
-   "아메리카노",
-   "피넛크림라떼"
+   "아메리카노(1,500원)",
+   "딥카페라떼(3,000원)",
+   "피넛크림라떼 8oz(3,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1980019379",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1513122510",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "가격 미확인"
+  }
  },
  {
   "name": "꾸다",
@@ -808,13 +806,13 @@ window.STORES = [
   "kakaoId": "1223101662",
   "naverId": "2055213211",
   "menu": [
-   "텐라떼(3,900원)",
-   "시그니처 라떼(4,500원)",
-   "아인슈페너(4,500원)"
+   "시그니처라떼 아이스(4,000원)",
+   "텐라떼 아이스(3,400원)",
+   "솔티드밀크카라멜 아이스(3,800원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1223101662",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2055213211",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -832,12 +830,13 @@ window.STORES = [
   "kakaoId": "2031332494",
   "naverId": "1862592701",
   "menu": [
-   "계절회무침 중(50,000원)",
-   "병어조림 중(50,000원)"
+   "생선구이(10,000원)",
+   "짱뚱어탕(10,000원)",
+   "낙지비빔밥(9,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/2031332494",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1862592701",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -855,11 +854,11 @@ window.STORES = [
   "kakaoId": "1692246032",
   "naverId": "2046902069",
   "menu": [
-   "한식뷔페 1인(8,000원)"
+   "한식뷔페 25찬(8,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/1692246032",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2046902069",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -882,8 +881,8 @@ window.STORES = [
    "매콤 닭가슴살 샌드위치(3,900원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/734599907",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1252190774",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -901,15 +900,16 @@ window.STORES = [
   "kakaoId": "127882219",
   "naverId": "2068729429",
   "menu": [
-   "징거버거",
-   "핫크리스피치킨"
+   "징거",
+   "핫크리스피치킨",
+   "징거타워"
   ],
   "menuSrc": {
-   "url": "https://news.bizwatch.co.kr/article/consumer/2025/07/04/0022",
-   "label": "비즈워치",
-   "checked": "2026-11-17"
+   "url": "https://map.naver.com/p/entry/place/2068729429",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "네이버엔 가격이 '가격 변동'으로 나옴(가격 미확인)"
  },
  {
   "name": "세븐일레븐 광주상무목련로점",
@@ -939,13 +939,11 @@ window.STORES = [
   "kakaoId": "2007184488",
   "naverId": "1241945196",
   "menu": [
-   "모둠초밥 10P(13,900원)",
-   "스페셜초밥 10P(19,900원)",
-   "연어초밥 10P(17,900원)"
+   "초밥 모든 접시(2,100원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/2007184488",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1241945196",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -1004,13 +1002,13 @@ window.STORES = [
   "kakaoId": "739830216",
   "naverId": "1301408736",
   "menu": [
-   "안심 크림 리소토(20,000원)",
    "머쉬룸 베이컨 크림파스타(19,000원)",
-   "쉬림프 파스타(19,000원)"
+   "쉬림프 파스타(19,000원)",
+   "쉬림프 바질페스토 파스타(19,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/739830216",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/1301408736",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -1028,16 +1026,15 @@ window.STORES = [
   "kakaoId": "26396481",
   "naverId": "36438958",
   "menu": [
-   "샌드위치",
-   "고추장 불고기 샌드위치",
-   "빵·케이크"
+   "LA초코쫀득도넛(1,950원)",
+   "메밀 바게뜨(4,900원)"
   ],
   "menuSrc": {
-   "url": "https://www.news1.kr/amp/industry/distribution/6242111",
-   "label": "뉴스1 (브랜드 기준)",
-   "checked": "2026-11-17"
+   "url": "https://map.naver.com/p/entry/place/36438958",
+   "label": "네이버 지도 주문 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "네이버 주문 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "GS25 상무센트럴점",
@@ -1082,13 +1079,13 @@ window.STORES = [
   "kakaoId": "849877912",
   "naverId": "2020086794",
   "menu": [
-   "왕할메가커피 아이스(3,400원)",
+   "아메리카노 핫(1,700원)",
    "아메리카노 아이스(2,000원)",
-   "큐브라떼 아이스(4,200원)"
+   "메가리카노(3,300원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/849877912",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2020086794",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  },
@@ -1120,16 +1117,15 @@ window.STORES = [
   "kakaoId": "21534333",
   "naverId": "37392117",
   "menu": [
-   "아메리카노(3,500원)",
-   "카페라떼(5,500원)",
-   "1리터커피(6,500원)"
+   "바닐라라떼(5,500원)",
+   "사이공 코코넛스무디커피(6,800원)",
+   "생강라떼(6,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/21534333",
-   "label": "카카오맵 주문 메뉴",
+   "url": "https://map.naver.com/p/entry/place/37392117",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
-  },
-  "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음 · 카카오맵 업종은 '커피전문점'"
+  }
  },
  {
   "name": "송탄87부대찌개",
@@ -1145,12 +1141,13 @@ window.STORES = [
   "kakaoId": "578855050",
   "naverId": "2083430445",
   "menu": [
-   "송탄부대찌개(13,000원)",
-   "베이컨구이(14,000원)"
+   "송탄부대찌개 1인분(13,000원)",
+   "베이컨구이 1인분(14,000원)",
+   "김치전(14,000원)"
   ],
   "menuSrc": {
-   "url": "https://place.map.kakao.com/578855050",
-   "label": "카카오맵 매장 메뉴",
+   "url": "https://map.naver.com/p/entry/place/2083430445",
+   "label": "네이버 지도 매장 메뉴",
    "checked": "2026-11-18"
   }
  }

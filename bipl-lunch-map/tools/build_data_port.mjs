@@ -14,7 +14,7 @@ const exTxt = py.slice(py.indexOf("EXCLUDE = {"), py.indexOf("}", py.indexOf("EX
 const EXCLUDE = new Set([...exTxt.split("\n").map(l => l.replace(/#.*$/, "")).join("\n").matchAll(/"([^"]+)"/g)].map(m => m[1]));
 const CAT_FIX = JSON.parse(py.match(/^CAT_FIX = (\{.*\})$/m)[1]);
 const NAME_FIX = JSON.parse(py.match(/^NAME_FIX = (\{.*\})$/m)[1]);
-const S = tuples(block("S")), M = tuples(block("M"));
+const N = tuples(block("N")), S = tuples(block("S")), M = tuples(block("M"));
 const CHECKED = py.match(/^CHECKED = "(.+)"$/m)[1];
 const menuFor = (name) => { for (const [k, v] of M) if (name.startsWith(k) || name.includes(k)) return v; return null; };
 const rows = JSON.parse(await fs.readFile(dir + "tools/all_rows.json", "utf8"));
@@ -23,7 +23,7 @@ const out = [];
 for (const r of rows) {
   if (r.dist == null || r.dist > 600 || BARS.has(r.name) || NO_LUNCH.has(r.name) || EXCLUDE.has(r.name)) continue;
   const name = NAME_FIX[r.name] ?? r.name, cat = CAT_FIX[r.name] ?? r.cat;
-  const m = S.get(name) || menuFor(name);
+  const m = N.get(name) || S.get(name) || menuFor(name);
   const item = { name, addr: r.addr, cat, src: r.src.split(",").map(s => s === "전체" ? "전체 가맹점" : "비플식권"), lat: r.lat, lon: r.lon, dist: r.dist, approx: r.acc === "근사" };
   const ids = PLACE_IDS[name] || {};
   if (ids.kakao) item.kakaoId = ids.kakao;
@@ -41,4 +41,4 @@ let txt = head + "window.STORES = " + JSON.stringify(out, null, 1) + ";\n";
 if (crlf) txt = txt.replace(/\n/g, "\r\n");
 await fs.writeFile(dir + "data.js", txt, "utf8");
 const cnt = {}; out.forEach(x => cnt[x.cat] = (cnt[x.cat] || 0) + 1);
-console.log({ BARS: BARS.size, S: S.size, M: M.size, total: out.length, cnt, withMenu: out.filter(x => x.menu && x.menu.length).length, noMenu: out.filter(x => x.menu && !x.menu.length).map(x => x.name) });
+console.log({ BARS: BARS.size, N: N.size, S: S.size, M: M.size, total: out.length, cnt, withMenu: out.filter(x => x.menu && x.menu.length).length, noMenu: out.filter(x => x.menu && !x.menu.length).map(x => x.name) });

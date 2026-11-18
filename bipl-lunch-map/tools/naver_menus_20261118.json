@@ -1,0 +1,3802 @@
+{
+ "파리바게뜨 광주상무백양점": {
+  "naverId": "16277608",
+  "items": [
+   {
+    "name": "후레쉬식빵",
+    "price": "2,700원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "파리바게뜨 광주상무백양점"
+ },
+ "진고집동해동태탕": {
+  "naverId": "1719573143",
+  "items": [
+   {
+    "name": "동태탕",
+    "price": "12,000원",
+    "rep": true
+   },
+   {
+    "name": "알탕(2인 이상)",
+    "price": "14,000원",
+    "rep": false
+   },
+   {
+    "name": "통돼지 김치찌개",
+    "price": "11,000원",
+    "rep": false
+   },
+   {
+    "name": "코다리 조림정식",
+    "price": "11,000원",
+    "rep": false
+   },
+   {
+    "name": "코다리조림 小",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "코다리조림 大",
+    "price": "60,000원",
+    "rep": false
+   },
+   {
+    "name": "코다리조림 중",
+    "price": "45,000원",
+    "rep": false
+   },
+   {
+    "name": "동태전 반접시",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "동태전 한접시",
+    "price": "18,000원",
+    "rep": false
+   },
+   {
+    "name": "손두부전 한접시",
+    "price": "18,000원",
+    "rep": false
+   },
+   {
+    "name": "반반전",
+    "price": "18,000원",
+    "rep": false
+   }
+  ],
+  "updated": "25.10.24",
+  "title": "진고집동해동태탕 상무점"
+ },
+ "메가MGC커피 광주상무중앙점": {
+  "naverId": "1203136900",
+  "items": [
+   {
+    "name": "핫아메리카노",
+    "price": "1,500원",
+    "rep": false
+   },
+   {
+    "name": "아이스아메리카노",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "쿠키프라페",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "퐁크러쉬(플레인,딸기,바나나)",
+    "price": "3,900원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "메가MGC커피 광주상무중앙점"
+ },
+ "봉구스밥버거 상무점": {
+  "naverId": "1868182064",
+  "items": [
+   {
+    "name": "봉구스밥버거",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "햄밥버거",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "치즈밥버거",
+    "price": "4,100원",
+    "rep": false
+   },
+   {
+    "name": "햄치즈밥버거",
+    "price": "5,100원",
+    "rep": false
+   },
+   {
+    "name": "제육밥버거",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "치즈제육밥버거",
+    "price": "5,100원",
+    "rep": false
+   },
+   {
+    "name": "김치제육밥버거",
+    "price": "5,300원",
+    "rep": false
+   },
+   {
+    "name": "닭갈비밥버거",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈닭갈비밥버거",
+    "price": "4,600원",
+    "rep": false
+   },
+   {
+    "name": "소불고기밥버거",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "김치불고기밥버거",
+    "price": "6,300원",
+    "rep": false
+   },
+   {
+    "name": "청양불고기밥버거",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "통살돈까스밥버거",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "통살돈까스마요밥버거",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "몬스터봉구",
+    "price": "7,300원",
+    "rep": false
+   },
+   {
+    "name": "봉구킹",
+    "price": "7,300원",
+    "rep": false
+   },
+   {
+    "name": "봉구퀸",
+    "price": "7,300원",
+    "rep": false
+   },
+   {
+    "name": "고기3종컵밥",
+    "price": "6,300원",
+    "rep": false
+   },
+   {
+    "name": "깻잎마요소불고기",
+    "price": "6,800원",
+    "rep": false
+   },
+   {
+    "name": "데리야끼봉구",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "돼불에햄",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "매콤제육닭갈비",
+    "price": "5,600원",
+    "rep": false
+   },
+   {
+    "name": "소고기봉된장",
+    "price": "5,600원",
+    "rep": false
+   },
+   {
+    "name": "점보치킨마요",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "봉구도시락",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "매콤봉구도시락",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "고기봉구도시락",
+    "price": "7,000원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "봉구스밥버거 상무점"
+ },
+ "댄싱컵 광주상무역점": {
+  "naverId": "1047072870",
+  "items": [
+   {
+    "name": "바질치즈치아바타",
+    "price": "4,800원",
+    "rep": true
+   },
+   {
+    "name": "[패스오더전용] 100원 아메리카노",
+    "price": "100원",
+    "rep": true
+   },
+   {
+    "name": "댄싱커피",
+    "price": "3,500원",
+    "rep": true
+   },
+   {
+    "name": "바닐라빈라떼",
+    "price": "4,300원",
+    "rep": true
+   },
+   {
+    "name": "아메리카노",
+    "price": "2,000원",
+    "rep": true
+   },
+   {
+    "name": "그랜마레몬에이드",
+    "price": "4,300원",
+    "rep": true
+   },
+   {
+    "name": "코코넛망고스무디",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "코코넛커피스무디",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "코코넛라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "참치마요구운주먹밥",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "김치치즈구운주먹밥",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "마카롱5종세트",
+    "price": "11,700원",
+    "rep": false
+   },
+   {
+    "name": "마카롱스트로베리",
+    "price": "2,200원",
+    "rep": false
+   },
+   {
+    "name": "마카롱바닐라",
+    "price": "2,200원",
+    "rep": false
+   },
+   {
+    "name": "마카롱초코",
+    "price": "2,200원",
+    "rep": false
+   },
+   {
+    "name": "햄치즈크로와상",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "츄러스",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "브라운치즈크로플",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "플레인크로플",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "소금빵",
+    "price": "2,800원",
+    "rep": false
+   },
+   {
+    "name": "화이트마카다미아쿠키",
+    "price": "4,200원",
+    "rep": false
+   },
+   {
+    "name": "다크초코피넛버터칩쿠키",
+    "price": "4,200원",
+    "rep": false
+   },
+   {
+    "name": "르뱅쿠키",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "에스프레소피에노",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "에스프레소클래식",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "에스프레소콘파냐",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "오트라떼",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "카푸치노",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "브라운슈가카푸치노",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "댄싱믹스커피",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "카페모카",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "돌체라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "돌체콜드브루[디카페인]",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "돌체콜드브루",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "콜드브루라떼[디카페인]",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "콜드브루라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "콜드브루[디카페인]",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "콜드브루",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "카라멜라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼[시즌빈]",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼[디카페인]",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "댄싱더블샷바닐라",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "더블샷샤케라토",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "차차라떼",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "빅아메리카노[시즌빈]",
+    "price": "4,200원",
+    "rep": false
+   },
+   {
+    "name": "빅아메리카노[디카페인]",
+    "price": "4,200원",
+    "rep": false
+   },
+   {
+    "name": "빅아메리카노",
+    "price": "3,400원",
+    "rep": false
+   },
+   {
+    "name": "아메리카노[시즌빈]",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "아메리카노[디카페인]",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "자몽티",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "유자차",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "생강차",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "레몬티",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "제로슈거유자라임티",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "제로슈거다크체리애플티",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "허니자몽블랙티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "페퍼민트티",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "얼그레이티",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "애플티",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "캐모마일티",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "레모마일티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "금귤애플티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "베리그레이티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "유자민트티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "썸머피치아이스티",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "바나나주스",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "망고바나나주스",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "딸기바나나주스",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "망고주스",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "자몽에이드",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "쿨라임에이드",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "샤인머스켓에이드",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "자두에이드",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "딸기초코프라페",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "카라멜쿠키프라페",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "말차프라페",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "에스프레소칩프라페",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "바닐라빈프라페",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "딥초콜릿프라페",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "댄싱믹스커피프라페",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "딸기바나나스무디",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "망고바나나스무디",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "딸기요거트스무디",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "블루베리요거트스무디",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "플레인요거트스무디",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "망고스무디",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "헤이즐넛초콜릿라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "베리뱅쇼",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "인절미크림라떼",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "얼그레이밀크티",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "말차라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "베리스트로베리라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "토피넛라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "고구마라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "딥초콜릿라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼",
+    "price": "3,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.05.13",
+  "title": "댄싱컵 광주상무역점"
+ },
+ "프랭크버거 광주상무점": {
+  "naverId": "1595458919",
+  "items": [
+   {
+    "name": "파닭파닭치킨버거",
+    "price": "6,600원",
+    "rep": true
+   },
+   {
+    "name": "깐쇼새우비프버거",
+    "price": "8,900원",
+    "rep": true
+   },
+   {
+    "name": "맥앤치즈비프버거",
+    "price": "9,900원",
+    "rep": true
+   },
+   {
+    "name": "파닭파닭치킨버거세트",
+    "price": "10,100원",
+    "rep": true
+   },
+   {
+    "name": "깐쇼새우비프버거세트",
+    "price": "12,400원",
+    "rep": true
+   },
+   {
+    "name": "맥앤치즈비프버거세트",
+    "price": "13,400원",
+    "rep": true
+   },
+   {
+    "name": "K불고기버거",
+    "price": "4,900원",
+    "rep": false
+   },
+   {
+    "name": "K핫불고기버거",
+    "price": "4,900원",
+    "rep": false
+   },
+   {
+    "name": "프랭크버거",
+    "price": "5,400원",
+    "rep": false
+   },
+   {
+    "name": "쉬림프버거",
+    "price": "5,800원",
+    "rep": false
+   },
+   {
+    "name": "청양마요쉬림프버거",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈버거",
+    "price": "6,400원",
+    "rep": false
+   },
+   {
+    "name": "베이컨치즈버거",
+    "price": "7,800원",
+    "rep": false
+   },
+   {
+    "name": "비프앤쉬림프버거",
+    "price": "8,900원",
+    "rep": false
+   },
+   {
+    "name": "100%한우버거",
+    "price": "8,900원",
+    "rep": false
+   },
+   {
+    "name": "100%한우갈릭버거",
+    "price": "9,400원",
+    "rep": false
+   },
+   {
+    "name": "더블비프치즈버거",
+    "price": "9,500원",
+    "rep": false
+   },
+   {
+    "name": "JG버거",
+    "price": "9,900원",
+    "rep": false
+   },
+   {
+    "name": "프랭크버거 세트",
+    "price": "8,900원",
+    "rep": false
+   },
+   {
+    "name": "K불고기버거세트",
+    "price": "8,400원",
+    "rep": false
+   },
+   {
+    "name": "K핫불고기버거세트",
+    "price": "8,400원",
+    "rep": false
+   },
+   {
+    "name": "쉬림프버거 세트",
+    "price": "9,300원",
+    "rep": false
+   },
+   {
+    "name": "청양마요쉬림프버거 세트",
+    "price": "9,500원",
+    "rep": false
+   },
+   {
+    "name": "치즈버거 세트",
+    "price": "9,900원",
+    "rep": false
+   },
+   {
+    "name": "베이컨치즈버거 세트",
+    "price": "11,300원",
+    "rep": false
+   },
+   {
+    "name": "비프앤쉬림프버거 세트",
+    "price": "12,400원",
+    "rep": false
+   },
+   {
+    "name": "100%한우버거 세트",
+    "price": "12,400원",
+    "rep": false
+   },
+   {
+    "name": "100%한우갈릭버거 세트",
+    "price": "12,900원",
+    "rep": false
+   },
+   {
+    "name": "더블비프치즈버거세트",
+    "price": "13,000원",
+    "rep": false
+   },
+   {
+    "name": "JG버거 세트",
+    "price": "13,400원",
+    "rep": false
+   },
+   {
+    "name": "순살치킨 후라이드(순살 200g)",
+    "price": "4,900원",
+    "rep": false
+   },
+   {
+    "name": "순살치킨 양념(순살 200g)",
+    "price": "5,400원",
+    "rep": false
+   },
+   {
+    "name": "순살치킨 청양마요(순살 200g)",
+    "price": "5,400원",
+    "rep": false
+   },
+   {
+    "name": "프렌치프라이",
+    "price": "2,200원",
+    "rep": false
+   },
+   {
+    "name": "해쉬포테이토(1개)",
+    "price": "2,200원",
+    "rep": false
+   },
+   {
+    "name": "코울슬로",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "콘샐러드",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "오징어링 (3개)",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "더치즈볼 (3개)",
+    "price": "2,800원",
+    "rep": false
+   },
+   {
+    "name": "치즈스틱 (3개)",
+    "price": "2,800원",
+    "rep": false
+   },
+   {
+    "name": "치킨텐더 (2개)",
+    "price": "2,900원",
+    "rep": false
+   },
+   {
+    "name": "치즈프랜치프라이",
+    "price": "3,700원",
+    "rep": false
+   },
+   {
+    "name": "바삭어니언링",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "통가슴살 후라이드 (1개)",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "버팔로윙봉 (윙2개+봉2개)",
+    "price": "5,600원",
+    "rep": false
+   },
+   {
+    "name": "자이언트 통닭다리 (1개)",
+    "price": "6,600원",
+    "rep": false
+   },
+   {
+    "name": "바닐라 밀크 쉐이크",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "아메리카노 (HOT / ICE)",
+    "price": "2,200원",
+    "rep": false
+   },
+   {
+    "name": "탄산음료",
+    "price": "2,200원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "프랭크버거 광주상무점"
+ },
+ "명인면옥 상무점": {
+  "naverId": "1868162510",
+  "items": [
+   {
+    "name": "물냉면",
+    "price": "11,000원",
+    "rep": true
+   },
+   {
+    "name": "비빔냉면",
+    "price": "11,000원",
+    "rep": true
+   },
+   {
+    "name": "고기국수",
+    "price": "9,000원",
+    "rep": true
+   },
+   {
+    "name": "숯불비빔국수",
+    "price": "9,000원",
+    "rep": true
+   },
+   {
+    "name": "수제 왕돈까스",
+    "price": "13,000원",
+    "rep": true
+   },
+   {
+    "name": "왕갈비탕",
+    "price": "15,000원",
+    "rep": true
+   }
+  ],
+  "updated": "26.08.18",
+  "title": "명인면옥 상무점"
+ },
+ "서가앤쿡": {
+  "naverId": "32316842",
+  "items": [
+   {
+    "name": "베이컨 까르보나라(1인)",
+    "price": "15,900원",
+    "rep": true
+   },
+   {
+    "name": "게살 오이스터 파스타(1인)[매콤]",
+    "price": "17,900원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "서가앤쿡 상무점",
+  "snippet": "정보 | 포장 | 매장 | 배달 | 대표메뉴 | 대표 | 베이컨 까르보나라(1인) | 부드러운 크림 소스와 베이컨의 조화가 돋보이는 서가앤쿡의 베스트 셀러 | 15,900원 | 대표 | 게살 오이스터 파스타(1인)[매콤] | 듬뿍 들어간 부드러운 게살과 오이스터 소스의 절묘한 조화가 환상적인 파스타 | 17,900원 | 한상 | 목살 한상(2인) | 서가앤쿡의 메인 메뉴 2가지를 한 상 가득 푸짐하게 나만의 스타일로 즐기세요 | 40,900원 | 1KG 스테이크half(500g) 한상(2인) | 49,800원 | 1KG 스테이크 한상(3~4인) | 65,800원 | 목살파히타한상(2인) | 냉장목살 스테이크와",
+  "layout": "order"
+ },
+ "왓더버거 광주상무점": {
+  "naverId": "2025249037",
+  "items": [
+   {
+    "name": "아메리칸 치즈버거",
+    "price": "6,200원",
+    "rep": false
+   }
+  ],
+  "updated": "26.09.23",
+  "title": "왓더버거 광주상무점"
+ },
+ "진미가람": {
+  "naverId": "32061971",
+  "items": [
+   {
+    "name": "특제양념숙성 LA갈비한판 \"1KG\"",
+    "price": "69,000원",
+    "rep": true
+   },
+   {
+    "name": "80시간 숙성 매운직화돼지갈비300g",
+    "price": "18,000원",
+    "rep": true
+   },
+   {
+    "name": "\"80시간 숙성\" 직화돼지갈비300g",
+    "price": "16,500원",
+    "rep": true
+   },
+   {
+    "name": "점심메뉴강추! 직화불고기쌈밥 1인분",
+    "price": "12,000원",
+    "rep": true
+   },
+   {
+    "name": "구워주는 저온숙성 숯불삼겹살 200g",
+    "price": "17,000원",
+    "rep": true
+   },
+   {
+    "name": "치즈폭탄 특대계란말이",
+    "price": "18,000원",
+    "rep": true
+   },
+   {
+    "name": "진미가람식 돼지갈비찜 (대1000g)",
+    "price": "57,000원",
+    "rep": true
+   },
+   {
+    "name": "진미가람식 돼지갈비찜(소 600g)",
+    "price": "34,000원",
+    "rep": false
+   },
+   {
+    "name": "낙지볶음",
+    "price": "13,000원",
+    "rep": false
+   },
+   {
+    "name": "낙육지회 (예약)",
+    "price": "가격 변동",
+    "rep": false
+   },
+   {
+    "name": "당일도축 한우 육사시미/뭉티기(예약)",
+    "price": "45,000원",
+    "rep": false
+   },
+   {
+    "name": "한우 육회 한접시",
+    "price": "45,000원",
+    "rep": false
+   },
+   {
+    "name": "한우 육회 반접시",
+    "price": "29,000원",
+    "rep": false
+   },
+   {
+    "name": "생고기비빔밥",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "익힘비빔밥",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "한우 스지 우거지 해장국",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "직접 끓인 작두콩 청국장",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "김치찌개",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "물/비빔 냉면",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "사골 떡국",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "직접 구운 누룽지",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "떡국 후식",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "냉면 후식",
+    "price": "5,000원",
+    "rep": false
+   }
+  ],
+  "updated": "25.11.28",
+  "title": "진미가람 본점"
+ },
+ "메가MGC커피 광주상무미즈피아점": {
+  "naverId": "1639754822",
+  "items": [
+   {
+    "name": "메가에이드",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "딸기쿠키 프라페",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "딸기라떼",
+    "price": "3,700원",
+    "rep": false
+   },
+   {
+    "name": "ICE 아메리카노",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "메가리카노",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "HOT 아메리카노",
+    "price": "1,500원",
+    "rep": false
+   }
+  ],
+  "updated": "26.04.22",
+  "title": "메가MGC커피 광주상무미즈피아점"
+ },
+ "박홍열갈비탕": {
+  "naverId": "1134919514",
+  "items": [
+   {
+    "name": "갈비탕정식",
+    "price": "18,000원",
+    "rep": true
+   },
+   {
+    "name": "얼큰갈비탕정식",
+    "price": "18,000원",
+    "rep": true
+   },
+   {
+    "name": "전복갈비탕",
+    "price": "22,000원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "박홍열갈비탕 상무본점",
+  "snippet": "정보 | 배달우리 매장은 배달 주문이 가능합니다 | 대표메뉴 | 대표 | 갈비탕정식 | 정갈하면서도 푸짐한 갈비탕(탕찜포함) | 18,000원 | 대표 | 얼큰갈비탕정식 | 술먹은 다음날 해장엔 역시 얼큰갈비탕(탕찜포함) | 18,000원 | 대표 | 전복갈비탕 | 전복이 들어가 건강에 좋은 전복갈비탕 | 22,000원 | 왕갈비탕 | 왕갈비탕 | 크고 맛있는 왕갈비탕이 시원한 국물속에 쏙~ | 18,000원 | 얼큰왕갈비탕(1인) | 술먹은 다음날 해장엔 역시 얼큰왕갈비탕 | 18,000원 | 왕갈비탕곱배기(1인) | 기본 왕갈비탕보다 고기양이 추가된 푸짐한 왕갈비탕곱배기 | 22,000원 | 얼큰왕갈비탕곱배기(1인)",
+  "layout": "order"
+ },
+ "현완단겸 상추튀김 상무점": {
+  "naverId": "20037459",
+  "items": [
+   {
+    "name": "돼지고기상추튀김",
+    "price": "8,000원",
+    "rep": true
+   },
+   {
+    "name": "모듬튀김(대)",
+    "price": "26,800원",
+    "rep": true
+   },
+   {
+    "name": "오징어 상추튀김",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "모듬튀김(중)",
+    "price": "19,800원",
+    "rep": false
+   },
+   {
+    "name": "고구마튀김",
+    "price": "6,500원",
+    "rep": false
+   },
+   {
+    "name": "김말이잡채튀김",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "매운고추튀김",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "계란튀김",
+    "price": "6,500원",
+    "rep": false
+   },
+   {
+    "name": "떡볶이",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "어묵",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "순대",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "순대+내장",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "떡순이",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "셀프라면",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "음료수",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "소주",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "맥주",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "막걸리",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "소세지김밥",
+    "price": "3,400원",
+    "rep": false
+   },
+   {
+    "name": "어묵김밥",
+    "price": "3,400원",
+    "rep": false
+   },
+   {
+    "name": "소세지김밥+어묵",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "어묵김밥+어묵",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "커플세트",
+    "price": "21,800원",
+    "rep": false
+   },
+   {
+    "name": "패밀리세트",
+    "price": "35,800원",
+    "rep": false
+   },
+   {
+    "name": "단체세트",
+    "price": "46,800원",
+    "rep": false
+   },
+   {
+    "name": "오징어 상추튀김 1BOX(포장)",
+    "price": "15,800원",
+    "rep": false
+   },
+   {
+    "name": "돼지고기 상추튀김 1BOX(포장)",
+    "price": "15,800원",
+    "rep": false
+   },
+   {
+    "name": "매운고추튀김 1BOX(포장)",
+    "price": "15,800원",
+    "rep": false
+   },
+   {
+    "name": "간장소스 추가(포장)",
+    "price": "1,500원",
+    "rep": false
+   },
+   {
+    "name": "상추 추가(포장)",
+    "price": "1,500원",
+    "rep": false
+   },
+   {
+    "name": "생맥주 500cc",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "생맥주 1700cc",
+    "price": "17,000원",
+    "rep": false
+   },
+   {
+    "name": "생맥주 2700cc",
+    "price": "27,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.10.24",
+  "title": "현완단겸상추튀김 상무본점"
+ },
+ "할멈탕수육김밥 상무점": {
+  "naverId": "2014921451",
+  "items": [
+   {
+    "name": "탕수육 (간단하게)",
+    "price": "8,000원",
+    "rep": true
+   },
+   {
+    "name": "탕수육 (든든하게)",
+    "price": "9,500원",
+    "rep": false
+   },
+   {
+    "name": "탕수육 (배부르게)",
+    "price": "11,500원",
+    "rep": false
+   },
+   {
+    "name": "할멈김밥",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "참치김밥",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "고추김밥",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "치즈김밥",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "샐러드김밥",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "크래미김밥",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "돈가스김밥",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "참치고추김밥",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "어린이김밥",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "떡볶이 (소)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "떡볶이 (대)",
+    "price": "7,500원",
+    "rep": false
+   },
+   {
+    "name": "라볶이",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈라볶이",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "순대",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "어묵탕",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "음료 (콜라/사이다)",
+    "price": "1,500원",
+    "rep": false
+   },
+   {
+    "name": "라면",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "치즈라면",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "우동",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "쫄면",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "제육덮밥",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "새싹야채비빔밥",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "수제돈가스",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈돈가스",
+    "price": "10,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.09.11",
+  "title": "할멈탕수육김밥 상무점"
+ },
+ "보배반점 상무점": {
+  "naverId": "1090179228",
+  "items": [
+   {
+    "name": "[주문1위]짬뽕",
+    "price": "11,500원",
+    "rep": true
+   },
+   {
+    "name": "짜장면",
+    "price": "9,500원",
+    "rep": true
+   },
+   {
+    "name": "탕수육(미니(1인추천))",
+    "price": "15,900원",
+    "rep": true
+   },
+   {
+    "name": "탕수육(소(2인추천))",
+    "price": "20,900원",
+    "rep": true
+   },
+   {
+    "name": "탕수육(중(3인추천))",
+    "price": "26,900원",
+    "rep": true
+   },
+   {
+    "name": "차돌짬뽕",
+    "price": "14,000원",
+    "rep": true
+   },
+   {
+    "name": "해물쟁반짜장(보통)",
+    "price": "25,000원",
+    "rep": true
+   },
+   {
+    "name": "해물쟁반짜장(곱빼기)",
+    "price": "27,000원",
+    "rep": true
+   },
+   {
+    "name": "볶음밥",
+    "price": "10,000원",
+    "rep": true
+   },
+   {
+    "name": "탕수육(대(4인추천))",
+    "price": "31,900원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "보배반점 광주상무점",
+  "snippet": "정보 | 포장 | 매장 | 배달 | 대표메뉴 | 대표 | [주문1위]짬뽕 | 불맛나는 인생짬뽕 | 11,500원 | 대표 | 짜장면 | 보배만의 수제 짜장소스와 쫀득한 면발에 알싸한 무순과 메추리알이 더해주는 감칠 맛 | 9,500원 | 대표 | 탕수육(미니(1인추천)) | 녹차먹인 무항생제 국내산 돼지고기에 독자적 레시피의 튀김 옷과 소스로 조리해 육즙 가득 감동의 맛 | 15,900원 | 대표 | 탕수육(소(2인추천)) | 녹차먹인 무항생제 국내산 돼지고기에 독자적 레시피의 튀김 옷과 소스로 조리해 육즙 가득 감동의 맛 | 20,900원 | 대표 | 탕수육(중(3인추천)) | 녹차먹인 무항생제 국내산 돼지고기",
+  "layout": "order"
+ },
+ "메가MGC커피 광주치평점": {
+  "naverId": "1603148864",
+  "items": [
+   {
+    "name": "Hot아메리카노",
+    "price": "1,500원",
+    "rep": false
+   },
+   {
+    "name": "Ice아메리카노",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "쿠키프라페",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "메가에이드",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "퐁크러쉬",
+    "price": "3,900원",
+    "rep": false
+   }
+  ],
+  "updated": "26.01.12",
+  "title": "메가MGC커피 광주치평점"
+ },
+ "용쓰91김밥 상무점": {
+  "naverId": "1842597387",
+  "items": [
+   {
+    "name": "91라이스김밥",
+    "price": "5,500원",
+    "rep": true
+   },
+   {
+    "name": "91떡볶이",
+    "price": "8,000원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "용쓰91김밥 상무점",
+  "snippet": "정보 | 배달우리 매장은 배달 주문이 가능합니다 | 대표메뉴 | 대표 | 91라이스김밥 | 김 대신 라이스페이퍼 / 소고기 속이 들어간 김밥을 소스에 찍어먹는 맛있는 김밥 | 5,500원 | 대표 | 91떡볶이 | 8,000원 | 김밥류 | 91김밥 | 4,000원 | 돈까스 김밥 | 5,500원 | 대표 | 91라이스김밥 | 김 대신 라이스페이퍼 / 소고기 속이 들어간 김밥을 소스에 찍어먹는 맛있는 김밥 | 5,500원 | 왕새우라이스김밥 | 5,500원 | 갈릭치킨라이스김밥 | 5,500원 | 펼쳐서 더보기 | 떡볶이 | 대표 | 91떡볶이 | 8,000원 | 치즈사리 | 2,000원 | 돈가스 | 수제생돈가스 | 10,000원 | 치즈돈가스 | ",
+  "layout": "order"
+ },
+ "매운날 상무직영점": {
+  "naverId": "1123897907",
+  "items": [
+   {
+    "name": "치즈김치 갈비찜",
+    "price": "20,000원",
+    "rep": true
+   },
+   {
+    "name": "우주선 치즈 갈비찜",
+    "price": "18,500원",
+    "rep": true
+   },
+   {
+    "name": "치즈소갈비찜한판(1일한정메뉴)",
+    "price": "80,000원",
+    "rep": true
+   },
+   {
+    "name": "명품김치 갈비찜",
+    "price": "18,500원",
+    "rep": true
+   },
+   {
+    "name": "우주선 등갈비찜",
+    "price": "16,500원",
+    "rep": true
+   },
+   {
+    "name": "소갈비찜한판(1일한정메뉴 3인분)",
+    "price": "75,000원",
+    "rep": true
+   },
+   {
+    "name": "대패삼겹 갈비찜",
+    "price": "18,500원",
+    "rep": true
+   },
+   {
+    "name": "치즈대패삼겹 갈비찜",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "소불고기전골(공기포함)",
+    "price": "15,000원",
+    "rep": false
+   },
+   {
+    "name": "SetA.통골뱅이탕(대)+먹태",
+    "price": "55,000원",
+    "rep": false
+   },
+   {
+    "name": "SetB.통골뱅이탕(중)+먹태",
+    "price": "45,000원",
+    "rep": false
+   },
+   {
+    "name": "통골뱅이탕(중)",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "통골뱅이탕(대)",
+    "price": "40,000원",
+    "rep": false
+   },
+   {
+    "name": "바삭먹태",
+    "price": "18,000원",
+    "rep": false
+   },
+   {
+    "name": "칼국수사리",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "우주선 간장 갈비찜",
+    "price": "16,500원",
+    "rep": false
+   },
+   {
+    "name": "소갈비찜 반판(1일한정메뉴 2인분)",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈소갈비찜 반판(1일한정메뉴)",
+    "price": "40,000원",
+    "rep": false
+   },
+   {
+    "name": "무뼈닭발 한판",
+    "price": "18,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈무뼈닭발 한판",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "폭탄날치알볶음밥",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈폭탄볶음밥",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈날치알폭탄볶음밥",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "비법소스 볶음밥",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "삼겹살 추가 (150g)",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "참치주먹밥",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "치치주먹밥(날치알+참치)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "날치알주먹밥",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈계란찜",
+    "price": "5,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.09.07",
+  "title": "상무지구맛집 매운날"
+ },
+ "상무쌈밥": {
+  "naverId": "2010895298",
+  "items": [
+   {
+    "name": "2인 쌈밥찌개세트",
+    "price": "33,000원",
+    "rep": false
+   },
+   {
+    "name": "쌈밥, 국수, 전 세트",
+    "price": "43,000원",
+    "rep": false
+   },
+   {
+    "name": "쌈밥정식",
+    "price": "12,000원",
+    "rep": true
+   },
+   {
+    "name": "제육정식",
+    "price": "12,000원",
+    "rep": false
+   },
+   {
+    "name": "돌솥비빔밥",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "광주식 애호박찌개",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "함평식 애호박찌개",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "보글보글 김치찌개",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "1인 쌈밥",
+    "price": "14,000원",
+    "rep": false
+   },
+   {
+    "name": "간새우애호박전",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "매콤달달 제육볶음",
+    "price": "28,000원",
+    "rep": false
+   },
+   {
+    "name": "하루전 예약 닭볶음탕, 돼지갈비찜",
+    "price": "55,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.11.16",
+  "title": "상무쌈밥"
+ },
+ "헤이키커피 상무점": {
+  "naverId": "1808245580",
+  "items": [
+   {
+    "name": "딥바닐라라떼",
+    "price": "4,500원",
+    "rep": true
+   },
+   {
+    "name": "밀키라떼",
+    "price": "4,500원",
+    "rep": true
+   },
+   {
+    "name": "코코라떼",
+    "price": "4,800원",
+    "rep": true
+   },
+   {
+    "name": "코코넛커피쉐이크",
+    "price": "5,000원",
+    "rep": true
+   },
+   {
+    "name": "아메리카노",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "1리터아메리카노(Only ICE)",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "오트라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "헤이즐넛라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "딥카라멜라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "딥카페모카",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "바나나라떼 (Only ICE)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "아샷추",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "아샷추 1L",
+    "price": "5,800원",
+    "rep": false
+   },
+   {
+    "name": "아인슈페너",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "초당옥수수크림라떼",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "넛츠모카",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "크림밀크티라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "허니비라떼 (Only ICE)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "피치아이스티",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "아망추",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "피치아이스티 1L",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "땡모반(수박주스)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "헤이딸기주스",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "헤이딸기라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "딸기바나나(ICE)",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "청송사과주스",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "애플유자티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "초코바나나라떼(ICE)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "딥초콜릿라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "딸기말차라떼 (Only ICE)",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "초코말차라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "제주말차라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "자몽허니블랙티",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "얼그레이밀크티",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "민트초코라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "고구마라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "곡물라떼(12곡)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "레몬차",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "유자차",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "문경오미자차",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "생강유자차(HOT)",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "자몽티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "제주청귤차",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "패션후르츠티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "레몬유자차",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "애플캐모마일티(HOT)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "생강차 (Only HOT)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "레몬에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "문경오미자에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "유자에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "제주청귤에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "패션후르츠에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "자몽에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "자두에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "레몬유자에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "밀크쉐이크",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "커피밀크쉐이크",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "바나나밀크쉐이크",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "얼그레이밀크쉐이크",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "플레인요거트스무디",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "복숭아요거트스무디",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "딸기요거트스무디",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "자두요거트스무디",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "망고요거트스무디",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "블루베리요거트스무디",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "유자레몬스무디",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "배 스무디",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "복숭아스무디",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "자두 스무디",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "망고 스무디",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "딥초코쉐이크",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "자바칩초코쉐이크",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "제주말차쉐이크",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "민트초코칩쉐이크",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "캐모마일",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "페퍼민트",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "얼그레이",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "피치우롱티",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "로얄 캐모마일",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "쿨민트",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "얼그레이 리저브",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "후르츠드림",
+    "price": "4,000원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "헤이키커피 상무점"
+ },
+ "모람": {
+  "naverId": "2084971709",
+  "items": [
+   {
+    "name": "구기자차(Hot)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "자몽차(Ice) *8월한정",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "자몽차(Hot) *8월한정",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "레몬차(Ice) *8월한정",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "레몬차(Hot) *8월한정",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "수제청 자몽에이드",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "수제청 레몬에이드",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "흑임자 바나나주스",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "생과일 블루베리주스",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "생과일 키위주스",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "생과일 토마토주스",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "리얼 생과일 망고주스",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "生더덕 주스",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "미숫가루쉐이크",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "딸기요거트스무디",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "블루베리요거트스무디",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "망고요거트스무디",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "플레인요거트스무디",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "흑임자라떼(Ice)",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "흑임자라떼(Hot)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "미숫가루라떼(Ice)",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "미숫가루라떼(Hot)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "말차라떼(Ice)",
+    "price": "5,500원",
+    "rep": false
+   },
+   {
+    "name": "말차라떼(Hot)",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "디카페인라떼(Ice)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "디카페인 라떼(Hot)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "크림라떼(only ice)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "돌체라떼(Ice)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "돌체라떼(Hot)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "카푸치노(Ice)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "카푸치노(Hot)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "카라멜 마끼아또(Ice)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "카라멜 마끼아또(Hot)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "바닐라라떼(Ice)",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "바닐라라떼(Hot)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼(Ice)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼(Hot)",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "디카페인 아메리카노(Ice)",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "디카페인 아메리카노(Hot)",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "아메리카노(Ice)",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "아메리카노(Hot)",
+    "price": "3,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.08.03",
+  "title": "모람"
+ },
+ "채가곰탕": {
+  "naverId": "16055351",
+  "items": [
+   {
+    "name": "한우곰탕",
+    "price": "11,000원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "채가곰탕"
+ },
+ "갓성비": {
+  "naverId": "2037418524",
+  "items": [
+   {
+    "name": "차돌박이(100g)",
+    "price": "9,900원",
+    "rep": false
+   },
+   {
+    "name": "꽃등심(100g)",
+    "price": "16,900원",
+    "rep": false
+   },
+   {
+    "name": "갈비살(100g)",
+    "price": "17,900원",
+    "rep": false
+   },
+   {
+    "name": "치마살(100g)",
+    "price": "19,900원",
+    "rep": false
+   },
+   {
+    "name": "살치살(100g)",
+    "price": "23,900원",
+    "rep": false
+   },
+   {
+    "name": "육회(100g)",
+    "price": "10,900원",
+    "rep": false
+   },
+   {
+    "name": "생고기(100g)",
+    "price": "11,900원",
+    "rep": false
+   },
+   {
+    "name": "차돌생고기(100g)",
+    "price": "11,900원",
+    "rep": false
+   },
+   {
+    "name": "세트1번",
+    "price": "61,900원",
+    "rep": false
+   },
+   {
+    "name": "세트2번",
+    "price": "79,900원",
+    "rep": false
+   },
+   {
+    "name": "세트3번",
+    "price": "98,900원",
+    "rep": false
+   },
+   {
+    "name": "육회비빔밥",
+    "price": "9,800원",
+    "rep": false
+   },
+   {
+    "name": "익힘비빔밥",
+    "price": "9,800원",
+    "rep": false
+   },
+   {
+    "name": "콩나물버섯밥&달래간장",
+    "price": "9,800원",
+    "rep": false
+   },
+   {
+    "name": "된장찌개",
+    "price": "7,800원",
+    "rep": false
+   },
+   {
+    "name": "샐러드우동",
+    "price": "8,800원",
+    "rep": false
+   },
+   {
+    "name": "물냉면",
+    "price": "7,800원",
+    "rep": false
+   },
+   {
+    "name": "비빔냉면",
+    "price": "7,800원",
+    "rep": false
+   },
+   {
+    "name": "불냉면",
+    "price": "8,800원",
+    "rep": false
+   },
+   {
+    "name": "차돌라면",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "누룽지",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "공기밥",
+    "price": "1,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.04.22",
+  "title": "갓성비"
+ },
+ "크리스피크림도넛 광주상무점": {
+  "naverId": "2096911190",
+  "items": [
+   {
+    "name": "오리지널 더즌",
+    "price": "20,000원",
+    "rep": true
+   },
+   {
+    "name": "오리지널 하프더즌",
+    "price": "11,400원",
+    "rep": true
+   },
+   {
+    "name": "오리지널 글레이즈드",
+    "price": "1,900원",
+    "rep": true
+   },
+   {
+    "name": "뉴욕 치즈케익",
+    "price": "2,500원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "크리스피크림도넛 광주상무점",
+  "snippet": "정보 | 배달우리 매장은 배달 주문이 가능합니다 | 대표메뉴 | 대표 | 오리지널 더즌 | 부드럽고 달콤한 크리스피크림의 시그니처 도넛 세트 (12개) | 20,000원 | 대표 | 오리지널 하프더즌 | 부드럽고 달콤한 크리스피크림의 시그니처 도넛 세트 (6개) | 11,400원 | 대표 | 오리지널 글레이즈드 | 부드럽고 달콤한 크리스피크림의 시그니처 도넛 | 1,900원 | 대표 | 뉴욕 치즈케익 | 진한 크림치즈와 고소한 쿠키가 조화로운 도넛 | 2,500원 | 신제품 | 홀리데이 프렌즈 더즌 | 오리지널 글레이즈드 6+어리둥절 크림산타 2+까망이 초코루돌프 1+해피마롱 스노우맨 1+크리스마스 트리 ",
+  "layout": "order"
+ },
+ "파리바게뜨 상무역점": {
+  "naverId": "16278724",
+  "items": [
+   {
+    "name": "한 입에 합격 초코찰떡 (미니8구)",
+    "price": "18,000원",
+    "rep": true
+   },
+   {
+    "name": "찰떡같이 합격해엿",
+    "price": "28,000원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "파리바게뜨 상무역점",
+  "snippet": "정보 | 포장 | 매장 | 배달 | 대표메뉴 | 대표 | 한 입에 합격 초코찰떡 (미니8구) | 생 초콜릿을 물듯, 쫀득한 식감의 초코 가나슈를 가득 채워 한입에 당 충전 한입 사이즈의 미니 초코찰떡 세트 (8개입) | 18,000원 | 대표 | 찰떡같이 합격해엿 | 쫀득한 찹쌀떡 3종, 달콤한 호두엿, 초코 풍미 사브레 쿠키까지 응원의 마음을 담은 수능 선물 세트 | 28,000원 | 초코 딥하게 파바 | (낱개) 벨지안 초콜릿 파운드 | 벨기에산 초콜릿으로 품격을 더한 깊고 진한 풍미의 초코파운드 | 2,300원 | 파베블랑 (프로즌디저트) | 사르르 녹는 생크림을 생초콜릿으로 감싸 부드럽고",
+  "layout": "order"
+ },
+ "해돋이 한식뷔페 상무점": {
+  "naverId": "2051131421",
+  "items": [
+   {
+    "name": "한식뷔페",
+    "price": "7,000원",
+    "rep": true
+   }
+  ],
+  "updated": "25.04.25",
+  "title": "해돋이 한식뷔페"
+ },
+ "마중물추어탕 상무직영점": {
+  "naverId": "1577852235",
+  "items": [
+   {
+    "name": "추어탕+돌솥밥",
+    "price": "14,000원",
+    "rep": true
+   },
+   {
+    "name": "추어탕+공기밥",
+    "price": "12,000원",
+    "rep": false
+   },
+   {
+    "name": "전복추어탕+돌솥밥",
+    "price": "18,000원",
+    "rep": false
+   },
+   {
+    "name": "우렁추어탕+돌솥밥",
+    "price": "16,000원",
+    "rep": false
+   },
+   {
+    "name": "통추어탕+돌솥밥",
+    "price": "16,000원",
+    "rep": false
+   },
+   {
+    "name": "닭발볶음",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "고추추어튀김(대)",
+    "price": "17,000원",
+    "rep": false
+   },
+   {
+    "name": "고추추어튀김(소)",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "추어튀김",
+    "price": "17,000원",
+    "rep": false
+   },
+   {
+    "name": "치즈돈까스",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "추어군만두",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "추어탕 포장",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "어리굴젓 600g",
+    "price": "20,000원",
+    "rep": false
+   }
+  ],
+  "updated": "25.08.28",
+  "title": "마중물추어탕 상무점"
+ },
+ "우지커피 광주상무치평점": {
+  "naverId": "1513122510",
+  "items": [
+   {
+    "name": "[패스오더전용] 100원 아메리카노",
+    "price": "100원",
+    "rep": true
+   },
+   {
+    "name": "아메리카노",
+    "price": "1,500원",
+    "rep": false
+   },
+   {
+    "name": "딥카페라떼",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "피넛크림라떼(8oz)",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "아메리터",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "연유큐브라떼",
+    "price": "4,100원",
+    "rep": false
+   },
+   {
+    "name": "모히또레몬홍차",
+    "price": "3,700원",
+    "rep": false
+   },
+   {
+    "name": "스크류딸기스무디",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "자바칩프라페",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "죠리퐁프라페",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "라임모히또",
+    "price": "3,900원",
+    "rep": false
+   }
+  ],
+  "updated": "25.12.30",
+  "title": "우지커피 광주상무치평점"
+ },
+ "꾸다": {
+  "naverId": "1080611018",
+  "items": [
+   {
+    "name": "한우소고기낙지 탕탕이 소",
+    "price": "45,000원",
+    "rep": true
+   },
+   {
+    "name": "홍어삼합 소",
+    "price": "45,000원",
+    "rep": true
+   },
+   {
+    "name": "육회 소",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "산낙지만 탕탕이 소",
+    "price": "40,000원",
+    "rep": false
+   },
+   {
+    "name": "산낙지 볶음 소",
+    "price": "50,000원",
+    "rep": false
+   },
+   {
+    "name": "낙지연포탕 소",
+    "price": "55,000원",
+    "rep": false
+   },
+   {
+    "name": "가지만두 튀김(백대표 추천메뉴)",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "계절메뉴)굴보쌈 생김치",
+    "price": "45,000원",
+    "rep": false
+   },
+   {
+    "name": "보쌈/묵은지(소)",
+    "price": "39,000원",
+    "rep": false
+   },
+   {
+    "name": "모듬전",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "돌문어 숙회",
+    "price": "가격 변동",
+    "rep": false
+   },
+   {
+    "name": "홍어회+묵은지 소",
+    "price": "39,000원",
+    "rep": false
+   },
+   {
+    "name": "전복(스팀or버터구이) 소",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "홍어무침",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "남도육전",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "동태전",
+    "price": "28,000원",
+    "rep": false
+   },
+   {
+    "name": "바지락전",
+    "price": "28,000원",
+    "rep": false
+   },
+   {
+    "name": "닭볶음탕",
+    "price": "40,000원",
+    "rep": false
+   },
+   {
+    "name": "돼지짜글이",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "점심 특선/돼지짜글이",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "점심 특선/제육볶음",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "두부김치",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "제육볶음",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "오징어볶음",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "모듬튀김",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "골뱅이무침+소면",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "오징어튀김",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "칠리새우",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "새우튀김",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "오뎅 전골",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "먹태구이",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "점심 특선/전복연포탕",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "점심 특선/순두부찌개",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "굴전(계절메뉴)",
+    "price": "28,000원",
+    "rep": false
+   },
+   {
+    "name": "바지락탕",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "알탕",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "촉촉 노가리 + 황태",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "계절메뉴)참소라",
+    "price": "35,000원",
+    "rep": false
+   },
+   {
+    "name": "계절메뉴)새꼬막데침",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "골뱅이무침",
+    "price": "30,000원",
+    "rep": false
+   },
+   {
+    "name": "생굴회(계절메뉴)",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "새꼬막(계절메뉴)",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "무뼈닭발",
+    "price": "25,000원",
+    "rep": false
+   },
+   {
+    "name": "해물라면",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "계란찜",
+    "price": "3,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.03.25",
+  "title": "꾸다"
+ },
+ "텐퍼센트커피 상무역환승센터점": {
+  "naverId": "2055213211",
+  "items": [
+   {
+    "name": "시그니처라떼(414ml/아이스)",
+    "price": "4,000원",
+    "rep": true
+   },
+   {
+    "name": "텐라떼(295ml/아이스)",
+    "price": "3,400원",
+    "rep": true
+   },
+   {
+    "name": "솔티드밀크카라멜(295ml/아이스)",
+    "price": "3,800원",
+    "rep": true
+   },
+   {
+    "name": "더티땅콩라떼(295ml/아이스)",
+    "price": "3,900원",
+    "rep": true
+   },
+   {
+    "name": "아인슈페너(414ml)",
+    "price": "4,000원",
+    "rep": true
+   },
+   {
+    "name": "리얼초코라떼(414ml)",
+    "price": "4,500원",
+    "rep": true
+   },
+   {
+    "name": "아메리카노",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "에스프레소",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "쇼콜라프레소",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "플랫화이트",
+    "price": "3,400원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "바닐라빈라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "돌체라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "밀크카라멜라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "카페모카",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "콜드브루",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "콜드브루라떼",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "돌체콜드브루라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "진한 말차라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "진한 말차카페라떼",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "진한 말차슈페너",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "말차딸기크림라떼",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "말차초코라떼",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "말차치즈폼프레치노",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "플레인 요거트 프레치노",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "망고 요거트 프레치노",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "딸기 요거트 프레치노",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "블루베리 요거트 프레치노",
+    "price": "4,800원",
+    "rep": false
+   },
+   {
+    "name": "아보카도바나나 프레치노",
+    "price": "5,000원",
+    "rep": false
+   },
+   {
+    "name": "애플망고 프레치노",
+    "price": "5,300원",
+    "rep": false
+   },
+   {
+    "name": "망고딸기 프레치노",
+    "price": "5,300원",
+    "rep": false
+   },
+   {
+    "name": "우바 피치아이스티",
+    "price": "3,300원",
+    "rep": false
+   },
+   {
+    "name": "제로 피치아이스티",
+    "price": "3,300원",
+    "rep": false
+   },
+   {
+    "name": "제로 망고아이스티",
+    "price": "3,300원",
+    "rep": false
+   },
+   {
+    "name": "제로 사과아이스티",
+    "price": "3,300원",
+    "rep": false
+   },
+   {
+    "name": "제로 체리콕",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "라이트 애플사이다 비니거",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "라이트 피치용과 스파클링",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "라이트 샤인유자 스파클링",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "리얼딸기라떼",
+    "price": "4,000원",
+    "rep": false
+   },
+   {
+    "name": "진한곡물라떼",
+    "price": "3,300원",
+    "rep": false
+   },
+   {
+    "name": "로얄밀크티",
+    "price": "4,300원",
+    "rep": false
+   },
+   {
+    "name": "착즙 레몬에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "착즙 자몽에이드",
+    "price": "4,500원",
+    "rep": false
+   },
+   {
+    "name": "고흥 유자차",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "허니레몬티",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "허니자몽티",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "블랙자몽티",
+    "price": "3,800원",
+    "rep": false
+   },
+   {
+    "name": "잉글리쉬블랙퍼스트",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "유기농제주녹차",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "히비스커스베리",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "페퍼민트",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "캐모마일메들리",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "오르조브루",
+    "price": "3,500원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "텐퍼센트커피 상무역환승센터점"
+ },
+ "상무계절맛집": {
+  "naverId": "1862592701",
+  "items": [
+   {
+    "name": "생선구이",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "짱뚱어탕",
+    "price": "10,000원",
+    "rep": false
+   },
+   {
+    "name": "낙지비빔밥",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "뚝배기불고기",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "알탕",
+    "price": "9,000원",
+    "rep": false
+   },
+   {
+    "name": "병어조림 대",
+    "price": "60,000원",
+    "rep": false
+   },
+   {
+    "name": "병어조림 중",
+    "price": "50,000원",
+    "rep": false
+   },
+   {
+    "name": "병어조림 소",
+    "price": "40,000원",
+    "rep": false
+   },
+   {
+    "name": "갈치조림 대",
+    "price": "60,000원",
+    "rep": false
+   },
+   {
+    "name": "갈치조림 중",
+    "price": "50,000원",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "상무계절맛집",
+  "snippet": "정보 | 생선구이 | 10,000원 | 짱뚱어탕 | 10,000원 | 낙지비빔밥 | 9,000원 | 뚝배기불고기 | 9,000원 | 알탕 | 9,000원 | 병어조림 대 | 60,000원 | 병어조림 중 | 50,000원 | 병어조림 소 | 40,000원 | 갈치조림 대 | 60,000원 | 갈치조림 중 | 50,000원 | 메뉴 항목과 가격은 각 매장의 사정에 따라 기재된 내용과 다를 수 있습니다. | 메뉴판 이미지로 보기2 | 이용약관고객센터리뷰운영정책신고센터 | 네이버"
+ },
+ "한식사랑 한식뷔페": {
+  "naverId": "2046902069",
+  "items": [
+   {
+    "name": "정성가득 25찬 식사",
+    "price": "8,000원",
+    "rep": true
+   }
+  ],
+  "updated": "26.08.03",
+  "title": "한식사랑 한식뷔페"
+ },
+ "브로 샌드위치": {
+  "naverId": "1252190774",
+  "items": [
+   {
+    "name": "햄·치즈·에그 샌드위치",
+    "price": "3,400원",
+    "rep": false
+   },
+   {
+    "name": "크랜베리 닭가슴살 샌드위치",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "매콤 닭가슴살 샌드위치",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "풀드포크 샌드위치",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "와사비크랩 샌드위치",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "로얄 솔트 아메리카노(ICE)",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "로얄 솔트 아메리카노(HOT)",
+    "price": "2,500원",
+    "rep": false
+   },
+   {
+    "name": "밀크티",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "딸기라떼",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "바닐라라떼(ICE)",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "오렌지주스",
+    "price": "3,500원",
+    "rep": false
+   }
+  ],
+  "updated": "26.04.02",
+  "title": "브로샌드위치"
+ },
+ "KFC 광주상무DI": {
+  "naverId": "2068729429",
+  "items": [
+   {
+    "name": "핫크리스피통다리",
+    "price": "가격 변동",
+    "rep": false
+   },
+   {
+    "name": "핫크리스피치킨",
+    "price": "가격 변동",
+    "rep": false
+   },
+   {
+    "name": "징거타워",
+    "price": "가격 변동",
+    "rep": false
+   },
+   {
+    "name": "징거",
+    "price": "가격 변동",
+    "rep": false
+   }
+  ],
+  "updated": null,
+  "title": "KFC 광주상무DI"
+ },
+ "미카도스시 상무점": {
+  "naverId": "1241945196",
+  "items": [
+   {
+    "name": "모든 접시",
+    "price": "2,100원",
+    "rep": false
+   }
+  ],
+  "updated": "26.10.18",
+  "title": "미카도스시 광주상무점"
+ },
+ "르깜므(Le Calme)": {
+  "naverId": "1301408736",
+  "items": [
+   {
+    "name": "머쉬룸 베이컨 크림파스타",
+    "price": "19,000원",
+    "rep": true
+   },
+   {
+    "name": "쉬림프 파스타",
+    "price": "19,000원",
+    "rep": true
+   },
+   {
+    "name": "쉬림프 바질페스토 파스타",
+    "price": "19,000원",
+    "rep": true
+   },
+   {
+    "name": "채끝스테이크",
+    "price": "37,000원",
+    "rep": true
+   },
+   {
+    "name": "한우암소 1++ 채끝스테이크",
+    "price": "57,000원",
+    "rep": true
+   },
+   {
+    "name": "고르곤 페스 츄리",
+    "price": "19,000원",
+    "rep": true
+   },
+   {
+    "name": "갑오징어 샐러드",
+    "price": "18,000원",
+    "rep": true
+   },
+   {
+    "name": "아메리카노(Ice/Hot)",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "르깜므스페셜세트(토마호크)",
+    "price": "120,000원",
+    "rep": false
+   },
+   {
+    "name": "봉골레 파스타",
+    "price": "18,000원",
+    "rep": false
+   },
+   {
+    "name": "씨푸드 파스타",
+    "price": "19,000원",
+    "rep": false
+   },
+   {
+    "name": "쉬림프 로제 리소토",
+    "price": "19,000원",
+    "rep": false
+   },
+   {
+    "name": "해산물 토마토 리소토",
+    "price": "19,000원",
+    "rep": false
+   },
+   {
+    "name": "돈등심 커틀렛",
+    "price": "17,000원",
+    "rep": false
+   },
+   {
+    "name": "돈등심 커틀렛 [Lunch]",
+    "price": "15,000원",
+    "rep": false
+   },
+   {
+    "name": "페파로니 페스츄리",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "고구마 페스츄리",
+    "price": "20,000원",
+    "rep": false
+   },
+   {
+    "name": "에이드",
+    "price": "7,000원",
+    "rep": false
+   },
+   {
+    "name": "음료",
+    "price": "3,000원",
+    "rep": false
+   },
+   {
+    "name": "스텔라 맥주",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "호가든 맥주",
+    "price": "8,000원",
+    "rep": false
+   },
+   {
+    "name": "카스 맥주",
+    "price": "6,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.03.03",
+  "title": "르깜므"
+ },
+ "파리바게뜨 상무마륵점": {
+  "naverId": "36438958",
+  "items": [
+   {
+    "name": "LA초코쫀득도넛",
+    "price": "1,950원",
+    "rep": true
+   },
+   {
+    "name": "찰떡같이 합격해엿",
+    "price": "28,000원",
+    "rep": true
+   },
+   {
+    "name": "[파란라벨] 메밀 바게뜨",
+    "price": "4,900원",
+    "rep": true
+   }
+  ],
+  "updated": null,
+  "title": "파리바게뜨 상무마륵점",
+  "snippet": "정보 | 포장 | 매장 | 배달 | 대표메뉴 | 대표 | LA초코쫀득도넛 | 현란한 발재간을 닮은 화려한 초코드리즐과 고급스러운 코코아파우더를 더한 쫄깃한 도넛 | 1,950원 | 대표 | 찰떡같이 합격해엿 | 쫀득한 찹쌀떡 3종, 달콤한 호두엿, 초코 풍미 사브레 쿠키까지 응원의 마음을 담은 수능 선물 세트 | 28,000원 | 대표 | [파란라벨] 메밀 바게뜨 | 깊고 구수한 풍미의 메밀 듬뿍, 메밀사워도우가 더해져 더욱 고소하고 맛있는 겉바속촉 바게뜨 | 4,900원 | 초코 딥하게 파바 | 초코쫀득츄러스 | 두툼한 볼륨감에 쫀득쫀득한 식감, 진한 초코맛이 매력적인 통통한 츄러스 | 2,900원 | ",
+  "layout": "order"
+ },
+ "메가MGC커피 광주김대중컨벤션점": {
+  "naverId": "2020086794",
+  "items": [
+   {
+    "name": "아메리카노HOT",
+    "price": "1,700원",
+    "rep": false
+   },
+   {
+    "name": "아메리카노ICE",
+    "price": "2,000원",
+    "rep": false
+   },
+   {
+    "name": "메가리카노",
+    "price": "3,300원",
+    "rep": false
+   },
+   {
+    "name": "카페라떼",
+    "price": "2,900원",
+    "rep": false
+   },
+   {
+    "name": "큐브라떼",
+    "price": "4,200원",
+    "rep": false
+   },
+   {
+    "name": "할메가커피",
+    "price": "2,100원",
+    "rep": false
+   },
+   {
+    "name": "왕할메가커피",
+    "price": "3,200원",
+    "rep": false
+   },
+   {
+    "name": "메가에이드",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "레몬에이드",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "블루레몬에이드",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "자몽에이드",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "청포도에이드",
+    "price": "3,500원",
+    "rep": false
+   },
+   {
+    "name": "쿠키프라페",
+    "price": "3,900원",
+    "rep": false
+   },
+   {
+    "name": "퐁크러쉬",
+    "price": "3,900원",
+    "rep": false
+   }
+  ],
+  "updated": "25.07.11",
+  "title": "메가MGC커피 광주김대중컨벤션점"
+ },
+ "티파라치": {
+  "naverId": "37392117",
+  "items": [
+   {
+    "name": "바닐라라떼",
+    "price": "5,500원",
+    "rep": true
+   },
+   {
+    "name": "사이공 코코넛스무디커피",
+    "price": "6,800원",
+    "rep": true
+   },
+   {
+    "name": "생강라떼",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "자몽차",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "사과유자차",
+    "price": "6,000원",
+    "rep": false
+   },
+   {
+    "name": "반반커피",
+    "price": "6,800원",
+    "rep": false
+   },
+   {
+    "name": "베트콩연유커피",
+    "price": "5,800원",
+    "rep": false
+   },
+   {
+    "name": "하노이코코넛라떼",
+    "price": "6,500원",
+    "rep": false
+   }
+  ],
+  "updated": "26.11.09",
+  "title": "티파라치"
+ },
+ "송탄87부대찌개": {
+  "naverId": "2083430445",
+  "items": [
+   {
+    "name": "송탄부대찌개(1인분)",
+    "price": "13,000원",
+    "rep": true
+   },
+   {
+    "name": "베이컨구이(1인분)",
+    "price": "14,000원",
+    "rep": true
+   },
+   {
+    "name": "김치전",
+    "price": "14,000원",
+    "rep": false
+   }
+  ],
+  "updated": "26.03.13",
+  "title": "송탄87부대찌개 광주본점"
+ }
+}
