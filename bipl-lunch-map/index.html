@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 :root{
   --page:#e3f0ee; --frame:#ffffff; --panel:#f4f4f2; --surface:#ffffff;
@@ -158,8 +157,13 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 .legend .lf{background:var(--p-food)} .legend .lc{background:var(--p-cafe)} .legend .ls{background:var(--p-store)} .legend .lr{background:var(--field);color:var(--muted)}
 .dot{width:9px;height:9px;border-radius:50%}
 .home-pin{background:#121212;color:#fff;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 4px 10px rgba(0,0,0,.25)}
-.leaflet-popup-content-wrapper{border-radius:16px}
-.leaflet-popup-content{font-family:inherit;font-size:13px}
+/* 카카오맵 마커·팝업 */
+.k-dot{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35);cursor:pointer}
+.k-pop{position:relative;background:#fff;color:#121212;border-radius:16px;padding:10px 30px 10px 12px;font-size:13px;line-height:1.45;box-shadow:0 6px 18px rgba(0,0,0,.18);max-width:240px;margin-bottom:16px}
+.k-pop:after{content:"";position:absolute;left:50%;bottom:-7px;margin-left:-7px;border:7px solid transparent;border-bottom:0;border-top-color:#fff}
+.k-pop b{font-size:14px}
+.k-pop .x{position:absolute;top:6px;right:6px;width:22px;height:22px;border:0;border-radius:50%;background:#efefec;cursor:pointer;font-size:12px;line-height:22px;padding:0}
+.map-msg{height:100%;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:13px;padding:20px}
 
 /* 알아두기 */
 .notes{margin-top:22px;background:var(--surface);border-radius:28px;padding:18px 20px;border:1px solid var(--line);font-size:12.5px;color:var(--muted)}
@@ -238,7 +242,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
             <li>가게 목록은 비플페이 앱의 '전체 가맹점 사용처'와 '비플식권 사용처' 화면을 옮겨 적은 거예요(정리일 <span id="checked"></span>). 결제 가능 여부는 바뀔 수 있으니 가게에서 확인해 주세요.</li>
             <li>대표메뉴와 가격은 네이버 지도의 매장 메뉴 페이지를 기준으로 정리했어요(2026-11-18). 네이버에 쓸 만한 메뉴가 없는 2곳만 다른 출처를 썼어요. 가격은 가게 사정에 따라 바뀔 수 있어요.</li>
             <li>술집·유흥주점·저녁 장사 포장마차처럼 점심 식사와 맞지 않는 10곳, 저녁에만 여는 고깃집 2곳, 지도 앱에서 확인되지 않는 1곳은 뺐어요. 이마트 상무점은 위치를 확인하지 못해 뺐어요.</li>
-            <li>지도 © OpenStreetMap 기여자</li>
+            <li>지도 © Kakao (카카오맵)</li>
           </ul>
         </div>
       </section>
@@ -258,7 +262,10 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+  // 카카오맵 JavaScript 키 (페이지에 공개되는 키. 카카오 디벨로퍼스에 등록한 도메인에서만 동작)
+  window.KAKAO_JS_KEY = "여기에_내_JavaScript_키";
+</script>
 <script src="data.js"></script>
 <script>
 (function(){
@@ -275,21 +282,57 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 
   document.getElementById("checked").textContent = META.checked;
 
-  // 지도
-  var map = L.map("map", {scrollWheelZoom:false}).setView([META.origin.lat, META.origin.lon], 15);
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:19, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-  var ring = L.circle([META.origin.lat, META.origin.lon], {radius:META.radius, color:"#121212", weight:1.5, fillColor:"#121212", fillOpacity:.04, dashArray:"6 6"}).addTo(map);
-  map.fitBounds(ring.getBounds(), {padding:[8,8]});
-  L.marker([META.origin.lat, META.origin.lon], {icon:L.divIcon({className:"", html:'<div class="home-pin">📍 아카데미</div>', iconSize:null, iconAnchor:[44,12]}), zIndexOffset:1000}).addTo(map);
+  STORES.forEach(function(s, i){ s.id = i; });
 
-  var markers = {};
-  STORES.forEach(function(s, i){
-    s.id = i;
-    var m = L.circleMarker([s.lat, s.lon], {radius:7, weight:2, color:"#fff", fillColor:cssVar(COLOR[s.cat]), fillOpacity:.95});
-    m.bindPopup('<b>'+esc(s.name)+'</b><br>'+s.dist+'m · 도보 약 '+walk(s.dist)+'분'+(s.menu&&s.menu.length?'<br>'+esc(s.menu.join(", ")):''));
-    m.on("click", function(){ highlight(i, false); });
-    markers[i] = m;
-  });
+  // 지도 (카카오맵 Web SDK). 지도를 못 불러와도 목록은 그대로 동작한다
+  var map = null, markers = {}, popup = null, visible = {};
+  var mapEl = document.getElementById("map");
+  function mapMsg(t){ mapEl.innerHTML = '<div class="map-msg">'+t+'</div>'; }
+  function popupHtml(s){
+    return '<div class="k-pop"><button class="x" type="button" aria-label="닫기">✕</button><b>'+esc(s.name)+'</b><br>'+s.dist+'m · 도보 약 '+walk(s.dist)+'분'+(s.menu&&s.menu.length?'<br>'+esc(s.menu.join(", ")):'')+'</div>';
+  }
+  function openPopup(id){
+    if(!map) return;
+    var s = STORES[id];
+    var el = document.createElement("div"); el.innerHTML = popupHtml(s); el = el.firstChild;
+    el.querySelector(".x").addEventListener("click", function(e){ e.stopPropagation(); popup.setMap(null); });
+    popup.setContent(el); popup.setPosition(new kakao.maps.LatLng(s.lat, s.lon)); popup.setMap(map);
+  }
+  function syncMarkers(){
+    if(!map) return;
+    STORES.forEach(function(s){ var on = !!visible[s.id]; markers[s.id].setMap(on ? map : null); });
+    if(popup && popup.getMap() && popup._id != null && !visible[popup._id]) popup.setMap(null);
+  }
+  function initMap(){
+    var center = new kakao.maps.LatLng(META.origin.lat, META.origin.lon);
+    mapEl.innerHTML = "";
+    map = new kakao.maps.Map(mapEl, {center:center, level:5});
+    map.setZoomable(false); // 마우스 휠 확대 끄기 (확대·축소는 버튼으로)
+    map.addControl(new kakao.maps.ZoomControl(), kakao.maps.ControlPosition.TOPLEFT);
+    var ring = new kakao.maps.Circle({center:center, radius:META.radius, strokeWeight:1.5, strokeColor:"#121212", strokeOpacity:1, strokeStyle:"dash", fillColor:"#121212", fillOpacity:.04});
+    ring.setMap(map);
+    map.setBounds(ring.getBounds(), 8, 8, 8, 8);
+    new kakao.maps.CustomOverlay({position:center, content:'<div class="home-pin">📍 아카데미</div>', yAnchor:.5, zIndex:10}).setMap(map);
+    popup = new kakao.maps.CustomOverlay({yAnchor:1, zIndex:20, clickable:true});
+    STORES.forEach(function(s){
+      var dot = document.createElement("div");
+      dot.className = "k-dot"; dot.style.background = cssVar(COLOR[s.cat]); dot.title = s.name;
+      dot.addEventListener("click", function(){ popup._id = s.id; openPopup(s.id); highlight(s.id, false); });
+      markers[s.id] = new kakao.maps.CustomOverlay({position:new kakao.maps.LatLng(s.lat, s.lon), content:dot, yAnchor:.5, zIndex:5, clickable:true});
+    });
+    kakao.maps.event.addListener(map, "click", function(){ popup.setMap(null); });
+    window.addEventListener("resize", function(){ map.relayout(); });
+    syncMarkers();
+  }
+  (function loadKakao(){
+    var key = window.KAKAO_JS_KEY;
+    if(!key || /여기에/.test(key)){ mapMsg("카카오맵 JavaScript 키가 아직 없어요.<br>index.html의 KAKAO_JS_KEY에 키를 넣어 주세요."); return; }
+    var sc = document.createElement("script");
+    sc.src = "https://dapi.kakao.com/v2/maps/sdk.js?appkey=" + encodeURIComponent(key) + "&autoload=false";
+    sc.onload = function(){ if(window.kakao && kakao.maps){ kakao.maps.load(initMap); } else { mapMsg("카카오맵을 불러오지 못했어요."); } };
+    sc.onerror = function(){ mapMsg("카카오맵을 불러오지 못했어요.<br>키와 등록 도메인(카카오 디벨로퍼스)을 확인해 주세요."); };
+    document.head.appendChild(sc);
+  })();
 
   // 상태
   var state = {cat:"전체", q:"", onlyMenu:false, onlyTicket:false};
@@ -317,7 +360,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     });
     var shown = STORES.filter(function(s){return matches(s)});
     countEl.textContent = "(" + shown.length + ")";
-    STORES.forEach(function(s){ var on = shown.indexOf(s) >= 0; if(on && !map.hasLayer(markers[s.id])) markers[s.id].addTo(map); if(!on && map.hasLayer(markers[s.id])) map.removeLayer(markers[s.id]); });
+    visible = {}; shown.forEach(function(s){ visible[s.id] = true; }); syncMarkers();
     if(!shown.length){ listEl.innerHTML = '<p class="empty">조건에 맞는 가게가 없어요 🥲</p>'; return; }
     listEl.innerHTML = shown.map(function(s){
       var k = KIND[s.cat];
@@ -346,7 +389,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   function highlight(id, pan){
     Array.prototype.forEach.call(listEl.querySelectorAll(".card"), function(c){ c.classList.toggle("active", +c.dataset.id === id); });
     var s = STORES[id];
-    if(pan){ map.setView([s.lat, s.lon], Math.max(map.getZoom(), 16)); markers[id].openPopup(); }
+    if(pan){ if(map){ if(map.getLevel() > 3) map.setLevel(3); map.panTo(new kakao.maps.LatLng(s.lat, s.lon)); popup._id = id; openPopup(id); } }
     else { var el = listEl.querySelector('.card[data-id="'+id+'"]'); if(el) el.scrollIntoView({behavior:"smooth", block:"center"}); }
   }
 
