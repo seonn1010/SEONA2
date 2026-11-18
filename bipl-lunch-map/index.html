@@ -5,131 +5,257 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>비플식권 점심지도</title>
 <meta name="description" content="L.L.M Academy(광주 상무중앙로 44) 반경 600m 안에서 비플페이 식권을 쓸 수 있는 음식점·카페·편의점 지도">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 :root{
-  --bg:#f6f5f1; --surface:#ffffff; --text:#1d1d1b; --muted:#6b6a65; --line:#e4e2db;
-  --accent:#e2572b; --accent-ink:#ffffff;
-  --c-food:#e2572b; --c-cafe:#8a5a2b; --c-store:#2b7de2;
-  --chip:#f0eee8; --shadow:0 1px 2px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.05);
+  --page:#e3f0ee; --frame:#ffffff; --panel:#f4f4f2; --surface:#ffffff;
+  --text:#121212; --muted:#6f6f6b; --line:#e6e6e2; --ink:#121212; --ink-text:#ffffff;
+  --field:#ebebe8;
+  /* 파스텔 카드 */
+  --p-all:#cfe5df; --p-food:#fbd3e2; --p-cafe:#fde7a6; --p-store:#e1d5f5;
+  /* 지도 점 (진한 색) */
+  --c-food:#e0457f; --c-cafe:#d99a00; --c-store:#7d5fd3;
+  --blob1:#f7d6e6; --blob2:#d7ece8; --blob3:#e4dcf6;
+  --shadow:0 20px 60px rgba(40,70,70,.12);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#151514; --surface:#1f1f1d; --text:#f1f0ec; --muted:#a3a19a; --line:#33322f;
-    --accent:#ff7a4d; --accent-ink:#1a0d07;
-    --c-food:#ff7a4d; --c-cafe:#d29a62; --c-store:#5ea2ff;
-    --chip:#2a2a27; --shadow:none;
+    --page:#101413; --frame:#1a1d1c; --panel:#141716; --surface:#202423;
+    --text:#f2f2ef; --muted:#a4a6a1; --line:#2c302e; --ink:#f2f2ef; --ink-text:#121212;
+    --field:#262a29;
+    --p-all:#24413a; --p-food:#4a2636; --p-cafe:#4a3d17; --p-store:#352b4d;
+    --c-food:#ff7aa9; --c-cafe:#ffc53d; --c-store:#a990ff;
+    --blob1:#2a1a22; --blob2:#16302b; --blob3:#231d33;
+    --shadow:none;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#151514; --surface:#1f1f1d; --text:#f1f0ec; --muted:#a3a19a; --line:#33322f;
-  --accent:#ff7a4d; --accent-ink:#1a0d07;
-  --c-food:#ff7a4d; --c-cafe:#d29a62; --c-store:#5ea2ff;
-  --chip:#2a2a27; --shadow:none;
+  --page:#101413; --frame:#1a1d1c; --panel:#141716; --surface:#202423;
+  --text:#f2f2ef; --muted:#a4a6a1; --line:#2c302e; --ink:#f2f2ef; --ink-text:#121212;
+  --field:#262a29;
+  --p-all:#24413a; --p-food:#4a2636; --p-cafe:#4a3d17; --p-store:#352b4d;
+  --c-food:#ff7aa9; --c-cafe:#ffc53d; --c-store:#a990ff;
+  --blob1:#2a1a22; --blob2:#16302b; --blob3:#231d33;
+  --shadow:none;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--bg);color:var(--text);font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.45;-webkit-text-size-adjust:100%}
+body{
+  background:var(--page);color:var(--text);
+  font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+  line-height:1.45;-webkit-text-size-adjust:100%;min-height:100vh;overflow-x:hidden;position:relative;
+}
+.num{font-family:"Poppins","Pretendard",sans-serif;font-variant-numeric:tabular-nums}
 a{color:inherit}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-header{padding:20px 0 12px}
-h1{font-size:22px;margin:0 0 4px;letter-spacing:-.02em}
-.sub{color:var(--muted);font-size:14px;margin:0}
-.layout{display:grid;gap:16px;grid-template-columns:1fr}
-@media (min-width:900px){.layout{grid-template-columns:1.1fr 1fr;align-items:start}.mapbox{position:sticky;top:16px}}
-#map{height:42vh;min-height:280px;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
-@media (min-width:900px){#map{height:calc(100vh - 140px)}}
-.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:8px 2px 0}
-.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
-.controls{position:sticky;top:0;z-index:500;background:var(--bg);padding:8px 0 10px}
-.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
-.tabs::-webkit-scrollbar{display:none}
-.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:8px 14px;font-size:14px;cursor:pointer;font-family:inherit}
-.tab[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
-.tab .n{opacity:.6;margin-left:4px;font-size:12px}
-.search{margin-top:8px;display:flex;gap:6px}
-.search input{flex:1;min-width:0;font:inherit;font-size:15px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text)}
-.search button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:10px;padding:0 12px;cursor:pointer}
-.opts{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:13px;color:var(--muted)}
-.opts label{display:flex;align-items:center;gap:5px;cursor:pointer}
-.count{font-size:13px;color:var(--muted);margin:2px 2px 8px}
-.list{display:flex;flex-direction:column;gap:10px;padding-bottom:24px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow);cursor:pointer}
-.card.active{outline:2px solid var(--accent);outline-offset:-1px}
+button{font:inherit;color:inherit}
+/* 배경 동그라미 */
+.blob{position:fixed;border-radius:50%;filter:blur(2px);z-index:0;pointer-events:none}
+.blob.b1{width:520px;height:520px;background:var(--blob1);right:-160px;bottom:-200px}
+.blob.b2{width:420px;height:420px;background:var(--blob2);left:-140px;top:-120px}
+.blob.b3{width:300px;height:300px;background:var(--blob3);left:30%;bottom:-180px}
+
+/* 앱 틀 */
+.frame{position:relative;z-index:1;max-width:1240px;margin:24px auto;background:var(--frame);border-radius:36px;box-shadow:var(--shadow);overflow:hidden}
+.topbar{background:#121212;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 28px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em}
+.logo{width:32px;height:32px;border-radius:10px;background:#fde7a6;color:#121212;display:grid;place-items:center;font-size:17px}
+.place{display:flex;align-items:center;gap:10px;font-size:13px}
+.place .avatar{width:34px;height:34px;border-radius:50%;background:#fbd3e2;display:grid;place-items:center;font-size:17px}
+.place b{display:block;font-size:14px}
+.place span{color:#b9b9b4}
+.body{background:var(--panel);margin:0;border-radius:28px 28px 0 0;padding:28px}
+.layout{display:grid;gap:24px;grid-template-columns:1fr;grid-template-areas:"top" "side" "lst"}
+.top{grid-area:top;min-width:0} .lst{grid-area:lst;min-width:0} .side{grid-area:side;min-width:0}
+.lst .listhead{margin-top:4px}
+@media (min-width:960px){
+  .layout{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"top side" "lst side";column-gap:28px;row-gap:0;align-items:start}
+  .side{position:sticky;top:20px}
+  .lst .listhead{margin-top:28px}
+}
+
+/* 제목 */
+.hello{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+h1{font-size:34px;line-height:1.15;margin:0;letter-spacing:-.03em;font-weight:800}
+.sub{color:var(--muted);font-size:14px;margin:6px 0 0}
+h2.sec{font-size:22px;margin:0;letter-spacing:-.02em;font-weight:700}
+h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
+
+/* 검색 */
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border-radius:999px;padding:6px 6px 6px 18px;min-width:0;flex:1 1 260px;max-width:360px;border:1px solid var(--line)}
+.search svg{flex:0 0 auto;color:var(--muted)}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:15px;color:var(--text);padding:6px 0}
+.search input::placeholder{color:#a3a39e}
+.search button{border:0;background:var(--field);border-radius:999px;padding:7px 12px;font-size:13px;color:var(--muted);cursor:pointer}
+
+/* 카테고리 타일 */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+@media (max-width:640px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tab{position:relative;text-align:left;border:2px solid transparent;border-radius:22px;padding:14px 14px 16px;cursor:pointer;min-height:112px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s ease,border-color .15s ease}
+.tab:hover{transform:translateY(-2px)}
+.tab[data-cat="전체"]{background:var(--p-all)}
+.tab[data-cat="음식점"]{background:var(--p-food)}
+.tab[data-cat="카페"]{background:var(--p-cafe)}
+.tab[data-cat="편의점·마트"]{background:var(--p-store)}
+.tab[aria-pressed="true"]{border-color:var(--ink)}
+.tab .lbl{font-size:14px;font-weight:600}
+.tab .n{font-size:30px;font-weight:600;line-height:1;margin-top:10px}
+.arrow{position:absolute;right:12px;bottom:12px;width:34px;height:34px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-size:15px}
+.tab[aria-pressed="true"] .arrow{background:var(--ink);color:var(--ink-text)}
+
+/* 필터 */
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.toggle{position:relative;display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer;user-select:none}
+.toggle input{position:absolute;opacity:0;pointer-events:none}
+.toggle .tick{width:16px;height:16px;border-radius:50%;border:1.5px solid #b5b5b0;display:grid;place-items:center;font-size:10px;color:transparent}
+.toggle:has(input:checked){background:var(--ink);color:var(--ink-text);border-color:var(--ink)}
+.toggle:has(input:checked) .tick{border-color:var(--ink-text);background:var(--ink-text);color:var(--ink)}
+.toggle:has(input:focus-visible){outline:2px solid var(--c-food);outline-offset:2px}
+
+/* 목록 */
+.listhead{display:flex;align-items:baseline;justify-content:space-between;margin:28px 2px 14px}
+.count{font-size:13px;color:var(--muted)}
+.list{display:flex;flex-direction:column;gap:14px;padding-bottom:8px}
+.card{border-radius:26px;padding:18px 18px 16px;cursor:pointer;border:2px solid transparent;transition:transform .15s ease,border-color .15s ease}
+.card:hover{transform:translateY(-2px)}
+.card.food{background:var(--p-food)} .card.cafe{background:var(--p-cafe)} .card.store{background:var(--p-store)}
+.card.active{border-color:var(--ink)}
 .row1{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-.name{font-weight:700;font-size:16px;margin:0}
-.cat{font-size:12px;font-weight:600;white-space:nowrap}
-.meta{font-size:13px;color:var(--muted);margin-top:3px}
-.dist{font-weight:700;color:var(--text)}
-.badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
-.badge{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--chip);color:var(--muted)}
-.badge.warn{color:#a15c00;background:rgba(255,170,0,.15)}
-.menus{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.mchip{font:inherit;font-size:13px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--text);cursor:pointer}
-.mnote{font-size:12px;color:var(--muted);margin-top:6px}
-.mnote a{color:var(--muted)}
-.links{display:flex;gap:8px;margin-top:12px}
-.btn{flex:1;text-align:center;text-decoration:none;font-size:14px;font-weight:600;padding:9px 0;border-radius:10px}
-.naver{background:#03c75a;color:#fff}
-.kakao{background:#fee500;color:#191919}
-.empty{color:var(--muted);text-align:center;padding:30px 0}
-footer{border-top:1px solid var(--line);margin-top:8px;padding:16px 0 32px;font-size:12px;color:var(--muted)}
-footer ul{margin:6px 0 0;padding-left:18px}
+.kind{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;background:rgba(255,255,255,.65);border-radius:999px;padding:4px 10px}
+.walk{display:inline-flex;align-items:center;gap:4px;background:var(--surface);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:600;white-space:nowrap}
+.name{font-weight:700;font-size:20px;margin:12px 0 2px;letter-spacing:-.02em}
+.meta{font-size:13px;color:var(--muted)}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.badge{font-size:11px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.55)}
+.badge.warn{background:#121212;color:#fff}
+.menus{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.mchip{font-size:13px;padding:6px 12px;border-radius:999px;border:0;background:var(--surface);cursor:pointer}
+.mchip:hover{background:var(--ink);color:var(--ink-text)}
+.mnote{font-size:12px;color:var(--muted);margin-top:8px}
+.links{display:flex;gap:8px;margin-top:14px}
+.btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-size:14px;font-weight:600;padding:10px 0;border-radius:999px;background:var(--surface)}
+.btn .mk{width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-size:11px;font-weight:800}
+.btn.naver .mk{background:#03c75a;color:#fff}
+.btn.kakao .mk{background:#fee500;color:#191919}
+.btn .go{opacity:.6}
+.btn:hover{background:var(--ink);color:var(--ink-text)}
+.empty{color:var(--muted);text-align:center;padding:40px 0;background:var(--surface);border-radius:26px}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .kind, :root:not([data-theme="light"]) .badge{background:rgba(0,0,0,.25)}
+}
+:root[data-theme="dark"] .kind, :root[data-theme="dark"] .badge{background:rgba(0,0,0,.25)}
+
+/* 지도 패널 */
+.mapcard{background:var(--surface);border-radius:28px;padding:16px;border:1px solid var(--line)}
+.maphead{display:flex;justify-content:space-between;align-items:center;margin:2px 4px 12px}
+.maphead .pill{font-size:12px;background:var(--field);border-radius:999px;padding:5px 10px;color:var(--muted)}
+#map{height:46vh;min-height:300px;border-radius:20px;background:var(--panel)}
+@media (min-width:960px){#map{height:calc(100vh - 170px);min-height:420px}}
+.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.legend span{display:inline-flex;align-items:center;gap:6px;font-size:12px;border-radius:999px;padding:6px 11px}
+.legend .lf{background:var(--p-food)} .legend .lc{background:var(--p-cafe)} .legend .ls{background:var(--p-store)} .legend .lr{background:var(--field);color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%}
+.home-pin{background:#121212;color:#fff;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.leaflet-popup-content-wrapper{border-radius:16px}
 .leaflet-popup-content{font-family:inherit;font-size:13px}
-.home-pin{background:var(--text);color:var(--bg);border-radius:8px;padding:3px 7px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+
+/* 알아두기 */
+.notes{margin-top:22px;background:var(--surface);border-radius:28px;padding:18px 20px;border:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.notes strong{color:var(--text);font-size:14px}
+.notes ul{margin:8px 0 0;padding-left:18px}
+.notes li{margin:3px 0}
+
+/* 휴대폰 */
+@media (max-width:640px){
+  .frame{margin:0;border-radius:0;box-shadow:none}
+  .topbar{padding:12px 16px}
+  .place .txt{display:none}
+  .body{padding:22px 16px;border-radius:24px 24px 0 0}
+  h1{font-size:27px}
+  .search{max-width:none;flex-basis:100%}
+  .tab{min-height:96px}
+  .tab .n{font-size:26px}
+  .blob{display:none}
+}
+@media (prefers-reduced-motion: reduce){.tab,.card{transition:none}.tab:hover,.card:hover{transform:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>비플식권 점심지도</h1>
-    <p class="sub">L.L.M Academy(상무중앙로 44) 반경 600m · 비플페이로 결제할 수 있는 곳</p>
-  </header>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
 
-  <div class="layout">
-    <div class="mapbox">
-      <div id="map" role="region" aria-label="가게 위치 지도"></div>
-      <div class="legend">
-        <span><i class="dot" style="background:var(--c-food)"></i>음식점</span>
-        <span><i class="dot" style="background:var(--c-cafe)"></i>카페</span>
-        <span><i class="dot" style="background:var(--c-store)"></i>편의점·마트</span>
-        <span>원 = 반경 600m</span>
-      </div>
-    </div>
-
-    <div>
-      <div class="controls">
-        <div class="tabs" role="group" aria-label="카테고리">
-          <button class="tab" data-cat="전체" aria-pressed="true">전체<span class="n"></span></button>
-          <button class="tab" data-cat="음식점" aria-pressed="false">음식점<span class="n"></span></button>
-          <button class="tab" data-cat="카페" aria-pressed="false">카페<span class="n"></span></button>
-          <button class="tab" data-cat="편의점·마트" aria-pressed="false">편의점·마트<span class="n"></span></button>
-        </div>
-        <div class="search">
-          <input id="q" type="search" placeholder="메뉴·가게 검색 (예: 국수, 버거)" autocomplete="off">
-          <button id="clear" type="button">지우기</button>
-        </div>
-        <div class="opts">
-          <label><input type="checkbox" id="onlyMenu"> 대표메뉴 확인된 곳만</label>
-          <label><input type="checkbox" id="onlyTicket"> '비플식권 사용처' 목록에 있는 곳만</label>
-        </div>
-      </div>
-      <p class="count" id="count"></p>
-      <div class="list" id="list"></div>
+<div class="frame">
+  <div class="topbar">
+    <div class="brand"><span class="logo">🍱</span>비플 점심지도</div>
+    <div class="place">
+      <div class="txt"><b>L.L.M Academy</b><span>광주 서구 상무중앙로 44</span></div>
+      <span class="avatar">📍</span>
     </div>
   </div>
 
-  <footer>
-    <strong>알아두기</strong>
-    <ul>
-      <li>거리는 아카데미에서 가게까지의 <b>직선거리</b>예요. 실제 걷는 길은 더 길 수 있어요. 도보 시간은 분속 67m(시속 약 4km)로 계산했어요.</li>
-      <li><b>위치 근사</b> 표시가 있는 가게는 지도에 건물 번호가 없어서 도로 위치로 추정했어요(약 ±150m).</li>
-      <li>가게 목록은 비플페이 앱의 '전체 가맹점 사용처'와 '비플식권 사용처' 화면을 옮겨 적은 거예요(정리일 <span id="checked"></span>). 결제 가능 여부는 바뀔 수 있으니 가게에서 확인해 주세요.</li>
-      <li>대표메뉴와 가격은 카카오맵·네이버 지도의 매장 메뉴 페이지를 보고 정리했어요(2026-11-18). 매장 페이지에 메뉴가 없는 몇 곳은 브랜드나 다른 지점 기준이라 이 지점 메뉴와 다를 수 있어요.</li>
-      <li>술집·유흥주점·저녁 장사 포장마차처럼 점심 식사와 맞지 않는 10곳, 저녁에만 여는 고깃집 2곳, 지도 앱에서 확인되지 않는 1곳은 뺐어요. 이마트 상무점은 위치를 확인하지 못해 뺐어요.</li>
-      <li>지도 © OpenStreetMap 기여자</li>
-    </ul>
-  </footer>
+  <div class="body">
+    <div class="layout">
+      <section class="top">
+        <div class="hello">
+          <div>
+            <h1>오늘 점심 뭐 먹지? 🍚</h1>
+            <p class="sub">아카데미 반경 600m · 비플페이로 결제할 수 있는 곳</p>
+          </div>
+          <label class="search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="q" type="search" placeholder="메뉴·가게 검색 (예: 국수, 버거)" autocomplete="off" aria-label="메뉴·가게 검색">
+            <button id="clear" type="button">지우기</button>
+          </label>
+        </div>
+
+        <div class="tiles" role="group" aria-label="카테고리">
+          <button class="tab" data-cat="전체" aria-pressed="true"><span class="lbl">🗂️ 전체</span><span class="n num"></span><span class="arrow" aria-hidden="true">↗</span></button>
+          <button class="tab" data-cat="음식점" aria-pressed="false"><span class="lbl">🍚 음식점</span><span class="n num"></span><span class="arrow" aria-hidden="true">↗</span></button>
+          <button class="tab" data-cat="카페" aria-pressed="false"><span class="lbl">☕ 카페</span><span class="n num"></span><span class="arrow" aria-hidden="true">↗</span></button>
+          <button class="tab" data-cat="편의점·마트" aria-pressed="false"><span class="lbl">🏪 편의점·마트</span><span class="n num"></span><span class="arrow" aria-hidden="true">↗</span></button>
+        </div>
+
+        <div class="opts">
+          <label class="toggle"><input type="checkbox" id="onlyMenu"><span class="tick">✓</span>대표메뉴 있는 곳만</label>
+          <label class="toggle"><input type="checkbox" id="onlyTicket"><span class="tick">✓</span>'비플식권 사용처' 목록만</label>
+        </div>
+      </section>
+
+      <section class="lst">
+
+        <div class="listhead">
+          <h2 class="sec">가게 목록<span class="dim num" id="countN"></span></h2>
+          <span class="count">가까운 순</span>
+        </div>
+        <div class="list" id="list"></div>
+
+        <div class="notes">
+          <strong>알아두기 💡</strong>
+          <ul>
+            <li>거리는 아카데미에서 가게까지의 <b>직선거리</b>예요. 실제 걷는 길은 더 길 수 있어요. 도보 시간은 분속 67m(시속 약 4km)로 계산했어요.</li>
+            <li><b>위치 근사</b> 표시가 있는 가게는 지도에 건물 번호가 없어서 도로 위치로 추정했어요(약 ±150m).</li>
+            <li>가게 목록은 비플페이 앱의 '전체 가맹점 사용처'와 '비플식권 사용처' 화면을 옮겨 적은 거예요(정리일 <span id="checked"></span>). 결제 가능 여부는 바뀔 수 있으니 가게에서 확인해 주세요.</li>
+            <li>대표메뉴와 가격은 카카오맵·네이버 지도의 매장 메뉴 페이지를 보고 정리했어요(2026-11-18). 매장 페이지에 메뉴가 없는 몇 곳은 브랜드나 다른 지점 기준이라 이 지점 메뉴와 다를 수 있어요.</li>
+            <li>술집·유흥주점·저녁 장사 포장마차처럼 점심 식사와 맞지 않는 10곳, 저녁에만 여는 고깃집 2곳, 지도 앱에서 확인되지 않는 1곳은 뺐어요. 이마트 상무점은 위치를 확인하지 못해 뺐어요.</li>
+            <li>지도 © OpenStreetMap 기여자</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="side">
+        <div class="mapcard">
+          <div class="maphead"><h2 class="sec">지도 🗺️</h2><span class="pill">점선 원 = 반경 600m</span></div>
+          <div id="map" role="region" aria-label="가게 위치 지도"></div>
+          <div class="legend">
+            <span class="lf"><i class="dot" style="background:var(--c-food)"></i>음식점</span>
+            <span class="lc"><i class="dot" style="background:var(--c-cafe)"></i>카페</span>
+            <span class="ls"><i class="dot" style="background:var(--c-store)"></i>편의점·마트</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -138,6 +264,7 @@ footer ul{margin:6px 0 0;padding-left:18px}
 (function(){
   var META = window.META, STORES = window.STORES.slice().sort(function(a,b){return a.dist-b.dist});
   var COLOR = {"음식점":"--c-food","카페":"--c-cafe","편의점·마트":"--c-store"};
+  var KIND = {"음식점":["food","🍚"],"카페":["cafe","☕"],"편의점·마트":["store","🏪"]};
   function cssVar(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
   function walk(m){return Math.max(1, Math.round(m/67))}
   function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
@@ -151,9 +278,9 @@ footer ul{margin:6px 0 0;padding-left:18px}
   // 지도
   var map = L.map("map", {scrollWheelZoom:false}).setView([META.origin.lat, META.origin.lon], 15);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom:19, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-  var ring = L.circle([META.origin.lat, META.origin.lon], {radius:META.radius, color:cssVar("--accent"), weight:1.5, fillOpacity:.04, dashArray:"6 6"}).addTo(map);
+  var ring = L.circle([META.origin.lat, META.origin.lon], {radius:META.radius, color:"#121212", weight:1.5, fillColor:"#121212", fillOpacity:.04, dashArray:"6 6"}).addTo(map);
   map.fitBounds(ring.getBounds(), {padding:[8,8]});
-  L.marker([META.origin.lat, META.origin.lon], {icon:L.divIcon({className:"", html:'<div class="home-pin">아카데미</div>', iconSize:null, iconAnchor:[34,12]}), zIndexOffset:1000}).addTo(map);
+  L.marker([META.origin.lat, META.origin.lon], {icon:L.divIcon({className:"", html:'<div class="home-pin">📍 아카데미</div>', iconSize:null, iconAnchor:[44,12]}), zIndexOffset:1000}).addTo(map);
 
   var markers = {};
   STORES.forEach(function(s, i){
@@ -167,7 +294,7 @@ footer ul{margin:6px 0 0;padding-left:18px}
   // 상태
   var state = {cat:"전체", q:"", onlyMenu:false, onlyTicket:false};
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
-  var listEl = document.getElementById("list"), countEl = document.getElementById("count"), qEl = document.getElementById("q");
+  var listEl = document.getElementById("list"), countEl = document.getElementById("countN"), qEl = document.getElementById("q");
 
   function matches(s, ignoreCat){
     if(!ignoreCat && state.cat !== "전체" && s.cat !== state.cat) return false;
@@ -189,10 +316,11 @@ footer ul{margin:6px 0 0;padding-left:18px}
       t.querySelector(".n").textContent = n;
     });
     var shown = STORES.filter(function(s){return matches(s)});
-    countEl.textContent = shown.length + "곳 · 가까운 순";
+    countEl.textContent = "(" + shown.length + ")";
     STORES.forEach(function(s){ var on = shown.indexOf(s) >= 0; if(on && !map.hasLayer(markers[s.id])) markers[s.id].addTo(map); if(!on && map.hasLayer(markers[s.id])) map.removeLayer(markers[s.id]); });
-    if(!shown.length){ listEl.innerHTML = '<p class="empty">조건에 맞는 가게가 없어요.</p>'; return; }
+    if(!shown.length){ listEl.innerHTML = '<p class="empty">조건에 맞는 가게가 없어요 🥲</p>'; return; }
     listEl.innerHTML = shown.map(function(s){
+      var k = KIND[s.cat];
       var badges = s.src.map(function(x){return '<span class="badge">'+esc(x)+'</span>'}).join("");
       if(s.approx) badges += '<span class="badge warn">위치 근사</span>';
       var menu = "";
@@ -204,12 +332,13 @@ footer ul{margin:6px 0 0;padding-left:18px}
           menu = '<div class="mnote">대표메뉴 미확인</div>';
         }
       }
-      return '<article class="card" data-id="'+s.id+'">'
-        + '<div class="row1"><h2 class="name">'+esc(s.name)+'</h2><span class="cat" style="color:var('+COLOR[s.cat]+')">'+esc(s.cat)+'</span></div>'
-        + '<div class="meta"><span class="dist">'+s.dist+'m</span> · 도보 약 '+walk(s.dist)+'분 · '+esc(s.addr)+'</div>'
+      return '<article class="card '+k[0]+'" data-id="'+s.id+'">'
+        + '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
+        + '<h3 class="name">'+esc(s.name)+'</h3>'
+        + '<div class="meta">'+esc(s.addr)+'</div>'
         + '<div class="badges">'+badges+'</div>'
         + menu
-        + '<div class="links"><a class="btn naver" href="'+naverUrl(s)+'" target="_blank" rel="noopener">네이버지도</a><a class="btn kakao" href="'+kakaoUrl(s)+'" target="_blank" rel="noopener">카카오맵</a></div>'
+        + '<div class="links"><a class="btn naver" href="'+naverUrl(s)+'" target="_blank" rel="noopener"><span class="mk">N</span>네이버지도<span class="go">↗</span></a><a class="btn kakao" href="'+kakaoUrl(s)+'" target="_blank" rel="noopener"><span class="mk">K</span>카카오맵<span class="go">↗</span></a></div>'
         + '</article>';
     }).join("");
   }
@@ -223,15 +352,15 @@ footer ul{margin:6px 0 0;padding-left:18px}
 
   tabs.forEach(function(t){ t.addEventListener("click", function(){ state.cat = t.dataset.cat; render(); }); });
   qEl.addEventListener("input", function(){ state.q = qEl.value.trim(); render(); });
-  document.getElementById("clear").addEventListener("click", function(){ qEl.value = ""; state.q = ""; render(); });
+  document.getElementById("clear").addEventListener("click", function(e){ e.preventDefault(); qEl.value = ""; state.q = ""; render(); });
   document.getElementById("onlyMenu").addEventListener("change", function(e){ state.onlyMenu = e.target.checked; render(); });
   document.getElementById("onlyTicket").addEventListener("change", function(e){ state.onlyTicket = e.target.checked; render(); });
   listEl.addEventListener("click", function(e){
     if(e.target.closest("a")) return;
     var chip = e.target.closest(".mchip");
-    if(chip){ qEl.value = chip.dataset.m; state.q = chip.dataset.m; state.cat = "전체"; render(); window.scrollTo({top:document.querySelector(".controls").offsetTop, behavior:"smooth"}); return; }
+    if(chip){ qEl.value = chip.dataset.m; state.q = chip.dataset.m; state.cat = "전체"; render(); window.scrollTo({top:document.querySelector(".hello").getBoundingClientRect().top + window.scrollY - 10, behavior:"smooth"}); return; }
     var card = e.target.closest(".card");
-    if(card){ highlight(+card.dataset.id, true); if(window.innerWidth < 900) document.getElementById("map").scrollIntoView({behavior:"smooth"}); }
+    if(card){ highlight(+card.dataset.id, true); if(window.innerWidth < 960) document.getElementById("map").scrollIntoView({behavior:"smooth"}); }
   });
 
   render();
