@@ -10,7 +10,9 @@ const barsTxt = py.slice(py.indexOf("BARS = {"), py.indexOf("}", py.indexOf("BAR
 const BARS = new Set([...barsTxt.split("\n").map(l => l.replace(/#.*$/, "")).join("\n").matchAll(/"([^"]+)"/g)].map(m => m[1]));
 const nlTxt = py.slice(py.indexOf("NO_LUNCH = {"), py.indexOf("}", py.indexOf("NO_LUNCH = {")));
 const NO_LUNCH = new Set([...nlTxt.split("\n").map(l => l.replace(/#.*$/, "")).join("\n").matchAll(/"([^"]+)"/g)].map(m => m[1]));
-const CAT_FIX =JSON.parse(py.match(/^CAT_FIX = (\{.*\})$/m)[1]);
+const exTxt = py.slice(py.indexOf("EXCLUDE = {"), py.indexOf("}", py.indexOf("EXCLUDE = {")));
+const EXCLUDE = new Set([...exTxt.split("\n").map(l => l.replace(/#.*$/, "")).join("\n").matchAll(/"([^"]+)"/g)].map(m => m[1]));
+const CAT_FIX = JSON.parse(py.match(/^CAT_FIX = (\{.*\})$/m)[1]);
 const NAME_FIX = JSON.parse(py.match(/^NAME_FIX = (\{.*\})$/m)[1]);
 const S = tuples(block("S")), M = tuples(block("M"));
 const CHECKED = py.match(/^CHECKED = "(.+)"$/m)[1];
@@ -19,7 +21,7 @@ const rows = JSON.parse(await fs.readFile(dir + "tools/all_rows.json", "utf8"));
 const PLACE_IDS = JSON.parse(await fs.readFile(dir + "tools/place_ids.json", "utf8"));
 const out = [];
 for (const r of rows) {
-  if (r.dist == null || r.dist > 600 || BARS.has(r.name) || NO_LUNCH.has(r.name)) continue;
+  if (r.dist == null || r.dist > 600 || BARS.has(r.name) || NO_LUNCH.has(r.name) || EXCLUDE.has(r.name)) continue;
   const name = NAME_FIX[r.name] ?? r.name, cat = CAT_FIX[r.name] ?? r.cat;
   const m = S.get(name) || menuFor(name);
   const item = { name, addr: r.addr, cat, src: r.src.split(",").map(s => s === "전체" ? "전체 가맹점" : "비플식권"), lat: r.lat, lon: r.lon, dist: r.dist, approx: r.acc === "근사" };

@@ -15,6 +15,11 @@ NO_LUNCH = {
     "돈 고기집 상무점",        # 매일 17:00 오픈
 }
 
+# 그 밖에 사용자가 빼라고 한 곳 (2026-11-18)
+EXCLUDE = {
+    "뉴벨퀴진",  # 지도 앱에 없음. 같은 주소의 '육시육분'과 같은 가게인지 확인 안 됨
+}
+
 # 업종 바로잡기 (2026-11-18, 사용자 결정): 지도 앱 업종이 커피전문점
 CAT_FIX = {"모람": "카페", "티파라치": "카페"}
 # 이름 바로잡기: 앱 표기 '뉴벨퀴진' → 인허가 이름 '누벨퀴진'
@@ -102,7 +107,7 @@ PLACE_IDS = json.load(open("place_ids.json", encoding="utf-8"))
 
 out = []
 for r in rows:
-    if r["dist"] is None or r["dist"] > 600 or r["name"] in BARS or r["name"] in NO_LUNCH:
+    if r["dist"] is None or r["dist"] > 600 or r["name"] in BARS or r["name"] in NO_LUNCH or r["name"] in EXCLUDE:
         continue
     name = NAME_FIX.get(r["name"], r["name"])
     cat = CAT_FIX.get(r["name"], r["cat"])
