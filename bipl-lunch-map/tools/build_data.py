@@ -9,6 +9,12 @@ BARS = {"한식주점 오감", "리얼펍 상무점", "인과연 혼술바", "�
         "빽바지집",      # 카카오맵 '치평동빽바지포차'(실내포장마차, 16:30~01:00)
 }
 
+# 점심 영업 안 함 (2026-11-18 카카오맵·네이버 영업시간 확인, 사용자 지시로 제외)
+NO_LUNCH = {
+    "쪽갈비대장 상무직영점",  # 매일 17:00 오픈
+    "돈 고기집 상무점",        # 매일 17:00 오픈
+}
+
 # 업종 바로잡기 (2026-11-18, 사용자 결정): 지도 앱 업종이 커피전문점
 CAT_FIX = {"모람": "카페", "티파라치": "카페"}
 # 이름 바로잡기: 앱 표기 '뉴벨퀴진' → 인허가 이름 '누벨퀴진'
@@ -96,7 +102,7 @@ PLACE_IDS = json.load(open("place_ids.json", encoding="utf-8"))
 
 out = []
 for r in rows:
-    if r["dist"] is None or r["dist"] > 600 or r["name"] in BARS:
+    if r["dist"] is None or r["dist"] > 600 or r["name"] in BARS or r["name"] in NO_LUNCH:
         continue
     name = NAME_FIX.get(r["name"], r["name"])
     cat = CAT_FIX.get(r["name"], r["cat"])
