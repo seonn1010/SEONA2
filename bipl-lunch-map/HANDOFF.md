@@ -1,12 +1,66 @@
 # 인수인계 메모: 비플식권 점심지도
 
-새 세션은 이 파일부터 읽는다. 마지막 정리: 2026-11-18. 작업 브랜치는 `main`이다(2026-11-18에 `claude/serene-gates-e2pyvm`을 main에 합침).
+새 세션은 이 파일부터 읽는다. 마지막 정리: 2026-11-19. 작업 브랜치는 `main`이다(2026-11-18에 `claude/serene-gates-e2pyvm`을 main에 합침).
+
+## 2026-11-19 추가한 기능 (사용자 요청 3가지 + 고정 id)
+- **고정 id**: 모든 가게에 `id`. 규칙은 kakaoId → `kakao-번호`, 없으면 naverId → `naver-번호`, 둘 다 없으면 `name-slug`. 한 번 정한 id는 `tools/store_ids.json`(이름 → id)에 저장해 두고 재사용한다. **후기 `store_id`가 이 id에 붙으므로 절대 바꾸지 말 것.** 가게 이름을 바꿀 때는 `store_ids.json`의 키도 같이 바꿔서 id가 유지되게 한다. 기존 54곳은 모두 `kakao-번호`
+- **결제 수단**(`pay` 필드, 배지·필터 "전체/비플식권/제로페이"): 기존 비플 목록은 `"비플식권"`. 제로페이는 아래 "제로페이 수집" 참고. 기존의 "'비플식권 사용처' 목록만" 토글(`src` 기준)은 그대로 남겼다
+- **12,000원 점심 뽑기**(`index.html`의 `PICK`, `pickPool`): price가 있는 `kind=meal` 메뉴 + 200m 안 다른 가게의 `kind=drink` 메뉴, 합계 10,000~12,000원. 결제 수단 필터를 따른다. 메뉴 구조화 뒤(2026-11-19) 전체 기준 조건 맞는 조합 527개. 저장소에 reference.html은 없어서 새로 짰다
+- **후기(Supabase)**: 프로젝트 URL `https://ioxnnldfhqpehmvvnhjw.supabase.co`, 공개 키는 `index.html`의 `window.SUPABASE_ANON_KEY`. 테이블·RLS는 `supabase/reviews.sql`(사용자가 2026-11-19 실행). 승인은 사용자가 Table Editor에서 `approved`를 켠다. 관리자 페이지는 만들지 않는다(사용자 결정)
+  - 2026-11-19 확인: 테스트 후기(닉네임 `테스트봇`, 진고집동해동태탕)를 사이트에서 등록 → 승인 전엔 사이트·anon 직접 조회(`approved=eq.false` 포함) 모두 빈 결과, anon 수정·삭제는 401 거절 → 사용자 승인 후 사이트에 "★ 5.0 (1명)"과 후기 표시. 테스트 후기는 사용자가 대시보드에서 지우기로 함
+  - 등록 요청은 `Prefer: return=minimal`로 보낸다(승인 전 행은 anon이 다시 읽을 수 없어서 `return=representation`이면 실패함)
+- 상세 영역: 카드 클릭 → 상세(휴대폰 아래 시트 62vh, PC 왼쪽 패널 420px) + 지도 이동. 지도 마커 클릭은 말풍선만(목록으로 스크롤하지 않음, 2026-11-18 사용자 요청)
+
+## 데이터를 고치는 경로 (2026-11-19 정리, 꼭 지킬 것)
+`data.js`는 **생성 결과물**이다. 직접 고치면 다음 생성 때 덮어써진다. 고칠 곳은 아래처럼 하나씩만 있다.
+
+| 바꾸고 싶은 것 | 고칠 파일 |
+|---|---|
+| 메뉴·가격·kind·tags·rep, 메뉴 출처, 메뉴 안내(menuNote) | `tools/menus.json` (키 = 가게 고정 id) |
+| 제외할 가게(술집 등), 업종·이름 바로잡기, 반경 | `tools/build_data.py` 위쪽 규칙(`BARS`, `NO_LUNCH`, `EXCLUDE`, `CAT_FIX`, `NAME_FIX`, `> 600`) |
+| 제로페이 가게(합칠 가게, 새 가게) | `tools/zeropay_merge.json` |
+| 가게 고정 id | `tools/store_ids.json` (새 가게만 자동 추가됨. 기존 값은 바꾸지 말 것) |
+| 지도 버튼용 카카오·네이버 번호(비플 목록 가게) | `tools/place_ids.json` |
+
+고친 뒤 생성 (둘은 같은 결과를 낸다):
+- Python이 있으면: `cd tools && python3 build_data.py`
+- 이 컴퓨터(Python 없음): `ego-browser nodejs -e 'await import("file:///D:/SEONA2/bipl-lunch-map/tools/build_data_port.mjs")'`
+  - `build_data_port.mjs`는 규칙을 `build_data.py`에서 읽어 오므로 규칙은 `build_data.py`에만 적는다.
+
+예전의 `N`·`S`·`M` 메뉴 표(문자열 "메뉴(9,000원)" 형식)는 2026-11-19에 `menus.json`으로 바꾸면서 없앴다. git 기록에 남아 있다.
+
+### 메뉴 형식 (`menus.json`)
+```json
+"kakao-1784943015": {
+  "name": "진고집동해동태탕",
+  "menu": [{"name": "동태탕", "price": 12000, "kind": "meal", "tags": ["국물", "매움"], "rep": true}],
+  "menuSrc": {"url": "...", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+  "menuNote": "화면에 보이는 안내 (선택)",
+  "note": "기록용 메모 (화면에 안 나옴)"
+}
+```
+- `price`: 원 단위 정수, 확인 못 하면 `null`(추측 금지)
+- `kind`: `meal` / `drink` / `dessert`
+- `tags`: 0~3개, 식사 `국물 면 밥 고기 튀김 분식 매움 가벼움`, 카페 `커피 논커피 달달함`에서만
+- `rep`: 카드에 보이는 대표메뉴, 가게당 2~3개(메뉴가 1~2개면 전부)
+- 고르는 기준(2026-11-19 사용자 지시): 음식점은 1인분 식사만 5~8개(사이드·추가·공깃밥·음료·주류·2인 이상 제외), 카페는 대표 음료 5개 정도 + 빵·디저트 1~2개, 사이즈·온도별 가격은 기본 하나
+- 화면: 카드엔 rep만, 나머지는 "메뉴 더보기". 검색은 메뉴 이름과 태그. 점심 뽑기는 price가 있는 메뉴 중 `kind=meal`(식당) + `kind=drink`(카페)
+
+### 2026-11-19 메뉴 확인 결과 (음식점·카페 40곳)
+- 가게 페이지를 한 곳씩 열어 확인(서브에이전트 4개가 10곳씩). 네이버 37곳, 카카오맵 3곳(KFC: 네이버 가격이 "가격 변동", 왓더버거·미카도스시: 네이버 메뉴 1개뿐)
+- 가격 null: 메가MGC커피 광주상무중앙점 카페라떼·메가리카노(카카오에 이름만 있음)
+- 메뉴 페이지가 아예 없던 가게: 없음
+- 메뉴가 적은 곳(원래 메뉴가 적거나 1인 식사가 적음): 채가곰탕·해돋이 한식뷔페·한식사랑 한식뷔페·송탄87부대찌개 1개, 파리바게뜨 백양점 2개, 진고집동해동태탕 3개
+- 주문(포장·배달) 화면 가격이라 매장과 다를 수 있음: 보배반점, 미카도스시, 용쓰91김밥, 파리바게뜨 상무역점·상무마륵점. 왓더버거는 세트 가격
+- 판단 근거는 가게마다 `menus.json`의 `note`에 있다. 수집 원본: `tools/menus_parts/`(대상 목록 `targets_N.json`, 결과 `menus_N.json`)
 
 ## 지금 상태
 - 반경 **600m**(직선거리), 가게 **54곳**: 음식점 25, 카페 15, 편의점·마트 14
 - 대표메뉴는 음식점·카페 40곳 모두 있음. **2026-11-18 사용자 지시로 네이버 지도 가격 기준으로 통일**(38곳, `build_data.py`의 `N`, 원본 `tools/naver_menus_20261118.json`). 네이버로 못 바꾼 곳: 파리바게뜨 상무역점(대표메뉴가 수능 선물세트뿐 → 카카오 기준 유지), 꾸다(네이버 메뉴가 저녁 안주뿐 → 리뷰의 점심 메뉴 유지). KFC는 네이버에 가격이 "가격 변동"이라 이름만. 주문형 메뉴(서가앤쿡, 박홍열갈비탕, 보배반점, 용쓰91김밥, 크리스피크림, 파리바게뜨 상무마륵점)는 매장 가격과 다를 수 있음
 - 지도는 **카카오맵 Web SDK**를 쓴다(2026-11-18 Leaflet·OSM에서 교체). 키는 `index.html`의 `window.KAKAO_JS_KEY`. 키가 없거나 SDK를 못 불러오면 지도 자리에 안내 문구가 나오고 목록은 그대로 동작한다. 마우스 휠 확대는 끔(확대·축소 버튼 있음)
-  - 2026-11-18 실제 JavaScript 키를 넣었다(앱 이름 "CJ아카데미점심"). 이때 카카오 SDK 응답: `http://localhost:8000` → 401 "domain mismatched"(웹 도메인 미등록), `https://seonn1010.github.io` → 403 "disabled OPEN_MAP_AND_LOCAL service"(카카오맵 사용 설정 꺼짐). 사용자가 카카오 디벨로퍼스에서 두 가지를 켠 뒤 다시 확인해야 한다. 확인 명령: `curl -H "Referer: <도메인>/" "https://dapi.kakao.com/v2/maps/sdk.js?appkey=<키>&autoload=false"`
+  - 2026-11-18 실제 JavaScript 키를 넣었다(앱 이름 "CJ아카데미점심"). 사용자가 카카오맵 사용 설정을 켜고 도메인 두 개(`https://seonn1010.github.io`, `http://localhost:8000`)를 등록해서 **2026-11-19 기준 두 곳 모두 지도 정상**(SDK 응답 200). 확인 명령: `curl -H "Referer: <도메인>/" "https://dapi.kakao.com/v2/maps/sdk.js?appkey=<키>&autoload=false"`
+  - 휴대폰·태블릿(터치)에선 두 손가락 확대를 켠다(`setZoomable(touch)`). 카카오 SDK는 휠 확대와 핀치 확대를 한 설정으로 같이 끄고 켠다
+- **GitHub Pages 켜져 있음**: https://seonn1010.github.io/SEONA2/bipl-lunch-map/ (푸시 후 1분 안에 반영, 브라우저 캐시 10분)
   - Artifact 미리보기용 도구(`make_artifact.py`, `embed.py`, `tiles.py`)는 Leaflet·OSM 기준이라 더 이상 맞지 않는다
 - 화면 디자인(2026-11-18): 사용자가 준 학습 대시보드 레퍼런스(파스텔 카드, 둥근 타일, 검은 포인트, 큰 제목)에 맞춰 바꿨다. PC는 왼쪽 목록·오른쪽 고정 지도, 휴대폰은 제목·카테고리 → 지도 → 목록 순서. 글꼴 Pretendard + 숫자 Poppins
 - 미리보기(Artifact, 비공개): https://claude.ai/artifact/EMtVQks6yqPmZuMgAkJgyG
@@ -25,12 +79,13 @@
 | 도보 시간 | 분속 67m(시속 약 4km), 직선거리 기준 |
 
 ## 다음 할 일
-1. **지도를 카카오맵 JavaScript API로 교체** — 2026-11-18 코드 교체 완료, 실제 키 입력·도메인 등록·동작 확인 남음
+0. 제로페이로 새로 들어온 가게의 대표메뉴 확인(지금은 "대표메뉴 미확인")
+1. ~~지도를 카카오맵 JavaScript API로 교체~~ **2026-11-19 완료** (아래는 기록)
    - 사용자가 카카오 디벨로퍼스에서 JavaScript 키를 발급하고, JavaScript SDK 도메인에 `https://seonn1010.github.io`와 `http://localhost:8000`을 등록하기로 했다. "제품 설정 → 카카오맵 → 사용 설정 ON"도 필요하다.
    - JavaScript 키는 페이지 코드에 공개되는 키다(등록 도메인에서만 동작).
    - 카카오맵은 회전이 안 된다. 사용자는 "상무대로가 아래 가로"인 회전 지도를 원했지만 카카오맵으로 가기로 했다.
    - 카카오 SDK는 Artifact 미리보기(CSP)와 클라우드 작업 환경에서 동작하지 않는다. 확인은 GitHub Pages에서 해야 한다.
-2. **GitHub Pages 공개**: 저장소 Settings → Pages (사용자가 설정)
+2. ~~GitHub Pages 공개~~ 사용자가 켬 (2026-11-19 확인)
 3. ~~대표메뉴·가격 채우기~~ **2026-11-18 로컬 세션에서 끝냄** (에고브라우저로 카카오맵·네이버 지도 매장 메뉴 페이지를 직접 열어 확인)
    - 1차: 비어 있던 23곳 중 19곳 추가 → `build_data.py`의 `M` 끝부분(5번째 값 = 확인일)
    - 2차: 웹 검색으로 채웠던 기존 23곳을 매장 페이지로 재확인 → `build_data.py`의 `S`(가게 이름이 정확히 같을 때 `M`보다 먼저 씀)
@@ -65,14 +120,16 @@
 | `geo_cache.json` | 주소별 좌표와 정확도 (`exact`, `approx`) |
 | `finalize.py` | 같은 도로의 정확한 번호끼리 보간하고, 아카데미 기준 거리를 계산해 `all_rows.json` 생성 |
 | `all_rows.json` | 후보 전체와 거리, 정확도(정확/보정/근사/미확인) |
-| `build_data.py` | 반경·제외(`BARS`)·업종/이름 바로잡기(`CAT_FIX`, `NAME_FIX`)·대표메뉴(`S` 가게별 → `M` 브랜드·키워드)를 적용해 `../data.js` 생성 |
-| `build_data_port.mjs` | `build_data.py`와 같은 규칙의 Node 버전 (Python 없는 컴퓨터용, `ego-browser nodejs`로 실행 가능) |
+| `build_data.py` | 반경·제외(`BARS`, `NO_LUNCH`, `EXCLUDE`)·업종/이름 바로잡기(`CAT_FIX`, `NAME_FIX`) 규칙을 적용하고 `menus.json`·`zeropay_merge.json`·`store_ids.json`을 합쳐 `../data.js` 생성 |
+| `build_data_port.mjs` | `build_data.py`와 같은 일을 하는 Node 버전 (Python 없는 컴퓨터용, `ego-browser nodejs`로 실행). 규칙은 `build_data.py`에서 읽어 옴 |
+| `menus.json` | **메뉴의 유일한 수정 위치** (가게 고정 id → 메뉴 목록·출처) |
+| `store_ids.json` | 가게 이름 → 고정 id. 생성 스크립트가 읽고, 새 가게만 추가해서 다시 저장한다. 기존 값은 손대지 말 것 |
 | `place_ids.json` | 가게별 카카오맵·네이버 지도 고유번호. 지도 버튼이 검색창이 아니라 가게 페이지로 바로 가게 함 (2026-11-18 에고브라우저로 이름·주소 대조). 없으면 검색 링크로 대신함 |
 | `serve.ps1` | 미리보기용 로컬 웹서버 (PowerShell, http://localhost:8000). 데스크톱 앱에선 `.claude/launch.json`의 `lunch-map`으로 옆 패널에 띄운다 |
 | `make_artifact.py`, `embed.py`, `tiles.py` | 미리보기용 단일 HTML 만들기 (Leaflet은 `npm install leaflet@1.9.4`, 타일은 `tiles.py`로 다시 받기) |
 
-- 반경을 바꾸려면 `build_data.py`의 `> 600`과 `"radius": 600`을 고치고 `cd tools && python3 build_data.py`를 실행한다. 그 뒤 `index.html`, `README.md`의 "반경 600m", 술집 개수 문구도 같이 고친다.
-- 대표메뉴를 바꾸려면 `build_data.py`의 `M`을 고쳐도 되고 `data.js`를 직접 고쳐도 된다. 단, `build_data.py`를 다시 돌리면 `data.js`를 손으로 고친 내용은 덮어써진다. 한 가지 방법으로 통일할 것.
+- 반경을 바꾸려면 `build_data.py`의 `> 600`과 `"radius": 600`을 고치고 다시 생성한다(위 "데이터를 고치는 경로"). 그 뒤 `index.html`, `README.md`의 "반경 600m", 술집 개수 문구도 같이 고친다. `build_data_port.mjs`의 `> 600`도 같이 고친다.
+- 메뉴는 `tools/menus.json`에서만 고친다. `data.js`를 직접 고치지 않는다.
 
 ## 데이터 주의점
 - "위치 근사"(지도에 건물번호가 없어 도로 위치로 추정, 약 ±150m): 마륵복개로·마륵로·상무공원로 10·운천로 206 등

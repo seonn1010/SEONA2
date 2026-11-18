@@ -1,0 +1,141 @@
+{
+  "kakao-8125665": {
+    "name": "파리바게뜨 광주상무백양점",
+    "menu": [
+      {"name": "후레쉬식빵", "price": 2700, "kind": "dessert", "tags": [], "rep": true},
+      {"name": "단팥빵", "price": 1800, "kind": "dessert", "tags": ["달달함"], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/16277608", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 메뉴는 후레쉬식빵 1개뿐이라 단팥빵은 카카오맵(https://place.map.kakao.com/8125665) 메뉴에서 확인. 카카오의 나머지 2개는 홀케이크·롤케이크라 제외. 음료 메뉴 없음"
+  },
+  "kakao-1025382476": {
+    "name": "댄싱컵 광주상무역점",
+    "menu": [
+      {"name": "댄싱커피", "price": 3500, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "아메리카노", "price": 2000, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "카페라떼", "price": 3000, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "바닐라빈라떼", "price": 4300, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "그랜마레몬에이드", "price": 4300, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "바질치즈치아바타", "price": 4800, "kind": "dessert", "tags": [], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1047072870", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "페이지 대표 표시가 6개(패스오더 전용 100원 아메리카노 포함)라 그중 3개만 rep로 지정"
+  },
+  "kakao-1185391934": {
+    "name": "왓더버거 광주상무점",
+    "menu": [
+      {"name": "아메리칸 치즈버거 세트", "price": 11500, "kind": "meal", "tags": ["고기"], "rep": true},
+      {"name": "새우카츠버거 세트", "price": 11100, "kind": "meal", "tags": ["튀김"], "rep": true},
+      {"name": "(BEST)직화 통새우버거 세트", "price": 13600, "kind": "meal", "tags": ["튀김"], "rep": true},
+      {"name": "(BEST)스크램블 에그 폭탄 지못미버거 세트", "price": 13900, "kind": "meal", "tags": [], "rep": false},
+      {"name": "(BEST)고기 듬뿍 셧더버거 세트", "price": 13600, "kind": "meal", "tags": ["고기"], "rep": false},
+      {"name": "[왓더로마] 리코타 트러플치킨버거 세트", "price": 13800, "kind": "meal", "tags": ["튀김"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://place.map.kakao.com/1185391934", "label": "카카오맵 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 메뉴는 아메리칸 치즈버거(단품) 6,200원 1개뿐이라 카카오맵 메뉴 사용. 카카오 메뉴는 모두 세트(버거+감자튀김+음료) 가격이며 배달 주문 메뉴와 섞여 있어 매장 가격과 다를 수 있음"
+  },
+  "kakao-850712337": {
+    "name": "현완단겸 상추튀김 상무점",
+    "menu": [
+      {"name": "돼지고기상추튀김", "price": 8000, "kind": "meal", "tags": ["튀김", "분식", "고기"], "rep": true},
+      {"name": "오징어 상추튀김", "price": 8000, "kind": "meal", "tags": ["튀김", "분식"], "rep": true},
+      {"name": "매운고추튀김", "price": 8000, "kind": "meal", "tags": ["튀김", "분식", "매움"], "rep": false},
+      {"name": "떡볶이", "price": 6000, "kind": "meal", "tags": ["분식"], "rep": true},
+      {"name": "떡순이", "price": 7000, "kind": "meal", "tags": ["분식"], "rep": false},
+      {"name": "소세지김밥", "price": 3400, "kind": "meal", "tags": ["분식", "가벼움"], "rep": false},
+      {"name": "어묵김밥", "price": 3400, "kind": "meal", "tags": ["분식", "가벼움"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/20037459", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "페이지 대표 표시 중 모듬튀김(대)는 여럿이 먹는 메뉴라 제외"
+  },
+  "kakao-2037976532": {
+    "name": "용쓰91김밥 상무점",
+    "menu": [
+      {"name": "91라이스김밥", "price": 5500, "kind": "meal", "tags": ["분식", "고기"], "rep": true},
+      {"name": "91떡볶이", "price": 8000, "kind": "meal", "tags": ["분식"], "rep": true},
+      {"name": "91김밥", "price": 4000, "kind": "meal", "tags": ["분식", "가벼움"], "rep": false},
+      {"name": "돈까스 김밥", "price": 5500, "kind": "meal", "tags": ["분식", "튀김"], "rep": false},
+      {"name": "수제생돈가스", "price": 10000, "kind": "meal", "tags": ["튀김", "고기"], "rep": false},
+      {"name": "오므라이스", "price": 8000, "kind": "meal", "tags": ["밥"], "rep": false},
+      {"name": "김치볶음밥", "price": 7000, "kind": "meal", "tags": ["밥"], "rep": false},
+      {"name": "우동", "price": 6000, "kind": "meal", "tags": ["면", "국물"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1842597387", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "주문형(배달) 메뉴 화면이라 화면 글자에서 읽음. 매장 가격과 다를 수 있음"
+  },
+  "kakao-520695368": {
+    "name": "모람",
+    "menu": [
+      {"name": "아메리카노(Ice)", "price": 3500, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "카페라떼(Ice)", "price": 4000, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "흑임자라떼(Ice)", "price": 5500, "kind": "drink", "tags": ["논커피"], "rep": true},
+      {"name": "미숫가루라떼(Ice)", "price": 5500, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "흑임자 바나나주스", "price": 6000, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "수제청 자몽에이드", "price": 5000, "kind": "drink", "tags": ["논커피"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2084971709", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "페이지에 대표 표시 없음. 빵·디저트 메뉴 없음"
+  },
+  "kakao-8568359": {
+    "name": "파리바게뜨 상무역점",
+    "menu": [
+      {"name": "아이스 아메리카노", "price": 4000, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "아메리카노", "price": 3500, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "아이스 제주 말차 라떼", "price": 4200, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "복숭아 아이스티", "price": 3200, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false},
+      {"name": "아이스초코포레누아", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false},
+      {"name": "초코소라빵 [Best]", "price": 2200, "kind": "dessert", "tags": ["달달함"], "rep": true},
+      {"name": "No.1우유식빵", "price": 3900, "kind": "dessert", "tags": [], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/16278724", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "주문형(배달·포장) 메뉴 화면이라 매장 가격과 다를 수 있음. 페이지 대표 표시는 수능 선물세트(초코찰떡 8구, 찰떡같이 합격해엿)뿐이라 제외하고 대표 빵·음료로 rep 지정. 커피 분류는 5개만 보여 라떼류는 확인 못 함"
+  },
+  "kakao-539808845": {
+    "name": "꾸다",
+    "menu": [
+      {"name": "점심 특선/돼지짜글이", "price": 10000, "kind": "meal", "tags": ["국물", "고기"], "rep": true},
+      {"name": "점심 특선/제육볶음", "price": 10000, "kind": "meal", "tags": ["고기", "밥"], "rep": true},
+      {"name": "점심 특선/순두부찌개", "price": 9000, "kind": "meal", "tags": ["국물"], "rep": false},
+      {"name": "점심 특선/전복연포탕", "price": 20000, "kind": "meal", "tags": ["국물"], "rep": false},
+      {"name": "해물라면", "price": 7000, "kind": "meal", "tags": ["면", "국물"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1080611018", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "저녁 안주(탕탕이·삼합 등 3만~5만원대) 위주 가게로, 1인 식사는 점심 특선 4개와 해물라면뿐. 예전 기록의 우거지 해장국은 현재 메뉴에 없음"
+  },
+  "kakao-734599907": {
+    "name": "브로 샌드위치",
+    "menu": [
+      {"name": "햄·치즈·에그 샌드위치", "price": 3400, "kind": "meal", "tags": ["가벼움"], "rep": true},
+      {"name": "크랜베리 닭가슴살 샌드위치", "price": 3900, "kind": "meal", "tags": ["가벼움", "고기"], "rep": true},
+      {"name": "매콤 닭가슴살 샌드위치", "price": 3900, "kind": "meal", "tags": ["가벼움", "고기", "매움"], "rep": true},
+      {"name": "풀드포크 샌드위치", "price": 3900, "kind": "meal", "tags": ["가벼움", "고기"], "rep": false},
+      {"name": "와사비크랩 샌드위치", "price": 3900, "kind": "meal", "tags": ["가벼움"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1252190774", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "페이지에 대표 표시 없음. 식사 메뉴는 샌드위치 5개뿐(나머지는 음료)"
+  },
+  "kakao-26396481": {
+    "name": "파리바게뜨 상무마륵점",
+    "menu": [
+      {"name": "아이스 아메리카노", "price": 4000, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "아메리카노", "price": 3500, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "아이스 제주 말차 라떼", "price": 4200, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "복숭아 아이스티", "price": 3200, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false},
+      {"name": "제주감귤크러쉬", "price": 3900, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "초코소라빵 [Best]", "price": 2200, "kind": "dessert", "tags": ["달달함"], "rep": true},
+      {"name": "No.1우유식빵", "price": 3900, "kind": "dessert", "tags": [], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/36438958", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "주문형(배달·포장) 메뉴 화면이라 매장 가격과 다를 수 있음. 페이지 대표 표시는 수능 선물세트(찰떡같이 합격해엿)뿐이라 제외하고 대표 빵·음료로 rep 지정. 커피 분류는 5개만 보여 라떼류는 확인 못 함"
+  }
+}

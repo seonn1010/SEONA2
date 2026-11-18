@@ -1,0 +1,137 @@
+{
+  "kakao-1784943015": {
+    "name": "진고집동해동태탕",
+    "menu": [
+      {"name": "동태탕", "price": 12000, "kind": "meal", "tags": ["국물", "매움"], "rep": true},
+      {"name": "통돼지 김치찌개", "price": 11000, "kind": "meal", "tags": ["국물", "고기"], "rep": false},
+      {"name": "코다리 조림정식", "price": 11000, "kind": "meal", "tags": ["밥"], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1719573143", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "1인 식사 메뉴가 3개뿐(알탕은 2인 이상, 코다리조림 소/중/대와 전 종류는 여럿이 먹는 메뉴라 제외)"
+  },
+  "kakao-1113376476": {
+    "name": "프랭크버거 광주상무점",
+    "menu": [
+      {"name": "파닭파닭치킨버거", "price": 6600, "kind": "meal", "tags": ["튀김"], "rep": true},
+      {"name": "깐쇼새우비프버거", "price": 8900, "kind": "meal", "tags": ["고기", "튀김"], "rep": true},
+      {"name": "맥앤치즈비프버거", "price": 9900, "kind": "meal", "tags": ["고기"], "rep": true},
+      {"name": "프랭크버거", "price": 5400, "kind": "meal", "tags": ["고기"], "rep": false},
+      {"name": "K불고기버거", "price": 4900, "kind": "meal", "tags": ["고기"], "rep": false},
+      {"name": "쉬림프버거", "price": 5800, "kind": "meal", "tags": ["튀김"], "rep": false},
+      {"name": "치즈버거", "price": 6400, "kind": "meal", "tags": ["고기"], "rep": false},
+      {"name": "100%한우버거", "price": 8900, "kind": "meal", "tags": ["고기"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1595458919", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "단품 버거 가격 기준(세트는 별도 메뉴로 판매)"
+  },
+  "kakao-10417509": {
+    "name": "진미가람",
+    "menu": [
+      {"name": "점심메뉴강추! 직화불고기쌈밥 1인분", "price": 12000, "kind": "meal", "tags": ["고기", "밥"], "rep": true},
+      {"name": "한우 스지 우거지 해장국", "price": 10000, "kind": "meal", "tags": ["국물", "고기"], "rep": true},
+      {"name": "생고기비빔밥", "price": 10000, "kind": "meal", "tags": ["밥", "고기"], "rep": false},
+      {"name": "익힘비빔밥", "price": 10000, "kind": "meal", "tags": ["밥"], "rep": false},
+      {"name": "직접 끓인 작두콩 청국장", "price": 9000, "kind": "meal", "tags": ["국물"], "rep": false},
+      {"name": "김치찌개", "price": 9000, "kind": "meal", "tags": ["국물"], "rep": false},
+      {"name": "물/비빔 냉면", "price": 9000, "kind": "meal", "tags": ["면"], "rep": false},
+      {"name": "사골 떡국", "price": 9000, "kind": "meal", "tags": ["국물"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/32061971", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 '대표' 표시는 대부분 LA갈비·돼지갈비·갈비찜 등 고기/여럿이 먹는 메뉴라 제외하고, 대표 중 1인 식사인 직화불고기쌈밥을 대표로 둠"
+  },
+  "kakao-2010722896": {
+    "name": "할멈탕수육김밥 상무점",
+    "menu": [
+      {"name": "탕수육 (간단하게)", "price": 8000, "kind": "meal", "tags": ["튀김", "고기"], "rep": true},
+      {"name": "할멈김밥", "price": 3500, "kind": "meal", "tags": ["분식", "가벼움"], "rep": true},
+      {"name": "참치김밥", "price": 4800, "kind": "meal", "tags": ["분식", "가벼움"], "rep": false},
+      {"name": "라볶이", "price": 6000, "kind": "meal", "tags": ["분식", "면"], "rep": false},
+      {"name": "라면", "price": 4500, "kind": "meal", "tags": ["분식", "면", "국물"], "rep": false},
+      {"name": "쫄면", "price": 8000, "kind": "meal", "tags": ["분식", "면"], "rep": false},
+      {"name": "제육덮밥", "price": 8000, "kind": "meal", "tags": ["밥", "고기"], "rep": false},
+      {"name": "수제돈가스", "price": 9000, "kind": "meal", "tags": ["튀김", "고기"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2014921451", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": ""
+  },
+  "kakao-1074323230": {
+    "name": "매운날 상무직영점",
+    "menu": [
+      {"name": "치즈김치 갈비찜", "price": 20000, "kind": "meal", "tags": ["고기", "매움"], "rep": true},
+      {"name": "우주선 치즈 갈비찜", "price": 18500, "kind": "meal", "tags": ["고기", "매움"], "rep": true},
+      {"name": "우주선 등갈비찜", "price": 16500, "kind": "meal", "tags": ["고기", "매움"], "rep": true},
+      {"name": "명품김치 갈비찜", "price": 18500, "kind": "meal", "tags": ["고기", "매움"], "rep": false},
+      {"name": "대패삼겹 갈비찜", "price": 18500, "kind": "meal", "tags": ["고기", "매움"], "rep": false},
+      {"name": "우주선 간장 갈비찜", "price": 16500, "kind": "meal", "tags": ["고기"], "rep": false},
+      {"name": "소불고기전골(공기포함)", "price": 15000, "kind": "meal", "tags": ["고기", "국물"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1123897907", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "갈비찜 가격이 1인분 기준인지 페이지에 표기 없음(미확인). 소갈비찜 한판/반판(2~3인분), 통골뱅이탕, 닭발 한판 등 여럿이 먹는 메뉴는 제외"
+  },
+  "kakao-8596212": {
+    "name": "채가곰탕",
+    "menu": [
+      {"name": "한우곰탕", "price": 11000, "kind": "meal", "tags": ["국물", "고기"], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/16055351", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "메뉴가 1개뿐(카카오맵도 한우곰탕 11,000원 1개로 동일)"
+  },
+  "kakao-759324156": {
+    "name": "해돋이 한식뷔페 상무점",
+    "menu": [
+      {"name": "한식뷔페", "price": 7000, "kind": "meal", "tags": ["밥"], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2051131421", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "뷔페 1종뿐(카카오맵도 해돋이한식뷔페 7,000원으로 동일)"
+  },
+  "kakao-1223101662": {
+    "name": "텐퍼센트커피 상무역환승센터점",
+    "menu": [
+      {"name": "아메리카노", "price": 2000, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "카페라떼", "price": 3500, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "시그니처라떼(414ml/아이스)", "price": 4000, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "텐라떼(295ml/아이스)", "price": 3400, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "솔티드밀크카라멜(295ml/아이스)", "price": 3800, "kind": "drink", "tags": ["달달함"], "rep": true},
+      {"name": "진한 말차라떼", "price": 4000, "kind": "drink", "tags": ["논커피"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2055213211", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 메뉴에 빵·디저트 없음"
+  },
+  "kakao-127882219": {
+    "name": "KFC 광주상무DI",
+    "menu": [
+      {"name": "징거", "price": 6200, "kind": "meal", "tags": ["튀김", "고기"], "rep": true},
+      {"name": "징거타워", "price": 7200, "kind": "meal", "tags": ["튀김", "고기"], "rep": true},
+      {"name": "징거BLT", "price": 7400, "kind": "meal", "tags": ["튀김", "고기"], "rep": false},
+      {"name": "클래식징거통다리", "price": 6800, "kind": "meal", "tags": ["튀김", "고기"], "rep": false},
+      {"name": "징거더블다운통다리", "price": 9200, "kind": "meal", "tags": ["튀김", "고기"], "rep": false},
+      {"name": "트위스터", "price": 4500, "kind": "meal", "tags": ["튀김", "가벼움"], "rep": false},
+      {"name": "갓양념켄치밥", "price": 5200, "kind": "meal", "tags": ["밥", "튀김"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://place.map.kakao.com/127882219", "label": "카카오맵 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 메뉴는 4개 모두 '가격 변동'으로만 표시돼 카카오맵 '메뉴'(82개) 목록 가격 사용. 카카오 '배달' 탭 가격은 이와 다름. 단품 기준(세트·박스 제외)"
+  },
+  "kakao-849877912": {
+    "name": "메가MGC커피 광주김대중컨벤션점",
+    "menu": [
+      {"name": "아메리카노ICE", "price": 2000, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "메가리카노", "price": 3300, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "카페라떼", "price": 2900, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "할메가커피", "price": 2100, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "메가에이드", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false},
+      {"name": "쿠키프라페", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2020086794", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버에 '대표' 표시가 없어 간판 메뉴로 대표 지정. 네이버 메뉴에 빵·디저트 없음"
+  }
+}

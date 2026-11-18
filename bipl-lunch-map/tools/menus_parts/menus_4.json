@@ -1,0 +1,138 @@
+{
+  "kakao-1754876219": {
+    "name": "봉구스밥버거 상무점",
+    "menu": [
+      {"name": "봉구스밥버거", "price": 3500, "kind": "meal", "tags": ["밥", "가벼움"], "rep": true},
+      {"name": "햄밥버거", "price": 4500, "kind": "meal", "tags": ["밥", "가벼움"], "rep": true},
+      {"name": "치즈밥버거", "price": 4100, "kind": "meal", "tags": ["밥", "가벼움"], "rep": false},
+      {"name": "제육밥버거", "price": 4500, "kind": "meal", "tags": ["밥", "고기"], "rep": false},
+      {"name": "소불고기밥버거", "price": 5500, "kind": "meal", "tags": ["밥", "고기"], "rep": false},
+      {"name": "통살돈까스밥버거", "price": 5000, "kind": "meal", "tags": ["밥", "튀김"], "rep": false},
+      {"name": "봉구도시락", "price": 6000, "kind": "meal", "tags": ["밥"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1868182064", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 메뉴에 대표 표시가 없어 메뉴판 첫머리의 기본 밥버거를 대표로 골랐음"
+  },
+  "kakao-19626816": {
+    "name": "서가앤쿡",
+    "menu": [
+      {"name": "베이컨 까르보나라(1인)", "price": 15900, "kind": "meal", "tags": ["면"], "rep": true},
+      {"name": "게살 오이스터 파스타(1인)[매콤]", "price": 17900, "kind": "meal", "tags": ["면", "매움"], "rep": true},
+      {"name": "해산물 크림 파스타(1인)", "price": 15900, "kind": "meal", "tags": ["면"], "rep": false},
+      {"name": "베이컨 로제파스타(1인)[매콤]", "price": 15900, "kind": "meal", "tags": ["면", "매움"], "rep": false},
+      {"name": "목살 필라프(1인)", "price": 15900, "kind": "meal", "tags": ["밥", "고기"], "rep": false},
+      {"name": "김치 필라프(1인)[매콤]", "price": 15900, "kind": "meal", "tags": ["밥", "매움"], "rep": false},
+      {"name": "해산물 토마토 리조또(1인)", "price": 15900, "kind": "meal", "tags": ["밥"], "rep": false},
+      {"name": "게살 오이스터 리조또(1인) 매콤", "price": 17900, "kind": "meal", "tags": ["밥", "매움"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/32316842", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "한상·스테이크 샐러드·2인 메뉴는 제외하고 1인 메뉴만 넣음"
+  },
+  "kakao-1539196609": {
+    "name": "박홍열갈비탕",
+    "menu": [
+      {"name": "갈비탕정식", "price": 18000, "kind": "meal", "tags": ["국물", "고기"], "rep": true},
+      {"name": "얼큰갈비탕정식", "price": 18000, "kind": "meal", "tags": ["국물", "고기", "매움"], "rep": true},
+      {"name": "전복갈비탕", "price": 22000, "kind": "meal", "tags": ["국물", "고기"], "rep": true},
+      {"name": "(실속)갈비탕", "price": 16000, "kind": "meal", "tags": ["국물", "고기"], "rep": false},
+      {"name": "(실속)얼큰갈비탕", "price": 16000, "kind": "meal", "tags": ["국물", "고기", "매움"], "rep": false},
+      {"name": "왕갈비탕", "price": 18000, "kind": "meal", "tags": ["국물", "고기"], "rep": false},
+      {"name": "얼큰왕갈비탕(1인)", "price": 18000, "kind": "meal", "tags": ["국물", "고기", "매움"], "rep": false},
+      {"name": "왕갈비탕곱배기(1인)", "price": 22000, "kind": "meal", "tags": ["국물", "고기"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1134919514", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "갈비찜(2인분)·추가메뉴·음료는 제외"
+  },
+  "kakao-1432145029": {
+    "name": "메가MGC커피 광주치평점",
+    "menu": [
+      {"name": "Ice아메리카노", "price": 2000, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "쿠키프라페", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": true},
+      {"name": "메가에이드", "price": 3900, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "퐁크러쉬", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1603148864", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 메뉴가 5개뿐이고 라떼가 없음(Hot아메리카노 1,500원은 온도만 달라 제외). 카카오맵에는 요기요 배달 주문 메뉴만 있고 가격이 매장과 달라(예: ICE 아메리카노 2,500원) 반영하지 않음"
+  },
+  "kakao-85778267": {
+    "name": "헤이키커피 상무점",
+    "menu": [
+      {"name": "아메리카노", "price": 2000, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "카페라떼", "price": 3500, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "딥바닐라라떼", "price": 4500, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "밀키라떼", "price": 4500, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "코코라떼", "price": 4800, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "코코넛커피쉐이크", "price": 5000, "kind": "drink", "tags": ["커피", "달달함"], "rep": false},
+      {"name": "헤이딸기라떼", "price": 4500, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1808245580", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 대표 표시가 4개(코코넛커피쉐이크 포함)라 앞의 3개만 rep로 둠. 빵·디저트 메뉴는 없음"
+  },
+  "kakao-684084470": {
+    "name": "크리스피크림도넛 광주상무점",
+    "menu": [
+      {"name": "오리지널 글레이즈드", "price": 1900, "kind": "dessert", "tags": ["달달함"], "rep": true},
+      {"name": "뉴욕 치즈케익", "price": 2500, "kind": "dessert", "tags": ["달달함"], "rep": true},
+      {"name": "초콜릿 아이스드 글레이즈드", "price": 2200, "kind": "dessert", "tags": ["달달함"], "rep": false},
+      {"name": "아메리카노 ICE(M)", "price": 4600, "kind": "drink", "tags": ["커피"], "rep": false},
+      {"name": "스트로베리 스무디 (M)", "price": 5500, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false},
+      {"name": "자몽 블랙티 HOT(M)", "price": 4400, "kind": "drink", "tags": ["논커피"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2096911190", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "도넛 전문점이라 도넛 위주로 넣음. 대표 표시된 오리지널 더즌·하프더즌은 여럿이 먹는 세트라 제외. 라떼류는 메뉴 목록 접힌 부분에 있어 가격 미확인이라 넣지 않음"
+  },
+  "kakao-1980019379": {
+    "name": "우지커피 광주상무치평점",
+    "menu": [
+      {"name": "아메리카노", "price": 1500, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "딥카페라떼", "price": 3000, "kind": "drink", "tags": ["커피"], "rep": true},
+      {"name": "피넛크림라떼(8oz)", "price": 3900, "kind": "drink", "tags": ["커피", "달달함"], "rep": true},
+      {"name": "연유큐브라떼", "price": 4100, "kind": "drink", "tags": ["커피", "달달함"], "rep": false},
+      {"name": "모히또레몬홍차", "price": 3700, "kind": "drink", "tags": ["논커피"], "rep": false},
+      {"name": "스크류딸기스무디", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false},
+      {"name": "자바칩프라페", "price": 3900, "kind": "drink", "tags": ["논커피", "달달함"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1513122510", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버 대표 표시는 '[패스오더전용] 100원 아메리카노' 행사 메뉴뿐이라 제외하고, 간판 메뉴로 대표를 골랐음. 빵·디저트 메뉴는 없음"
+  },
+  "kakao-1692246032": {
+    "name": "한식사랑 한식뷔페",
+    "menu": [
+      {"name": "정성가득 25찬 식사", "price": 8000, "kind": "meal", "tags": ["밥"], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2046902069", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "한식뷔페라 메뉴가 1개뿐"
+  },
+  "kakao-739830216": {
+    "name": "르깜므(Le Calme)",
+    "menu": [
+      {"name": "머쉬룸 베이컨 크림파스타", "price": 19000, "kind": "meal", "tags": ["면"], "rep": true},
+      {"name": "쉬림프 파스타", "price": 19000, "kind": "meal", "tags": ["면"], "rep": true},
+      {"name": "쉬림프 바질페스토 파스타", "price": 19000, "kind": "meal", "tags": ["면"], "rep": true},
+      {"name": "봉골레 파스타", "price": 18000, "kind": "meal", "tags": ["면"], "rep": false},
+      {"name": "쉬림프 로제 리소토", "price": 19000, "kind": "meal", "tags": ["밥"], "rep": false},
+      {"name": "돈등심 커틀렛 [Lunch]", "price": 15000, "kind": "meal", "tags": ["튀김", "고기"], "rep": false},
+      {"name": "아메리카노(Ice/Hot)", "price": 6000, "kind": "drink", "tags": ["커피"], "rep": false}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/1301408736", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "카페로 분류돼 있지만 실제 메뉴는 파스타·스테이크 위주 레스토랑이라 1인 식사 메뉴 중심으로 넣고 아메리카노 1개를 더함. 네이버 대표 표시 7개 중 파스타 3개만 rep로 둠. 스테이크·페스츄리·샐러드는 나눠 먹는 메뉴로 보고 제외"
+  },
+  "kakao-578855050": {
+    "name": "송탄87부대찌개",
+    "menu": [
+      {"name": "송탄부대찌개(1인분)", "price": 13000, "kind": "meal", "tags": ["국물", "매움"], "rep": true}
+    ],
+    "menuSrc": {"url": "https://map.naver.com/p/entry/place/2083430445", "label": "네이버 지도 매장 메뉴", "checked": "2026-11-19"},
+    "noMenuPage": false,
+    "note": "네이버·카카오 모두 글자 메뉴가 3개(송탄부대찌개, 베이컨구이, 김치전)뿐. 베이컨구이(1인분, 14,000원)는 대표 표시가 있지만 곁들임 요리라 제외. 카카오맵에 메뉴판 사진(26개 메뉴)이 있으나 글자로 확인하지 못함. 식사 메뉴 1개뿐"
+  }
+}

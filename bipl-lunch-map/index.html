@@ -112,6 +112,80 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 .toggle:has(input:checked) .tick{border-color:var(--ink-text);background:var(--ink-text);color:var(--ink)}
 .toggle:has(input:focus-visible){outline:2px solid var(--c-food);outline-offset:2px}
 
+/* 결제 수단 */
+.payseg{display:inline-flex;align-items:center;gap:2px;background:var(--field);border-radius:999px;padding:4px;margin-top:16px;max-width:100%}
+.seglbl{font-size:12px;color:var(--muted);padding:0 8px 0 10px}
+.seg{border:0;background:transparent;border-radius:999px;padding:7px 14px;font-size:13px;cursor:pointer;white-space:nowrap}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--ink-text)}
+.badge.bp{background:#121212;color:#fff}
+.badge.zp{background:#2f6bff;color:#fff}
+
+/* 랜덤 추천 */
+.pick{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:14px 14px 14px 18px}
+.pickhead{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pickhead b{display:block;font-size:16px}
+.pickhead span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.pickbtn{border:0;background:var(--ink);color:var(--ink-text);border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer;white-space:nowrap}
+.pick-res{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+.pick-sum{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pick-sum .num{font-size:26px;font-weight:700}
+.pick-sum small{font-size:12px;color:var(--muted)}
+.pick-sum .left{font-size:12px;background:var(--p-all);border-radius:999px;padding:3px 10px}
+.pick-steps{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.pick-steps li{display:flex;gap:10px;align-items:flex-start;border-radius:16px;padding:10px 12px}
+.pick-steps li.s1{background:var(--p-food)} .pick-steps li.s2{background:var(--p-cafe)}
+.pick-steps i{font-style:normal;flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:#121212;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700}
+.pick-steps b{display:block;font-size:14px}
+.pick-steps .d{font-size:12px;color:var(--muted)}
+.pick-act{display:flex;gap:8px;margin-top:10px}
+.pick-act button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer}
+.pick-act .again{background:var(--ink);color:var(--ink-text);border-color:var(--ink)}
+.pick-msg{margin-top:12px;font-size:13px;color:var(--muted);background:var(--panel);border-radius:14px;padding:10px 12px}
+.route-pin{width:26px;height:26px;border-radius:50%;background:#121212;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+
+/* 가게 상세 + 후기 */
+.dimmer{position:fixed;inset:0;background:rgba(0,0,0,.25);z-index:40}
+.detail{position:fixed;z-index:50;background:var(--frame);color:var(--text);box-shadow:0 20px 60px rgba(0,0,0,.25);display:flex;flex-direction:column}
+.detail[hidden],.dimmer[hidden]{display:none}
+.d-scroll{overflow:auto;padding:22px 20px 24px;-webkit-overflow-scrolling:touch}
+.d-x{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;border:0;background:var(--field);cursor:pointer;z-index:1}
+.d-grip{display:none}
+.detail .name{margin-top:10px;padding-right:40px}
+.d-sec{margin-top:18px;background:var(--panel);border-radius:20px;padding:16px}
+.d-sec h3{margin:0 0 10px;font-size:15px}
+.d-summary{display:flex;align-items:baseline;gap:8px}
+.d-summary .avg{font-size:24px;font-weight:700}
+.d-summary .avg .st{color:#f5a400}
+.d-summary .ppl{font-size:13px;color:var(--muted)}
+.d-reviews{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.d-reviews li{background:var(--surface);border-radius:14px;padding:10px 12px;font-size:14px}
+.d-reviews .who{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.d-reviews .rs{color:#f5a400;font-size:14px;letter-spacing:1px;margin-top:4px}
+.d-reviews .rs .off{color:#cfcfca}
+.d-reviews .cm{margin-top:4px;white-space:pre-wrap;word-break:break-word}
+.d-empty{font-size:13px;color:var(--muted);margin:8px 0 0}
+.stars{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.stars button{border:0;background:transparent;font-size:30px;line-height:1;padding:2px;cursor:pointer;color:#d4d4cf}
+.stars button.on{color:#f5a400}
+.star-txt{font-size:12px;color:var(--muted);margin-left:8px}
+.fld{display:block;margin-top:12px}
+.fld span{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-bottom:6px}
+.fld em{font-style:normal;font-weight:400;color:var(--muted)}
+.fld textarea,.fld input{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:inherit;font-size:16px;background:var(--surface);color:var(--text);resize:vertical}
+.d-submit{margin-top:12px;width:100%;border:0;border-radius:999px;padding:12px;background:var(--ink);color:var(--ink-text);font-weight:700;cursor:pointer}
+.d-submit:disabled{opacity:.35;cursor:not-allowed}
+.f-msg{font-size:13px;margin:10px 0 0;min-height:1em}
+.f-msg.ok{color:#1d7a4f} .f-msg.err{color:#c0392b}
+@media (min-width:960px){
+  .detail{left:24px;top:24px;bottom:24px;width:420px;border-radius:28px}
+  .dimmer{display:none!important}
+}
+@media (max-width:959px){
+  .detail{left:0;right:0;bottom:0;max-height:62vh;border-radius:24px 24px 0 0;padding-bottom:env(safe-area-inset-bottom)}
+  .d-grip{display:block;width:44px;height:5px;border-radius:3px;background:var(--line);margin:10px auto 0}
+  .d-scroll{padding-top:8px}
+}
+
 /* 목록 */
 .listhead{display:flex;align-items:baseline;justify-content:space-between;margin:28px 2px 14px}
 .count{font-size:13px;color:var(--muted)}
@@ -131,6 +205,18 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 .menus{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
 .mchip{font-size:13px;padding:6px 12px;border-radius:999px;border:0;background:var(--surface);cursor:pointer}
 .mchip:hover{background:var(--ink);color:var(--ink-text)}
+.mchip b{font-weight:600;font-family:"Poppins","Pretendard",sans-serif;font-size:12px;margin-left:2px}
+.more{margin-top:8px}
+.more summary{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;cursor:pointer;list-style:none;background:rgba(255,255,255,.55);border-radius:999px;padding:5px 11px}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"▾";font-size:11px}
+.more[open] summary::after{content:"▴"}
+.more .menus{margin-top:8px}
+.d-menu{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.d-menu li{display:flex;justify-content:space-between;gap:10px;background:var(--panel);border-radius:12px;padding:8px 12px;font-size:14px}
+.d-menu em{font-style:normal;font-size:11px;font-weight:700;background:var(--ink);color:var(--ink-text);border-radius:999px;padding:1px 7px;margin-right:6px}
+.d-menu small{color:var(--muted);font-size:11px}
+.d-menu .mp{white-space:nowrap;font-weight:600}
 .mnote{font-size:12px;color:var(--muted);margin-top:8px}
 .links{display:flex;gap:8px;margin-top:14px}
 .btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-size:14px;font-weight:600;padding:10px 0;border-radius:999px;background:var(--surface)}
@@ -225,9 +311,24 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
           <button class="tab" data-cat="편의점·마트" aria-pressed="false"><span class="lbl">🏪 편의점·마트</span><span class="n num"></span><span class="arrow" aria-hidden="true">↗</span></button>
         </div>
 
+        <div class="payseg" role="group" aria-label="결제 수단">
+          <span class="seglbl">결제</span>
+          <button class="seg" type="button" data-pay="전체" aria-pressed="true">전체</button>
+          <button class="seg" type="button" data-pay="비플식권" aria-pressed="false">비플식권</button>
+          <button class="seg" type="button" data-pay="제로페이" aria-pressed="false">제로페이</button>
+        </div>
+
         <div class="opts">
           <label class="toggle"><input type="checkbox" id="onlyMenu"><span class="tick">✓</span>대표메뉴 있는 곳만</label>
           <label class="toggle"><input type="checkbox" id="onlyTicket"><span class="tick">✓</span>'비플식권 사용처' 목록만</label>
+        </div>
+
+        <div class="pick">
+          <div class="pickhead">
+            <div><b>🎲 12,000원 점심 뽑기</b><span>식당 메뉴 1개 + 200m 안 카페 음료 1개, 합계 10,000~12,000원</span></div>
+            <button id="pickBtn" class="pickbtn" type="button">뽑기</button>
+          </div>
+          <div id="pickOut" aria-live="polite"></div>
         </div>
       </section>
 
@@ -245,7 +346,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
             <li>거리는 아카데미에서 가게까지의 <b>직선거리</b>예요. 실제 걷는 길은 더 길 수 있어요. 도보 시간은 분속 67m(시속 약 4km)로 계산했어요.</li>
             <li><b>위치 근사</b> 표시가 있는 가게는 지도에 건물 번호가 없어서 도로 위치로 추정했어요(약 ±150m).</li>
             <li>가게 목록은 비플페이 앱의 '전체 가맹점 사용처'와 '비플식권 사용처' 화면을 옮겨 적은 거예요(정리일 <span id="checked"></span>). 결제 가능 여부는 바뀔 수 있으니 가게에서 확인해 주세요.</li>
-            <li>대표메뉴와 가격은 네이버 지도의 매장 메뉴 페이지를 기준으로 정리했어요(2026-11-18). 네이버에 쓸 만한 메뉴가 없는 2곳만 다른 출처를 썼어요. 가격은 가게 사정에 따라 바뀔 수 있어요.</li>
+            <li>메뉴와 가격은 가게마다 네이버 지도(일부는 카카오맵) 매장 메뉴 페이지를 직접 열어 확인했어요(2026-11-19). 음식점은 1인분 식사, 카페는 대표 음료 위주예요. 카드엔 대표메뉴만 보이고 "메뉴 더보기"로 나머지를 볼 수 있어요. 가격은 가게 사정에 따라 바뀔 수 있어요.</li>
             <li>술집·유흥주점·저녁 장사 포장마차처럼 점심 식사와 맞지 않는 10곳, 저녁에만 여는 고깃집 2곳, 지도 앱에서 확인되지 않는 1곳은 뺐어요. 이마트 상무점은 위치를 확인하지 못해 뺐어요.</li>
             <li>지도 © Kakao (카카오맵)</li>
           </ul>
@@ -267,9 +368,39 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   </div>
 </div>
 
+<!-- 가게 상세 + 후기 (모바일: 아래에서 올라오는 시트, PC: 왼쪽 패널) -->
+<div id="dimmer" class="dimmer" hidden></div>
+<section id="detail" class="detail" hidden role="dialog" aria-labelledby="dName">
+  <div class="d-grip" aria-hidden="true"></div>
+  <button class="d-x" type="button" aria-label="닫기">✕</button>
+  <div class="d-scroll">
+    <div id="dHead"></div>
+    <div class="d-sec">
+      <h3>별점·후기</h3>
+      <div id="dSummary" class="d-summary"></div>
+      <ul id="dReviews" class="d-reviews"></ul>
+    </div>
+    <form id="dForm" class="d-sec d-form" autocomplete="off">
+      <h3>후기 남기기</h3>
+      <div class="stars" role="group" aria-label="별점 (누른 별을 다시 누르면 취소)">
+        <button type="button" data-n="1" aria-label="1점">★</button><button type="button" data-n="2" aria-label="2점">★</button><button type="button" data-n="3" aria-label="3점">★</button><button type="button" data-n="4" aria-label="4점">★</button><button type="button" data-n="5" aria-label="5점">★</button>
+        <span id="starTxt" class="star-txt">별점 선택 안 함</span>
+      </div>
+      <label class="fld"><span>댓글 <em id="cLen">0/300</em></span><textarea id="fComment" maxlength="300" rows="3" placeholder="맛, 양, 웨이팅 등 자유롭게 (선택)"></textarea></label>
+      <label class="fld"><span>닉네임</span><input id="fNick" maxlength="20" placeholder="비우면 '익명'"></label>
+      <button id="fSubmit" class="d-submit" type="submit" disabled>등록</button>
+      <p id="fMsg" class="f-msg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <script>
   // 카카오맵 JavaScript 키 (페이지에 공개되는 키. 카카오 디벨로퍼스에 등록한 도메인에서만 동작)
   window.KAKAO_JS_KEY = "f5391b1b8738068a0151cec083b77a5b";
+  // Supabase 후기 저장소. 공개용 anon(publishable) 키만 넣는다. service_role 키는 절대 넣지 말 것
+  // 승인 전 후기는 RLS 정책 때문에 이 키로는 조회되지 않는다 (supabase/reviews.sql 참고)
+  window.SUPABASE_URL = "https://ioxnnldfhqpehmvvnhjw.supabase.co";
+  window.SUPABASE_ANON_KEY = "sb_publishable_JZAfLQF6A-ucVgbWRjAE7A_T4cu9Y36";
 </script>
 <script src="data.js"></script>
 <script>
@@ -287,18 +418,24 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 
   document.getElementById("checked").textContent = META.checked;
 
-  STORES.forEach(function(s, i){ s.id = i; });
+  // 메뉴 형식: {name, price(원 또는 null), kind: meal|drink|dessert, tags: [...], rep: 카드 대표 여부}
+  function repMenus(s){ return (s.menu||[]).filter(function(m){ return m.rep; }); }
+  function priceText(m){ return m.price != null ? won(m.price) + "원" : "가격 미확인"; }
+  function chipHtml(m){ return '<button class="mchip" type="button" data-m="'+esc(m.name)+'">'+esc(m.name)+' <b class="num">'+(m.price != null ? won(m.price)+'원' : '')+'</b></button>'; }
+
+  // 가게 id는 data.js의 고정 id(kakao-번호 등)를 그대로 쓴다. 정렬 순서 번호는 쓰지 않음
+  var BYID = {}; STORES.forEach(function(s){ BYID[s.id] = s; });
 
   // 지도 (카카오맵 Web SDK). 지도를 못 불러와도 목록은 그대로 동작한다
   var map = null, markers = {}, popup = null, visible = {};
   var mapEl = document.getElementById("map");
   function mapMsg(t){ mapEl.innerHTML = '<div class="map-msg">'+t+'</div>'; }
   function popupHtml(s){
-    return '<div class="k-pop"><button class="x" type="button" aria-label="닫기">✕</button><b>'+esc(s.name)+'</b><br>'+s.dist+'m · 도보 약 '+walk(s.dist)+'분'+(s.menu&&s.menu.length?'<br>'+esc(s.menu.join(", ")):'')+'</div>';
+    return '<div class="k-pop"><button class="x" type="button" aria-label="닫기">✕</button><b>'+esc(s.name)+'</b><br>'+s.dist+'m · 도보 약 '+walk(s.dist)+'분'+(repMenus(s).length?'<br>'+esc(repMenus(s).map(function(m){return m.name}).join(", ")):'')+'</div>';
   }
   function openPopup(id){
     if(!map) return;
-    var s = STORES[id];
+    var s = BYID[id];
     var el = document.createElement("div"); el.innerHTML = popupHtml(s); el = el.firstChild;
     el.querySelector(".x").addEventListener("click", function(e){ e.stopPropagation(); popup.setMap(null); });
     popup.setContent(el); popup.setPosition(new kakao.maps.LatLng(s.lat, s.lon)); popup.setMap(map);
@@ -342,7 +479,9 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   })();
 
   // 상태
-  var state = {cat:"전체", q:"", onlyMenu:false, onlyTicket:false};
+  var state = {cat:"전체", q:"", onlyMenu:false, onlyTicket:false, pay:"전체"};
+  var segs = Array.prototype.slice.call(document.querySelectorAll(".seg"));
+  function payOk(s){ return state.pay === "전체" || (s.pay||[]).indexOf(state.pay) >= 0; }
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
   var listEl = document.getElementById("list"), countEl = document.getElementById("countN"), qEl = document.getElementById("q");
 
@@ -350,15 +489,17 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     if(!ignoreCat && state.cat !== "전체" && s.cat !== state.cat) return false;
     if(state.onlyMenu && !(s.menu && s.menu.length)) return false;
     if(state.onlyTicket && s.src.indexOf("비플식권") < 0) return false;
+    if(!payOk(s)) return false;
     if(state.q){
       var q = state.q.replace(/\s/g,"").toLowerCase();
-      var hay = (s.name + " " + (s.menu||[]).join(" ") + " " + s.cat).replace(/\s/g,"").toLowerCase();
+      var hay = (s.name + " " + (s.menu||[]).map(function(m){ return m.name + " " + (m.tags||[]).join(" "); }).join(" ") + " " + s.cat).replace(/\s/g,"").toLowerCase();
       if(hay.indexOf(q) < 0) return false;
     }
     return true;
   }
 
   function render(){
+    segs.forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.pay === state.pay)); });
     tabs.forEach(function(t){
       var c = t.dataset.cat;
       t.setAttribute("aria-pressed", String(c === state.cat));
@@ -371,18 +512,21 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     if(!shown.length){ listEl.innerHTML = '<p class="empty">조건에 맞는 가게가 없어요 🥲</p>'; return; }
     listEl.innerHTML = shown.map(function(s){
       var k = KIND[s.cat];
-      var badges = s.src.map(function(x){return '<span class="badge">'+esc(x)+'</span>'}).join("");
+      var badges = (s.pay||[]).map(function(x){return '<span class="badge '+(x==="제로페이"?"zp":"bp")+'">'+esc(x)+'</span>'}).join("");
       if(s.approx) badges += '<span class="badge warn">위치 근사</span>';
       var menu = "";
       if(s.cat !== "편의점·마트"){
         if(s.menu && s.menu.length){
-          menu = '<div class="menus">' + s.menu.map(function(m){return '<button class="mchip" type="button" data-m="'+esc(m.replace(/\(.*?\)/g,""))+'">'+esc(m)+'</button>'}).join("") + '</div>';
+          // 카드에는 대표(rep) 메뉴만, 나머지는 "메뉴 더보기"를 눌러야 펼쳐진다
+          var rest = s.menu.filter(function(m){ return !m.rep; });
+          menu = '<div class="menus">' + repMenus(s).map(chipHtml).join("") + '</div>';
+          if(rest.length) menu += '<details class="more"><summary>메뉴 더보기 <span class="num">+'+rest.length+'</span></summary><div class="menus">' + rest.map(chipHtml).join("") + '</div></details>';
           if(s.menuNote) menu += '<div class="mnote">'+esc(s.menuNote)+'</div>';
         } else {
           menu = '<div class="mnote">대표메뉴 미확인</div>';
         }
       }
-      return '<article class="card '+k[0]+'" data-id="'+s.id+'">'
+      return '<article class="card '+k[0]+'" data-id="'+esc(s.id)+'">'
         + '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
         + '<h3 class="name">'+esc(s.name)+'</h3>'
         + '<div class="meta">'+esc(s.addr)+'</div>'
@@ -394,13 +538,82 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   }
 
   function highlight(id, pan){
-    Array.prototype.forEach.call(listEl.querySelectorAll(".card"), function(c){ c.classList.toggle("active", +c.dataset.id === id); });
-    var s = STORES[id];
+    Array.prototype.forEach.call(listEl.querySelectorAll(".card"), function(c){ c.classList.toggle("active", c.dataset.id === id); });
+    var s = BYID[id];
     if(pan){ if(map){ if(map.getLevel() > 3) map.setLevel(3); map.panTo(new kakao.maps.LatLng(s.lat, s.lon)); popup._id = id; openPopup(id); } }
     /* 지도에서 가게를 눌러도 목록으로 스크롤하지 않음 (팝업만 표시) */
   }
 
   tabs.forEach(function(t){ t.addEventListener("click", function(){ state.cat = t.dataset.cat; render(); }); });
+  segs.forEach(function(b){ b.addEventListener("click", function(){ state.pay = b.dataset.pay; render(); }); });
+
+  // ── 랜덤 메뉴 추천: 식당 메뉴 1개 + 다른 가게(카페) 음료 1개 ──
+  // 조건: 합계 10,000~12,000원, 식당↔카페 직선 200m 이내, price가 있는 메뉴만. 식당 쪽은 kind=meal, 카페 쪽은 kind=drink
+  var PICK = {min:10000, max:12000, near:200};
+  function won(n){ return n.toLocaleString("ko-KR"); }
+  function meters(a, b){
+    var R = 6371000, r = Math.PI/180, dLa = (b.lat-a.lat)*r, dLo = (b.lon-a.lon)*r;
+    var h = Math.sin(dLa/2)*Math.sin(dLa/2) + Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dLo/2)*Math.sin(dLo/2);
+    return Math.round(2*R*Math.asin(Math.sqrt(h)));
+  }
+  function pickPool(){
+    var pool = STORES.filter(payOk), meals = [], drinks = [];
+    pool.forEach(function(s){
+      (s.menu||[]).forEach(function(m){
+        if(m.price == null) return;
+        if(m.kind === "meal") meals.push({s:s, name:m.name, price:m.price});
+        if(m.kind === "drink") drinks.push({s:s, name:m.name, price:m.price});
+      });
+    });
+    var near = 0, combos = [], lo = Infinity, hi = 0;
+    meals.forEach(function(a){
+      drinks.forEach(function(b){
+        if(a.s.id === b.s.id) return;
+        var d = meters(a.s, b.s); if(d > PICK.near) return;
+        near++; var t = a.price + b.price; lo = Math.min(lo, t); hi = Math.max(hi, t);
+        if(t >= PICK.min && t <= PICK.max) combos.push({a:a, b:b, d:d, total:t, key:a.s.id+"|"+a.name+"|"+b.s.id+"|"+b.name});
+      });
+    });
+    var why = null, f = state.pay === "전체" ? "" : " ('"+state.pay+"' 결제 가게 기준)";
+    if(!meals.length) why = "가격이 확인된 식당 메뉴가 없어요" + f + ".";
+    else if(!drinks.length) why = "가격이 확인된 카페 음료가 없어요" + f + ".";
+    else if(!near) why = "가격이 확인된 식당에서 200m 안에 가격이 확인된 카페 음료가 없어요" + f + ".";
+    else if(!combos.length) why = "200m 안 식당·카페 조합은 " + near + "개 있지만, 합계가 10,000~12,000원에 맞는 조합이 없어요 (가능한 합계 " + won(lo) + "~" + won(hi) + "원)" + f + ".";
+    return {combos:combos, why:why};
+  }
+  var pickOut = document.getElementById("pickOut"), lastKey = null, route = [];
+  function clearRoute(){ route.forEach(function(o){ o.setMap(null); }); route = []; }
+  function drawRoute(c){
+    clearRoute(); if(!map) return;
+    var o = new kakao.maps.LatLng(META.origin.lat, META.origin.lon), p1 = new kakao.maps.LatLng(c.a.s.lat, c.a.s.lon), p2 = new kakao.maps.LatLng(c.b.s.lat, c.b.s.lon);
+    route.push(new kakao.maps.Polyline({path:[o, p1, p2], strokeWeight:4, strokeColor:"#121212", strokeOpacity:.9, strokeStyle:"shortdash"}));
+    [[p1,"1"],[p2,"2"]].forEach(function(x){ route.push(new kakao.maps.CustomOverlay({position:x[0], content:'<div class="route-pin">'+x[1]+'</div>', yAnchor:.5, zIndex:15})); });
+    route.forEach(function(r){ r.setMap(map); });
+    var bounds = new kakao.maps.LatLngBounds(); [o, p1, p2].forEach(function(p){ bounds.extend(p); });
+    map.setBounds(bounds, 60, 60, 60, 60);
+  }
+  function doPick(){
+    var r = pickPool();
+    if(!r.combos.length){ lastKey = null; clearRoute(); pickOut.innerHTML = '<div class="pick-msg">조건에 맞는 조합이 없어요. '+esc(r.why)+'</div>'; return; }
+    var pool = r.combos.length > 1 ? r.combos.filter(function(c){ return c.key !== lastKey; }) : r.combos;
+    var c = pool[Math.floor(Math.random()*pool.length)]; lastKey = c.key;
+    pickOut.innerHTML = '<div class="pick-res">'
+      + '<div class="pick-sum"><span><span class="num">'+won(c.total)+'</span>원</span><span class="left">남는 금액 '+won(12000-c.total)+'원</span><small>조건 맞는 조합 '+r.combos.length+'개 중 하나</small></div>'
+      + '<ol class="pick-steps">'
+      + '<li class="s1"><i>1</i><div><b>'+esc(c.a.s.name)+'</b>'+esc(c.a.name)+' · <span class="num">'+won(c.a.price)+'</span>원<div class="d">아카데미에서 도보 약 '+walk(c.a.s.dist)+'분 ('+c.a.s.dist+'m)</div></div></li>'
+      + '<li class="s2"><i>2</i><div><b>'+esc(c.b.s.name)+'</b>'+esc(c.b.name)+' · <span class="num">'+won(c.b.price)+'</span>원<div class="d">①에서 '+c.d+'m (도보 약 '+walk(c.d)+'분)</div></div></li>'
+      + '</ol>'
+      + '<div class="pick-act"><button class="again" type="button" data-act="again">다시 뽑기</button><button type="button" data-act="close">닫기</button></div>'
+      + '</div>';
+    if(popup) popup.setMap(null);
+    drawRoute(c);
+  }
+  document.getElementById("pickBtn").addEventListener("click", doPick);
+  pickOut.addEventListener("click", function(e){
+    var b = e.target.closest("button"); if(!b) return;
+    if(b.dataset.act === "again") doPick();
+    if(b.dataset.act === "close"){ pickOut.innerHTML = ""; lastKey = null; clearRoute(); }
+  });
   qEl.addEventListener("input", function(){ state.q = qEl.value.trim(); render(); });
   document.getElementById("clear").addEventListener("click", function(e){ e.preventDefault(); qEl.value = ""; state.q = ""; render(); });
   document.getElementById("onlyMenu").addEventListener("change", function(e){ state.onlyMenu = e.target.checked; render(); });
@@ -409,8 +622,96 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     if(e.target.closest("a")) return;
     var chip = e.target.closest(".mchip");
     if(chip){ qEl.value = chip.dataset.m; state.q = chip.dataset.m; state.cat = "전체"; render(); window.scrollTo({top:document.querySelector(".hello").getBoundingClientRect().top + window.scrollY - 10, behavior:"smooth"}); return; }
+    if(e.target.closest("details")) return;   // "메뉴 더보기" 펼치기는 상세 창을 열지 않음
     var card = e.target.closest(".card");
-    if(card){ highlight(+card.dataset.id, true); if(window.innerWidth < 960) document.getElementById("map").scrollIntoView({behavior:"smooth"}); }
+    if(card) openDetail(card.dataset.id);
+  });
+
+  // ── 가게 상세 + 후기 (Supabase) ──
+  // 승인된 후기만 서버에서 내려온다: RLS 정책(approved = true)이 막으므로 프론트에서 숨기는 처리는 없다
+  var SB = {url: window.SUPABASE_URL, key: window.SUPABASE_ANON_KEY};
+  var detailEl = document.getElementById("detail"), dimEl = document.getElementById("dimmer");
+  var dHead = document.getElementById("dHead"), dSummary = document.getElementById("dSummary"), dReviews = document.getElementById("dReviews");
+  var fForm = document.getElementById("dForm"), fComment = document.getElementById("fComment"), fNick = document.getElementById("fNick");
+  var fSubmit = document.getElementById("fSubmit"), fMsg = document.getElementById("fMsg"), cLen = document.getElementById("cLen"), starTxt = document.getElementById("starTxt");
+  var starBtns = Array.prototype.slice.call(document.querySelectorAll(".stars button"));
+  var cur = null, rating = null, loadSeq = 0, lastFocus = null;
+  function sbHeaders(extra){ var h = {"apikey": SB.key, "Authorization": "Bearer " + SB.key}; for(var k in extra) h[k] = extra[k]; return h; }
+  function starsHtml(n){ var s = ""; for(var i = 1; i <= 5; i++) s += i <= n ? "★" : '<span class="off">★</span>'; return s; }
+  function fmtDate(t){ var d = new Date(t); return d.getFullYear() + "." + (d.getMonth()+1) + "." + d.getDate(); }
+  function headHtml(s){
+    var k = KIND[s.cat];
+    var badges = (s.pay||[]).map(function(x){return '<span class="badge '+(x==="제로페이"?"zp":"bp")+'">'+esc(x)+'</span>'}).join("");
+    var menu = s.cat === "편의점·마트" ? "" : (s.menu && s.menu.length
+      ? '<ul class="d-menu">' + s.menu.map(function(m){ return '<li><span class="mn">'+(m.rep?'<em>대표</em>':'')+esc(m.name)+((m.tags||[]).length?' <small>'+esc(m.tags.join(" · "))+'</small>':'')+'</span><span class="mp num">'+priceText(m)+'</span></li>'; }).join("") + '</ul>'
+        + (s.menuSrc ? '<div class="mnote">메뉴 출처: '+esc(s.menuSrc.label)+' ('+esc(s.menuSrc.checked)+')'+(s.menuNote?' · '+esc(s.menuNote):'')+'</div>' : '')
+      : '<div class="mnote">대표메뉴 미확인</div>');
+    return '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
+      + '<h2 class="name" id="dName">'+esc(s.name)+'</h2><div class="meta">'+esc(s.addr)+'</div>'
+      + '<div class="badges">'+badges+'</div>' + menu
+      + '<div class="links"><a class="btn naver" href="'+naverUrl(s)+'" target="_blank" rel="noopener"><span class="mk">N</span>네이버지도<span class="go">↗</span></a><a class="btn kakao" href="'+kakaoUrl(s)+'" target="_blank" rel="noopener"><span class="mk">K</span>카카오맵<span class="go">↗</span></a></div>';
+  }
+  function loadReviews(id){
+    var seq = ++loadSeq;
+    dSummary.innerHTML = '<span class="ppl">후기를 불러오는 중…</span>'; dReviews.innerHTML = "";
+    if(!SB.url || !SB.key){ dSummary.innerHTML = '<span class="ppl">후기 저장소가 아직 연결되지 않았어요.</span>'; return; }
+    fetch(SB.url + "/rest/v1/reviews?select=nickname,rating,comment,created_at&store_id=eq." + encodeURIComponent(id) + "&order=created_at.desc", {headers: sbHeaders()})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(rows){
+        if(seq !== loadSeq) return;
+        var rated = rows.filter(function(x){ return x.rating != null; });
+        if(rated.length){
+          var avg = rated.reduce(function(a, x){ return a + x.rating; }, 0) / rated.length;
+          dSummary.innerHTML = '<span class="avg num"><span class="st">★</span> '+avg.toFixed(1)+'</span><span class="ppl">('+rated.length+'명)</span>';
+        } else dSummary.innerHTML = '<span class="ppl">아직 별점이 없어요.</span>';
+        if(!rows.length){ dReviews.innerHTML = '<li class="d-empty" style="background:none;padding:0">아직 공개된 후기가 없어요. 첫 후기를 남겨 주세요!</li>'; return; }
+        dReviews.innerHTML = rows.map(function(x){
+          return '<li><div class="who"><b>'+esc(x.nickname || "익명")+'</b><span>'+fmtDate(x.created_at)+'</span></div>'
+            + (x.rating != null ? '<div class="rs" aria-label="별점 '+x.rating+'점">'+starsHtml(x.rating)+'</div>' : '')
+            + (x.comment ? '<div class="cm">'+esc(x.comment)+'</div>' : '') + '</li>';
+        }).join("");
+      })
+      .catch(function(){ if(seq === loadSeq) dSummary.innerHTML = '<span class="ppl">후기를 불러오지 못했어요. 잠시 후 다시 열어 주세요.</span>'; });
+  }
+  function setRating(n){
+    rating = n;
+    starBtns.forEach(function(b){ var on = rating != null && +b.dataset.n <= rating; b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(rating === +b.dataset.n)); });
+    starTxt.textContent = rating ? rating + ".0점 (다시 누르면 취소)" : "별점 선택 안 함";
+    syncSubmit();
+  }
+  function syncSubmit(){ cLen.textContent = fComment.value.length + "/300"; fSubmit.disabled = !(rating || fComment.value.trim()); }
+  function resetForm(){ fComment.value = ""; fNick.value = ""; setRating(null); }
+  function openDetail(id){
+    var s = BYID[id]; if(!s) return;
+    if(!cur) lastFocus = document.activeElement;
+    cur = s; resetForm(); fMsg.textContent = ""; fMsg.className = "f-msg";
+    dHead.innerHTML = headHtml(s);
+    detailEl.hidden = false; dimEl.hidden = window.innerWidth >= 960;
+    detailEl.querySelector(".d-scroll").scrollTop = 0;
+    highlight(id, true);
+    if(window.innerWidth < 960) document.getElementById("map").scrollIntoView({behavior:"smooth", block:"start"});
+    detailEl.querySelector(".d-x").focus({preventScroll:true});
+    loadReviews(id);
+  }
+  function closeDetail(){
+    if(!cur) return;
+    cur = null; detailEl.hidden = true; dimEl.hidden = true;
+    if(lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
+  }
+  detailEl.querySelector(".d-x").addEventListener("click", closeDetail);
+  dimEl.addEventListener("click", closeDetail);
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeDetail(); });
+  starBtns.forEach(function(b){ b.addEventListener("click", function(){ var n = +b.dataset.n; setRating(rating === n ? null : n); }); });
+  fComment.addEventListener("input", syncSubmit);
+  fForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    if(!cur || fSubmit.disabled) return;
+    var comment = fComment.value.trim(), nick = fNick.value.trim();
+    var body = {store_id: cur.id, nickname: nick || "익명", rating: rating, comment: comment || null};
+    fSubmit.disabled = true; fMsg.className = "f-msg"; fMsg.textContent = "등록하는 중…";
+    fetch(SB.url + "/rest/v1/reviews", {method:"POST", headers: sbHeaders({"Content-Type":"application/json", "Prefer":"return=minimal"}), body: JSON.stringify(body)})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); resetForm(); fMsg.className = "f-msg ok"; fMsg.textContent = "등록됐어요! 관리자 승인 후 보여요 🙌"; })
+      .catch(function(){ fMsg.className = "f-msg err"; fMsg.textContent = "등록하지 못했어요. 잠시 후 다시 시도해 주세요."; syncSubmit(); });
   });
 
   render();
