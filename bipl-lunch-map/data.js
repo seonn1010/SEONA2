@@ -36,8 +36,16 @@ window.STORES = [
   "lon": 126.849261,
   "dist": 148,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "동태탕(12,000원)",
+   "고기왕창 김치찌개(11,000원)",
+   "알탕(14,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1784943015",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "메가MGC커피 광주상무중앙점",
@@ -96,8 +104,16 @@ window.STORES = [
   "lon": 126.847903,
   "dist": 171,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "댄싱커피(3,500원)",
+   "바닐라 빈 라떼(4,300원)",
+   "아메리카노(2,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1025382476",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "프랭크버거 광주상무점",
@@ -145,8 +161,17 @@ window.STORES = [
   "lon": 126.849475,
   "dist": 181,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "간장양념쪽갈비",
+   "매운양념쪽갈비",
+   "김치찌개"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/265341820",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "가격 미확인 · 카카오맵 영업시간 17:00~04:00(점심 영업 미확인)"
  },
  {
   "name": "명인면옥 상무점",
@@ -159,8 +184,17 @@ window.STORES = [
   "lon": 126.849475,
   "dist": 181,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "전주 물갈비(18,000원)",
+   "숯불물냉면(15,000원)",
+   "갈비탕(17,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/933790811",
+   "label": "카카오맵 주문 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "서가앤쿡",
@@ -219,8 +253,17 @@ window.STORES = [
   "lon": 126.850568,
   "dist": 207,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "숙성 삼겹살 100g(9,000원)",
+   "돼지이빠이김치찌개(6,000원)",
+   "김치말이국수(6,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://m.place.naver.com/place/2019338645/menu/list",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "네이버 지도에 17:00 영업 시작으로 나옴(점심 영업 미확인)"
  },
  {
   "name": "시그널",
@@ -304,8 +347,14 @@ window.STORES = [
   "lon": 126.849187,
   "dist": 248,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "갈비탕정식(16,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1539196609",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "현완단겸 상추튀김 상무점",
@@ -374,8 +423,16 @@ window.STORES = [
   "lon": 126.847744,
   "dist": 271,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "보배짜장면(6,500원)",
+   "보배짬뽕(8,000원)",
+   "차돌짬뽕(11,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1265231932",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "GS25 상무평화점",
@@ -435,8 +492,17 @@ window.STORES = [
   "lon": 126.848912,
   "dist": 289,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "91김밥(4,000원)",
+   "91라이스김밥(5,500원)",
+   "91떡볶이(8,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/2037976532",
+   "label": "카카오맵 주문 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음"
  },
  {
   "name": "빽바지집",
@@ -518,8 +584,16 @@ window.STORES = [
   "lon": 126.849013,
   "dist": 342,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "고흥유자차(3,500원)",
+   "딸기주스(4,500원)",
+   "피치아이스티(3,200원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/85778267",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "모람",
@@ -532,8 +606,17 @@ window.STORES = [
   "lon": 126.852692,
   "dist": 345,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "아메리카노 아이스(3,500원)",
+   "카페라떼 아이스(4,000원)",
+   "흑임자라떼 아이스(5,500원)"
+  ],
+  "menuSrc": {
+   "url": "https://m.place.naver.com/place/2084971709/menu/list",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "네이버 지도 업종은 '테이크아웃커피'"
  },
  {
   "name": "채가곰탕",
@@ -578,8 +661,16 @@ window.STORES = [
   "lon": 126.849656,
   "dist": 353,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "차돌박이",
+   "육회"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1285174598",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "가격 미확인"
  },
  {
   "name": "크리스피크림도넛 광주상무점",
@@ -636,8 +727,14 @@ window.STORES = [
   "lon": 126.847899,
   "dist": 353,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "한식뷔페 1인(7,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/759324156",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "마중물추어탕 상무직영점",
@@ -650,8 +747,16 @@ window.STORES = [
   "lon": 126.852577,
   "dist": 359,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "추어탕+돌솥밥(14,000원)",
+   "추어탕+공기밥(12,000원)",
+   "고추추어튀김 소(9,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1254093742",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "우지커피 광주상무치평점",
@@ -729,8 +834,15 @@ window.STORES = [
   "lon": 126.8494,
   "dist": 364,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "계절회무침 중(50,000원)",
+   "병어조림 중(50,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/2031332494",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "한식사랑 한식뷔페",
@@ -743,8 +855,14 @@ window.STORES = [
   "lon": 126.84947,
   "dist": 414,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "한식뷔페 1인(8,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1692246032",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "브로 샌드위치",
@@ -757,8 +875,16 @@ window.STORES = [
   "lon": 126.848087,
   "dist": 456,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "햄·치즈·에그 샌드위치(3,400원)",
+   "크랜베리 닭가슴살 샌드위치(3,900원)",
+   "매콤 닭가슴살 샌드위치(3,900원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/734599907",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "KFC 광주상무DI",
@@ -892,8 +1018,16 @@ window.STORES = [
   "lon": 126.850822,
   "dist": 538,
   "approx": true,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "안심 크림 리소토(20,000원)",
+   "머쉬룸 베이컨 크림파스타(19,000원)",
+   "쉬림프 파스타(19,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/739830216",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "파리바게뜨 상무마륵점",
@@ -989,8 +1123,17 @@ window.STORES = [
   "lon": 126.845219,
   "dist": 583,
   "approx": true,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "아메리카노(3,500원)",
+   "카페라떼(5,500원)",
+   "1리터커피(6,500원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/21534333",
+   "label": "카카오맵 주문 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음 · 카카오맵 업종은 '커피전문점'"
  },
  {
   "name": "송탄87부대찌개",
@@ -1003,7 +1146,14 @@ window.STORES = [
   "lon": 126.85537,
   "dist": 590,
   "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "송탄부대찌개(13,000원)",
+   "베이컨구이(14,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/578855050",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  }
 ];
