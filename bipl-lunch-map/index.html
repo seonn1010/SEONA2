@@ -312,7 +312,9 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     var center = new kakao.maps.LatLng(META.origin.lat, META.origin.lon);
     mapEl.innerHTML = "";
     map = new kakao.maps.Map(mapEl, {center:center, level:5});
-    map.setZoomable(false); // 마우스 휠 확대 끄기 (확대·축소는 버튼으로)
+    // 컴퓨터(마우스)에서는 휠 확대를 끄고, 휴대폰·태블릿(터치)에서는 두 손가락 확대를 켠다
+    var touch = window.matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0;
+    map.setZoomable(touch);
     map.addControl(new kakao.maps.ZoomControl(), kakao.maps.ControlPosition.TOPLEFT);
     var ring = new kakao.maps.Circle({center:center, radius:META.radius, strokeWeight:1.5, strokeColor:"#121212", strokeOpacity:1, strokeStyle:"dash", fillColor:"#121212", fillOpacity:.04});
     ring.setMap(map);
