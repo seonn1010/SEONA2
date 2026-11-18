@@ -14,16 +14,14 @@ window.STORES = [
   "dist": 95,
   "approx": false,
   "menu": [
-   "샌드위치",
-   "고추장 불고기 샌드위치",
-   "빵·케이크"
+   "단팥빵(1,800원)",
+   "실키롤케익(13,900원)"
   ],
   "menuSrc": {
-   "url": "https://www.news1.kr/amp/industry/distribution/6242111",
-   "label": "뉴스1 (브랜드 기준)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "브랜드 공통 메뉴 기준"
+   "url": "https://place.map.kakao.com/8125665",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "진고집동해동태탕",
@@ -59,16 +57,16 @@ window.STORES = [
   "dist": 162,
   "approx": false,
   "menu": [
-   "메가리카노",
-   "할메가커피",
-   "바닐라라떼"
+   "왕메가카페라떼",
+   "헛개리카노",
+   "딸기라떼"
   ],
   "menuSrc": {
-   "url": "https://www.smarttoday.co.kr/ko-kr/articles/104376",
-   "label": "스마트투데이 (판매 상위 메뉴 보도)",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/1207665176",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "가격 미확인"
  },
  {
   "name": "봉구스밥버거 상무점",
@@ -82,16 +80,15 @@ window.STORES = [
   "dist": 162,
   "approx": false,
   "menu": [
-   "봉구스 밥버거",
-   "햄치즈 밥버거",
-   "제육 밥버거"
+   "몬스터봉구(7,800원)",
+   "봉구킹(7,800원)",
+   "더블치즈닭갈비(5,700원)"
   ],
   "menuSrc": {
-   "url": "https://www.insight.co.kr/news/133179",
-   "label": "인사이트",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "브랜드 공통 메뉴 기준"
+   "url": "https://place.map.kakao.com/1754876219",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "댄싱컵 광주상무역점",
@@ -127,16 +124,15 @@ window.STORES = [
   "dist": 171,
   "approx": false,
   "menu": [
-   "치즈버거",
-   "오리지널 버거",
-   "비프&쉬림프 버거"
+   "프랭크버거 세트(10,100원)",
+   "쉬림프버거 세트(10,500원)",
+   "100% 한우버거 세트(13,600원)"
   ],
   "menuSrc": {
-   "url": "https://autoreserve.com/th/restaurants/JZUQmGby1jWwYufMoWXb",
-   "label": "오토리저브 (다른 지점 메뉴)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "다른 지점 메뉴 기준"
+   "url": "https://place.map.kakao.com/1113376476",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "GS25 상무센터점",
@@ -208,16 +204,15 @@ window.STORES = [
   "dist": 199,
   "approx": false,
   "menu": [
-   "목살 스테이크",
-   "크림 파스타",
-   "필라프"
+   "베이컨 까르보나라 1인(15,900원)",
+   "게살 오이스터 파스타 1인(17,900원)",
+   "새우 필라프 1인(15,900원)"
   ],
   "menuSrc": {
-   "url": "https://polle.com/place/4zg5KT/%EC%84%9C%EA%B0%80%EC%95%A4%EC%BF%A1",
-   "label": "폴레 리뷰",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "다른 지점 메뉴 기준"
+   "url": "https://place.map.kakao.com/19626816",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "왓더버거 광주상무점",
@@ -231,16 +226,15 @@ window.STORES = [
   "dist": 202,
   "approx": false,
   "menu": [
-   "왓더버거",
-   "불고기버거",
-   "치킨버거"
+   "아메리칸 치즈버거 세트(11,500원)",
+   "새우카츠버거 세트(11,100원)",
+   "직화 통새우버거 세트(13,600원)"
   ],
   "menuSrc": {
-   "url": "https://autoreserve.com/it/restaurants/fQh3izgLT2gZqENJaLXe",
-   "label": "오토리저브 (다른 지점 메뉴)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "다른 지점 메뉴 기준"
+   "url": "https://place.map.kakao.com/1185391934",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "돈 고기집 상무점",
@@ -266,20 +260,6 @@ window.STORES = [
   "menuNote": "네이버 지도에 17:00 영업 시작으로 나옴(점심 영업 미확인)"
  },
  {
-  "name": "시그널",
-  "addr": "광주 서구 상무연하로 48",
-  "cat": "음식점",
-  "src": [
-   "전체 가맹점"
-  ],
-  "lat": 35.152483,
-  "lon": 126.850496,
-  "dist": 229,
-  "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
- },
- {
   "name": "진미가람",
   "addr": "광주 서구 상무중앙로28번길 18",
   "cat": "음식점",
@@ -291,14 +271,14 @@ window.STORES = [
   "dist": 241,
   "approx": false,
   "menu": [
-   "돼지갈비",
-   "석갈비",
-   "숯불쌈밥"
+   "직화 돼지갈비 300g(33,000원)",
+   "김치찌개(9,000원)",
+   "청국장(9,000원)"
   ],
   "menuSrc": {
-   "url": "https://www.siksinhot.com/toplists/best/041474_Gwangju",
-   "label": "식신",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/10417509",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   }
  },
  {
@@ -325,16 +305,16 @@ window.STORES = [
   "dist": 242,
   "approx": false,
   "menu": [
-   "메가리카노",
-   "할메가커피",
-   "바닐라라떼"
+   "왕메가카페라떼",
+   "헛개리카노",
+   "딸기라떼"
   ],
   "menuSrc": {
-   "url": "https://www.smarttoday.co.kr/ko-kr/articles/104376",
-   "label": "스마트투데이 (판매 상위 메뉴 보도)",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/1655655146",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "가격 미확인"
  },
  {
   "name": "박홍열갈비탕",
@@ -368,13 +348,13 @@ window.STORES = [
   "dist": 259,
   "approx": false,
   "menu": [
-   "상추튀김",
-   "오징어튀김"
+   "오징어 상추튀김 1BOX(17,800원)",
+   "돼지고기 상추튀김 1BOX(17,800원)"
   ],
   "menuSrc": {
-   "url": "https://polle.com/place/1l8pMC/%ED%98%84%EC%99%84%EB%8B%A8%EA%B2%B8%20%EC%83%81%EC%B6%94%ED%8A%80%EA%B9%80",
-   "label": "폴레 리뷰",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/850712337",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   }
  },
  {
@@ -401,16 +381,15 @@ window.STORES = [
   "dist": 271,
   "approx": false,
   "menu": [
-   "탕수육",
-   "떡볶이",
-   "김밥"
+   "탕수육(10,000원)",
+   "할멈김밥(4,200원)",
+   "참치고추김밥(5,900원)"
   ],
   "menuSrc": {
-   "url": "https://polle.com/moya95/posts/865",
-   "label": "폴레 후기 (광주 다른 지점)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "다른 지점 메뉴 기준"
+   "url": "https://place.map.kakao.com/2010722896",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "보배반점 상무점",
@@ -470,16 +449,15 @@ window.STORES = [
   "dist": 289,
   "approx": false,
   "menu": [
-   "메가리카노",
-   "할메가커피",
-   "바닐라라떼"
+   "왕할메가커피 아이스(3,900원)",
+   "아메리카노 아이스(2,500원)",
+   "큐브라떼 아이스(4,700원)"
   ],
   "menuSrc": {
-   "url": "https://www.smarttoday.co.kr/ko-kr/articles/104376",
-   "label": "스마트투데이 (판매 상위 메뉴 보도)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "브랜드 공통 메뉴 기준"
+   "url": "https://place.map.kakao.com/1432145029",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "용쓰91김밥 상무점",
@@ -503,20 +481,6 @@ window.STORES = [
    "checked": "2026-11-18"
   },
   "menuNote": "카카오맵 주문하기 메뉴 기준 — 매장 가격과 다를 수 있음"
- },
- {
-  "name": "빽바지집",
-  "addr": "광주 서구 치평로 79",
-  "cat": "음식점",
-  "src": [
-   "전체 가맹점"
-  ],
-  "lat": 35.14833,
-  "lon": 126.847781,
-  "dist": 302,
-  "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
  },
  {
   "name": "세븐일레븐 광주상무운천점",
@@ -563,14 +527,14 @@ window.STORES = [
   "dist": 317,
   "approx": false,
   "menu": [
-   "수육쌈밥",
-   "제육쌈밥",
-   "애호박찌개"
+   "수육쌈밥(28,000원·2인부터)",
+   "제육쌈밥(28,000원·2인부터)",
+   "광주식 애호박찌개(12,000원)"
   ],
   "menuSrc": {
-   "url": "https://daangn.com/kr/local-profile/%EC%83%81%EB%AC%B4%EC%8C%88%EB%B0%A5-iucinxccfb4s/",
-   "label": "당근 업체 페이지",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/1269496616",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   }
  },
  {
@@ -598,7 +562,7 @@ window.STORES = [
  {
   "name": "모람",
   "addr": "광주 서구 상무번영로 11",
-  "cat": "음식점",
+  "cat": "카페",
   "src": [
    "전체 가맹점"
   ],
@@ -630,12 +594,12 @@ window.STORES = [
   "dist": 349,
   "approx": false,
   "menu": [
-   "곰탕(한우 암소)"
+   "한우곰탕(11,000원)"
   ],
   "menuSrc": {
-   "url": "https://hotplacehunter.co.kr/sns/article/79174/",
-   "label": "핫플헌터",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/8596212",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   }
  },
  {
@@ -684,14 +648,15 @@ window.STORES = [
   "dist": 353,
   "approx": false,
   "menu": [
-   "오리지널 글레이즈드"
+   "오리지널 글레이즈드",
+   "BEST 뉴욕세트(9,100원)"
   ],
   "menuSrc": {
-   "url": "https://www.insight.co.kr/news/339766",
-   "label": "인사이트",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/684084470",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "뉴욕세트 = 오리지널 글레이즈드 포함 도넛 4개"
  },
  {
   "name": "파리바게뜨 상무역점",
@@ -705,16 +670,16 @@ window.STORES = [
   "dist": 353,
   "approx": false,
   "menu": [
-   "샌드위치",
-   "고추장 불고기 샌드위치",
-   "빵·케이크"
+   "초코쫀득츄러스(2,900원)",
+   "초코 바게뜨(3,700원)",
+   "파베 생초콜릿 케이크 조각(7,500원)"
   ],
   "menuSrc": {
-   "url": "https://www.news1.kr/amp/industry/distribution/6242111",
-   "label": "뉴스1 (브랜드 기준)",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/8568359",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "매장 '대표' 표시 메뉴(시즌 상품 포함)"
  },
  {
   "name": "해돋이 한식뷔페 상무점",
@@ -770,14 +735,16 @@ window.STORES = [
   "dist": 359,
   "approx": false,
   "menu": [
-   "딥 카페라떼"
+   "딥카페라떼",
+   "아메리카노",
+   "피넛크림라떼"
   ],
   "menuSrc": {
-   "url": "https://www.hankyung.com/article/2026050562841",
-   "label": "한국경제",
-   "checked": "2026-11-17"
+   "url": "https://place.map.kakao.com/1980019379",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
   },
-  "menuNote": "브랜드 공통 메뉴 기준"
+  "menuNote": "가격 미확인"
  },
  {
   "name": "꾸다",
@@ -797,9 +764,9 @@ window.STORES = [
   "menuSrc": {
    "url": "https://polle.com/place/1A0gbJ/%EA%BE%B8%EB%8B%A4",
    "label": "폴레 리뷰",
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
-  "menuNote": "저녁엔 주점 메뉴 위주"
+  "menuNote": "카카오맵 업종 '호프·요리주점'(11:00~02:00), 매장 메뉴엔 안주만 있음. 점심 메뉴는 리뷰 기준"
  },
  {
   "name": "텐퍼센트커피 상무역환승센터점",
@@ -813,15 +780,15 @@ window.STORES = [
   "dist": 364,
   "approx": false,
   "menu": [
-   "텐라떼(시그니처 라떼)",
-   "아인슈페너 라떼"
+   "텐라떼(3,900원)",
+   "시그니처 라떼(4,500원)",
+   "아인슈페너(4,500원)"
   ],
   "menuSrc": {
-   "url": "https://polle.com/lkhun71/posts/1181",
-   "label": "폴레 방문 후기",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "브랜드 공통 메뉴 기준"
+   "url": "https://place.map.kakao.com/1223101662",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "상무계절맛집",
@@ -932,16 +899,15 @@ window.STORES = [
   "dist": 503,
   "approx": false,
   "menu": [
-   "초밥",
-   "롤",
-   "우동"
+   "모둠초밥 10P(13,900원)",
+   "스페셜초밥 10P(19,900원)",
+   "연어초밥 10P(17,900원)"
   ],
   "menuSrc": {
-   "url": "https://autoreserve.com/en/restaurants/dTLdnGnqtLdfEWeUH15R",
-   "label": "오토리저브 (다른 지점 메뉴)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "다른 지점 메뉴 기준"
+   "url": "https://place.map.kakao.com/2007184488",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "씨유 광주스카이랜드점",
@@ -968,20 +934,6 @@ window.STORES = [
   "approx": true
  },
  {
-  "name": "아이케이케이",
-  "addr": "광주 서구 시청로50번길 17",
-  "cat": "음식점",
-  "src": [
-   "전체 가맹점"
-  ],
-  "lat": 35.153102,
-  "lon": 126.853832,
-  "dist": 511,
-  "approx": false,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
- },
- {
   "name": "GS25 광주SK뷰점",
   "addr": "광주 서구 마륵복개로 140",
   "cat": "편의점·마트",
@@ -994,7 +946,7 @@ window.STORES = [
   "approx": true
  },
  {
-  "name": "뉴벨퀴진",
+  "name": "누벨퀴진",
   "addr": "광주 서구 마륵복개로 104",
   "cat": "음식점",
   "src": [
@@ -1004,8 +956,17 @@ window.STORES = [
   "lon": 126.850822,
   "dist": 538,
   "approx": true,
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   "지리산 흑돼지 맑은곰탕(10,000원)",
+   "한우 함흥 물냉면(10,000원)",
+   "한운모듬 꼬리곰탕(18,000원)"
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1228569945",
+   "label": "카카오맵 '육시육분' 매장 메뉴",
+   "checked": "2026-11-18"
+  },
+  "menuNote": "카카오맵엔 같은 주소(마륵복개로 104 1층)에 '육시육분'(곰탕)만 있음. 인허가일(2022-07-07)도 같아 같은 가게로 보이나 미확인"
  },
  {
   "name": "르깜므(Le Calme)",
@@ -1089,16 +1050,15 @@ window.STORES = [
   "dist": 552,
   "approx": true,
   "menu": [
-   "메가리카노",
-   "할메가커피",
-   "바닐라라떼"
+   "왕할메가커피 아이스(3,400원)",
+   "아메리카노 아이스(2,000원)",
+   "큐브라떼 아이스(4,200원)"
   ],
   "menuSrc": {
-   "url": "https://www.smarttoday.co.kr/ko-kr/articles/104376",
-   "label": "스마트투데이 (판매 상위 메뉴 보도)",
-   "checked": "2026-11-17"
-  },
-  "menuNote": "브랜드 공통 메뉴 기준"
+   "url": "https://place.map.kakao.com/849877912",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-18"
+  }
  },
  {
   "name": "씨유 상무라인점",
@@ -1115,7 +1075,7 @@ window.STORES = [
  {
   "name": "티파라치",
   "addr": "광주 서구 마륵로 116",
-  "cat": "음식점",
+  "cat": "카페",
   "src": [
    "전체 가맹점"
   ],
