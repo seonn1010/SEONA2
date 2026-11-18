@@ -40,7 +40,7 @@
    - "주문하기 메뉴 기준"(명인면옥, 용쓰91김밥, 티파라치)은 카카오맵 배달 주문 메뉴라 매장 가격과 다를 수 있다.
    - 가격이 없는 곳: 쪽갈비대장, 갓성비, 메가MGC 상무중앙점·미즈피아점, 우지커피 (메뉴 이름만)
    - 점심 영업 미확인: 쪽갈비대장(카카오 17:00~04:00), 돈 고기집(네이버 17:00 시작)
-   - **`index.html` 고칠 것**(클라우드 세션 담당 파일이라 손대지 않음): 128줄 "대표메뉴는 웹 검색으로 조사" → 지도 앱 매장 메뉴 확인으로, 129줄 "술집으로 보이는 7곳" → 10곳(유흥주점·포장마차 3곳 추가)
+   - `index.html` 안내 문구(메뉴 출처, 제외 10곳)도 2026-11-18에 고쳤다.
 
 ## 이미 해봤는데 안 된 것
 - **CARTO 지도(Positron/Voyager)**: 2026년 기준 무료 API 키가 필요하다. 키 없이 받으면 타일에 "API KEY REQUIRED"만 찍힌다.
@@ -59,6 +59,7 @@
 | `all_rows.json` | 후보 전체와 거리, 정확도(정확/보정/근사/미확인) |
 | `build_data.py` | 반경·제외(`BARS`)·업종/이름 바로잡기(`CAT_FIX`, `NAME_FIX`)·대표메뉴(`S` 가게별 → `M` 브랜드·키워드)를 적용해 `../data.js` 생성 |
 | `build_data_port.mjs` | `build_data.py`와 같은 규칙의 Node 버전 (Python 없는 컴퓨터용, `ego-browser nodejs`로 실행 가능) |
+| `serve.ps1` | 미리보기용 로컬 웹서버 (PowerShell, http://localhost:8000). 데스크톱 앱에선 `.claude/launch.json`의 `lunch-map`으로 옆 패널에 띄운다 |
 | `make_artifact.py`, `embed.py`, `tiles.py` | 미리보기용 단일 HTML 만들기 (Leaflet은 `npm install leaflet@1.9.4`, 타일은 `tiles.py`로 다시 받기) |
 
 - 반경을 바꾸려면 `build_data.py`의 `> 600`과 `"radius": 600`을 고치고 `cd tools && python3 build_data.py`를 실행한다. 그 뒤 `index.html`, `README.md`의 "반경 600m", 술집 개수 문구도 같이 고친다.
@@ -68,8 +69,9 @@
 - "위치 근사"(지도에 건물번호가 없어 도로 위치로 추정, 약 ±150m): 마륵복개로·마륵로·상무공원로 10·운천로 206 등
 - 이마트 상무점은 지번(치평동 1208-5)만 있어서 위치 미확인이라 제외했다.
 - 골든웨이브(운천로 261)는 같은 주소의 "소이연남 광주상무점" 메뉴를 넣었다. 같은 가게인지는 미확인.
-- 대표메뉴 출처 링크는 웹 검색 결과에 나온 링크다. 원문 페이지는 직접 열어보지 못했다(클라우드 네트워크 제한).
+- 대표메뉴 출처는 대부분 카카오맵·네이버 지도 매장 페이지(2026-11-18 직접 열어 확인). 남은 웹 검색 출처(매운날, KFC, 파리바게뜨 상무마륵점, 꾸다 등)는 원문을 직접 열어보지 못했다.
 
 ## 작업 환경
-- 클라우드 환경 이름 `SEONA2`(개인용). 허용 호스트: nominatim.openstreetmap.org, tile.openstreetmap.org, a~d.basemaps.cartocdn.com, 카카오·네이버 지도 관련 주소들
-- 두 세션(모바일 클라우드, 컴퓨터 로컬)이 같은 브랜치를 쓴다. 작업 전 `git pull`, 끝나면 커밋하고 푸시. 같은 파일을 동시에 고치지 않기(컴퓨터는 `data.js`, 클라우드는 `index.html`).
+- **2026-11-18부터 사용자 컴퓨터의 로컬 세션(Claude 데스크톱 앱, `D:\SEONA2`)에서만 작업한다** (사용자 결정). 예전의 클라우드/로컬 파일 분담 규칙은 없앴다. 끝나면 커밋하고, 푸시는 사용자에게 물어본다.
+- 이 컴퓨터엔 Python·Node가 따로 설치돼 있지 않다. Node가 필요하면 `ego-browser nodejs`를 쓴다(`tools/build_data_port.mjs` 참고).
+- (예전 기록) 클라우드 환경 이름 `SEONA2`(개인용). 허용 호스트: nominatim.openstreetmap.org, tile.openstreetmap.org, a~d.basemaps.cartocdn.com, 카카오·네이버 지도 관련 주소들
