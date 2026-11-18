@@ -91,6 +91,9 @@ def menu_for(name):
             return v
     return None
 
+# 가게 고유번호 (지도 앱 버튼이 검색창이 아니라 가게 페이지로 바로 가도록). 2026-11-18 에고브라우저로 이름·주소를 대조해 모음
+PLACE_IDS = json.load(open("place_ids.json", encoding="utf-8"))
+
 out = []
 for r in rows:
     if r["dist"] is None or r["dist"] > 600 or r["name"] in BARS:
@@ -103,6 +106,9 @@ for r in rows:
         "src": ["전체 가맹점" if s == "전체" else "비플식권" for s in r["src"].split(",")],
         "lat": r["lat"], "lon": r["lon"], "dist": r["dist"], "approx": r["acc"] == "근사",
     }
+    ids = PLACE_IDS.get(name, {})
+    if ids.get("kakao"): item["kakaoId"] = ids["kakao"]
+    if ids.get("naver"): item["naverId"] = ids["naver"]
     if cat != "편의점·마트":
         if m:
             item["menu"] = m[0]; item["menuSrc"] = {"url": m[1], "label": m[2], "checked": m[4] if len(m) > 4 else CHECKED}

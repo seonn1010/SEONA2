@@ -13,6 +13,8 @@ window.STORES = [
   "lon": 126.847871,
   "dist": 95,
   "approx": false,
+  "kakaoId": "8125665",
+  "naverId": "16277608",
   "menu": [
    "단팥빵(1,800원)",
    "실키롤케익(13,900원)"
@@ -34,6 +36,8 @@ window.STORES = [
   "lon": 126.849261,
   "dist": 148,
   "approx": false,
+  "kakaoId": "1784943015",
+  "naverId": "1719573143",
   "menu": [
    "동태탕(12,000원)",
    "고기왕창 김치찌개(11,000원)",
@@ -56,6 +60,8 @@ window.STORES = [
   "lon": 126.847839,
   "dist": 162,
   "approx": false,
+  "kakaoId": "1207665176",
+  "naverId": "1203136900",
   "menu": [
    "왕메가카페라떼",
    "헛개리카노",
@@ -79,6 +85,8 @@ window.STORES = [
   "lon": 126.847839,
   "dist": 162,
   "approx": false,
+  "kakaoId": "1754876219",
+  "naverId": "1868182064",
   "menu": [
    "몬스터봉구(7,800원)",
    "봉구킹(7,800원)",
@@ -101,6 +109,8 @@ window.STORES = [
   "lon": 126.847903,
   "dist": 171,
   "approx": false,
+  "kakaoId": "1025382476",
+  "naverId": "1047072870",
   "menu": [
    "댄싱커피(3,500원)",
    "바닐라 빈 라떼(4,300원)",
@@ -123,6 +133,8 @@ window.STORES = [
   "lon": 126.847903,
   "dist": 171,
   "approx": false,
+  "kakaoId": "1113376476",
+  "naverId": "1595458919",
   "menu": [
    "프랭크버거 세트(10,100원)",
    "쉬림프버거 세트(10,500원)",
@@ -144,7 +156,9 @@ window.STORES = [
   "lat": 35.14969,
   "lon": 126.847663,
   "dist": 174,
-  "approx": false
+  "approx": false,
+  "kakaoId": "95988217",
+  "naverId": "1446716428"
  },
  {
   "name": "쪽갈비대장 상무직영점",
@@ -157,6 +171,8 @@ window.STORES = [
   "lon": 126.849475,
   "dist": 181,
   "approx": false,
+  "kakaoId": "265341820",
+  "naverId": "2030444830",
   "menu": [
    "간장양념쪽갈비",
    "매운양념쪽갈비",
@@ -180,6 +196,8 @@ window.STORES = [
   "lon": 126.849475,
   "dist": 181,
   "approx": false,
+  "kakaoId": "933790811",
+  "naverId": "1868162510",
   "menu": [
    "전주 물갈비(18,000원)",
    "숯불물냉면(15,000원)",
@@ -203,6 +221,8 @@ window.STORES = [
   "lon": 126.848885,
   "dist": 199,
   "approx": false,
+  "kakaoId": "19626816",
+  "naverId": "32316842",
   "menu": [
    "베이컨 까르보나라 1인(15,900원)",
    "게살 오이스터 파스타 1인(17,900원)",
@@ -225,6 +245,8 @@ window.STORES = [
   "lon": 126.849386,
   "dist": 202,
   "approx": false,
+  "kakaoId": "1185391934",
+  "naverId": "2025249037",
   "menu": [
    "아메리칸 치즈버거 세트(11,500원)",
    "새우카츠버거 세트(11,100원)",
@@ -247,6 +269,8 @@ window.STORES = [
   "lon": 126.850568,
   "dist": 207,
   "approx": false,
+  "kakaoId": "1224614637",
+  "naverId": "2019338645",
   "menu": [
    "숙성 삼겹살 100g(9,000원)",
    "돼지이빠이김치찌개(6,000원)",
@@ -270,6 +294,8 @@ window.STORES = [
   "lon": 126.850485,
   "dist": 241,
   "approx": false,
+  "kakaoId": "10417509",
+  "naverId": "32061971",
   "menu": [
    "직화 돼지갈비 300g(33,000원)",
    "김치찌개(9,000원)",
@@ -291,7 +317,9 @@ window.STORES = [
   "lat": 35.149642,
   "lon": 126.851094,
   "dist": 242,
-  "approx": false
+  "approx": false,
+  "kakaoId": "1502586479",
+  "naverId": "1033454242"
  },
  {
   "name": "메가MGC커피 광주상무미즈피아점",
@@ -304,6 +332,8 @@ window.STORES = [
   "lon": 126.851094,
   "dist": 242,
   "approx": false,
+  "kakaoId": "1655655146",
+  "naverId": "1639754822",
   "menu": [
    "왕메가카페라떼",
    "헛개리카노",
@@ -327,6 +357,8 @@ window.STORES = [
   "lon": 126.849187,
   "dist": 248,
   "approx": false,
+  "kakaoId": "1539196609",
+  "naverId": "1134919514",
   "menu": [
    "갈비탕정식(16,000원)"
   ],
@@ -347,6 +379,8 @@ window.STORES = [
   "lon": 126.847804,
   "dist": 259,
   "approx": false,
+  "kakaoId": "850712337",
+  "naverId": "20037459",
   "menu": [
    "오징어 상추튀김 1BOX(17,800원)",
    "돼지고기 상추튀김 1BOX(17,800원)"
@@ -367,7 +401,9 @@ window.STORES = [
   "lat": 35.14864,
   "lon": 126.847744,
   "dist": 271,
-  "approx": false
+  "approx": false,
+  "kakaoId": "9635745",
+  "naverId": "16054473"
  },
  {
   "name": "할멈탕수육김밥 상무점",
@@ -380,6 +416,8 @@ window.STORES = [
   "lon": 126.847744,
   "dist": 271,
   "approx": false,
+  "kakaoId": "2010722896",
+  "naverId": "2014921451",
   "menu": [
    "탕수육(10,000원)",
    "할멈김밥(4,200원)",
@@ -402,6 +440,8 @@ window.STORES = [
   "lon": 126.847744,
   "dist": 271,
   "approx": false,
+  "kakaoId": "1265231932",
+  "naverId": "1090179228",
   "menu": [
    "보배짜장면(6,500원)",
    "보배짬뽕(8,000원)",
@@ -423,7 +463,9 @@ window.STORES = [
   "lat": 35.148521,
   "lon": 126.850089,
   "dist": 283,
-  "approx": false
+  "approx": false,
+  "kakaoId": "12293845",
+  "naverId": "16276942"
  },
  {
   "name": "씨유 상무평화로점",
@@ -435,7 +477,9 @@ window.STORES = [
   "lat": 35.148285,
   "lon": 126.848912,
   "dist": 289,
-  "approx": false
+  "approx": false,
+  "kakaoId": "41496090",
+  "naverId": "1794798242"
  },
  {
   "name": "메가MGC커피 광주치평점",
@@ -448,6 +492,8 @@ window.STORES = [
   "lon": 126.848912,
   "dist": 289,
   "approx": false,
+  "kakaoId": "1432145029",
+  "naverId": "1603148864",
   "menu": [
    "왕할메가커피 아이스(3,900원)",
    "아메리카노 아이스(2,500원)",
@@ -470,6 +516,8 @@ window.STORES = [
   "lon": 126.848912,
   "dist": 289,
   "approx": false,
+  "kakaoId": "2037976532",
+  "naverId": "1842597387",
   "menu": [
    "91김밥(4,000원)",
    "91라이스김밥(5,500원)",
@@ -492,7 +540,9 @@ window.STORES = [
   "lat": 35.148275,
   "lon": 126.849903,
   "dist": 303,
-  "approx": false
+  "approx": false,
+  "kakaoId": "1186585288",
+  "naverId": "1607806228"
  },
  {
   "name": "매운날 상무직영점",
@@ -505,6 +555,8 @@ window.STORES = [
   "lon": 126.850473,
   "dist": 303,
   "approx": false,
+  "kakaoId": "1074323230",
+  "naverId": "1123897907",
   "menu": [
    "치즈갈비찜"
   ],
@@ -526,6 +578,8 @@ window.STORES = [
   "lon": 126.849175,
   "dist": 317,
   "approx": false,
+  "kakaoId": "1269496616",
+  "naverId": "2010895298",
   "menu": [
    "수육쌈밥(28,000원·2인부터)",
    "제육쌈밥(28,000원·2인부터)",
@@ -548,6 +602,8 @@ window.STORES = [
   "lon": 126.849013,
   "dist": 342,
   "approx": false,
+  "kakaoId": "85778267",
+  "naverId": "1808245580",
   "menu": [
    "고흥유자차(3,500원)",
    "딸기주스(4,500원)",
@@ -570,6 +626,8 @@ window.STORES = [
   "lon": 126.852692,
   "dist": 345,
   "approx": false,
+  "kakaoId": "520695368",
+  "naverId": "2084971709",
   "menu": [
    "아메리카노 아이스(3,500원)",
    "카페라떼 아이스(4,000원)",
@@ -593,6 +651,8 @@ window.STORES = [
   "lon": 126.84981,
   "dist": 349,
   "approx": false,
+  "kakaoId": "8596212",
+  "naverId": "16055351",
   "menu": [
    "한우곰탕(11,000원)"
   ],
@@ -612,7 +672,9 @@ window.STORES = [
   "lat": 35.153756,
   "lon": 126.850496,
   "dist": 351,
-  "approx": false
+  "approx": false,
+  "kakaoId": "138477340",
+  "naverId": "1041829072"
  },
  {
   "name": "갓성비",
@@ -625,6 +687,8 @@ window.STORES = [
   "lon": 126.849656,
   "dist": 353,
   "approx": false,
+  "kakaoId": "1285174598",
+  "naverId": "2037418524",
   "menu": [
    "차돌박이",
    "육회"
@@ -647,6 +711,8 @@ window.STORES = [
   "lon": 126.847899,
   "dist": 353,
   "approx": false,
+  "kakaoId": "684084470",
+  "naverId": "2096911190",
   "menu": [
    "오리지널 글레이즈드",
    "BEST 뉴욕세트(9,100원)"
@@ -669,6 +735,8 @@ window.STORES = [
   "lon": 126.847899,
   "dist": 353,
   "approx": false,
+  "kakaoId": "8568359",
+  "naverId": "16278724",
   "menu": [
    "초코쫀득츄러스(2,900원)",
    "초코 바게뜨(3,700원)",
@@ -692,6 +760,8 @@ window.STORES = [
   "lon": 126.847899,
   "dist": 353,
   "approx": false,
+  "kakaoId": "759324156",
+  "naverId": "2051131421",
   "menu": [
    "한식뷔페 1인(7,000원)"
   ],
@@ -712,6 +782,8 @@ window.STORES = [
   "lon": 126.852577,
   "dist": 359,
   "approx": false,
+  "kakaoId": "1254093742",
+  "naverId": "1577852235",
   "menu": [
    "추어탕+돌솥밥(14,000원)",
    "추어탕+공기밥(12,000원)",
@@ -734,6 +806,8 @@ window.STORES = [
   "lon": 126.852577,
   "dist": 359,
   "approx": false,
+  "kakaoId": "1980019379",
+  "naverId": "1513122510",
   "menu": [
    "딥카페라떼",
    "아메리카노",
@@ -757,6 +831,8 @@ window.STORES = [
   "lon": 126.84957,
   "dist": 360,
   "approx": false,
+  "kakaoId": "539808845",
+  "naverId": "1080611018",
   "menu": [
    "돼지짜글이(점심)",
    "우거지 해장국(점심)"
@@ -779,6 +855,8 @@ window.STORES = [
   "lon": 126.850223,
   "dist": 364,
   "approx": false,
+  "kakaoId": "1223101662",
+  "naverId": "2055213211",
   "menu": [
    "텐라떼(3,900원)",
    "시그니처 라떼(4,500원)",
@@ -801,6 +879,8 @@ window.STORES = [
   "lon": 126.8494,
   "dist": 364,
   "approx": false,
+  "kakaoId": "2031332494",
+  "naverId": "1862592701",
   "menu": [
    "계절회무침 중(50,000원)",
    "병어조림 중(50,000원)"
@@ -822,6 +902,8 @@ window.STORES = [
   "lon": 126.84947,
   "dist": 414,
   "approx": false,
+  "kakaoId": "1692246032",
+  "naverId": "2046902069",
   "menu": [
    "한식뷔페 1인(8,000원)"
   ],
@@ -842,6 +924,8 @@ window.STORES = [
   "lon": 126.848087,
   "dist": 456,
   "approx": false,
+  "kakaoId": "734599907",
+  "naverId": "1252190774",
   "menu": [
    "햄·치즈·에그 샌드위치(3,400원)",
    "크랜베리 닭가슴살 샌드위치(3,900원)",
@@ -864,6 +948,8 @@ window.STORES = [
   "lon": 126.84771,
   "dist": 463,
   "approx": false,
+  "kakaoId": "127882219",
+  "naverId": "2068729429",
   "menu": [
    "징거버거",
    "핫크리스피치킨"
@@ -885,7 +971,9 @@ window.STORES = [
   "lat": 35.15013,
   "lon": 126.854135,
   "dist": 482,
-  "approx": false
+  "approx": false,
+  "kakaoId": "1553271795",
+  "naverId": "1140856510"
  },
  {
   "name": "미카도스시 상무점",
@@ -898,6 +986,8 @@ window.STORES = [
   "lon": 126.847112,
   "dist": 503,
   "approx": false,
+  "kakaoId": "2007184488",
+  "naverId": "1241945196",
   "menu": [
    "모둠초밥 10P(13,900원)",
    "스페셜초밥 10P(19,900원)",
@@ -919,7 +1009,9 @@ window.STORES = [
   "lat": 35.15124,
   "lon": 126.854514,
   "dist": 511,
-  "approx": false
+  "approx": false,
+  "kakaoId": "1248560637",
+  "naverId": "800035063"
  },
  {
   "name": "씨유 SK행복날개주유소점",
@@ -931,7 +1023,8 @@ window.STORES = [
   "lat": 35.15124,
   "lon": 126.854514,
   "dist": 511,
-  "approx": true
+  "approx": true,
+  "naverId": "16272661"
  },
  {
   "name": "GS25 광주SK뷰점",
@@ -943,7 +1036,9 @@ window.STORES = [
   "lat": 35.146304,
   "lon": 126.850822,
   "dist": 538,
-  "approx": true
+  "approx": true,
+  "kakaoId": "122020931",
+  "naverId": "38632891"
  },
  {
   "name": "누벨퀴진",
@@ -956,6 +1051,8 @@ window.STORES = [
   "lon": 126.850822,
   "dist": 538,
   "approx": true,
+  "kakaoId": "1228569945",
+  "naverId": "2074365418",
   "menu": [
    "지리산 흑돼지 맑은곰탕(10,000원)",
    "한우 함흥 물냉면(10,000원)",
@@ -979,6 +1076,8 @@ window.STORES = [
   "lon": 126.850822,
   "dist": 538,
   "approx": true,
+  "kakaoId": "739830216",
+  "naverId": "1301408736",
   "menu": [
    "안심 크림 리소토(20,000원)",
    "머쉬룸 베이컨 크림파스타(19,000원)",
@@ -1001,6 +1100,8 @@ window.STORES = [
   "lon": 126.850822,
   "dist": 538,
   "approx": true,
+  "kakaoId": "26396481",
+  "naverId": "36438958",
   "menu": [
    "샌드위치",
    "고추장 불고기 샌드위치",
@@ -1023,7 +1124,9 @@ window.STORES = [
   "lat": 35.155546,
   "lon": 126.850917,
   "dist": 550,
-  "approx": false
+  "approx": false,
+  "kakaoId": "2099124772",
+  "naverId": "38632893"
  },
  {
   "name": "GS25 상무중앙점",
@@ -1036,7 +1139,9 @@ window.STORES = [
   "lat": 35.154361,
   "lon": 126.853235,
   "dist": 552,
-  "approx": false
+  "approx": false,
+  "kakaoId": "16205473",
+  "naverId": "32013199"
  },
  {
   "name": "메가MGC커피 광주김대중컨벤션점",
@@ -1049,6 +1154,8 @@ window.STORES = [
   "lon": 126.842981,
   "dist": 552,
   "approx": true,
+  "kakaoId": "849877912",
+  "naverId": "2020086794",
   "menu": [
    "왕할메가커피 아이스(3,400원)",
    "아메리카노 아이스(2,000원)",
@@ -1070,7 +1177,9 @@ window.STORES = [
   "lat": 35.146591,
   "lon": 126.845219,
   "dist": 583,
-  "approx": true
+  "approx": true,
+  "kakaoId": "10960537",
+  "naverId": "16277303"
  },
  {
   "name": "티파라치",
@@ -1083,6 +1192,8 @@ window.STORES = [
   "lon": 126.845219,
   "dist": 583,
   "approx": true,
+  "kakaoId": "21534333",
+  "naverId": "37392117",
   "menu": [
    "아메리카노(3,500원)",
    "카페라떼(5,500원)",
@@ -1106,6 +1217,8 @@ window.STORES = [
   "lon": 126.85537,
   "dist": 590,
   "approx": false,
+  "kakaoId": "578855050",
+  "naverId": "2083430445",
   "menu": [
    "송탄부대찌개(13,000원)",
    "베이컨구이(14,000원)"

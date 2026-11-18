@@ -14,12 +14,16 @@ const S = tuples(block("S")), M = tuples(block("M"));
 const CHECKED = py.match(/^CHECKED = "(.+)"$/m)[1];
 const menuFor = (name) => { for (const [k, v] of M) if (name.startsWith(k) || name.includes(k)) return v; return null; };
 const rows = JSON.parse(await fs.readFile(dir + "tools/all_rows.json", "utf8"));
+const PLACE_IDS = JSON.parse(await fs.readFile(dir + "tools/place_ids.json", "utf8"));
 const out = [];
 for (const r of rows) {
   if (r.dist == null || r.dist > 600 || BARS.has(r.name)) continue;
   const name = NAME_FIX[r.name] ?? r.name, cat = CAT_FIX[r.name] ?? r.cat;
   const m = S.get(name) || menuFor(name);
   const item = { name, addr: r.addr, cat, src: r.src.split(",").map(s => s === "전체" ? "전체 가맹점" : "비플식권"), lat: r.lat, lon: r.lon, dist: r.dist, approx: r.acc === "근사" };
+  const ids = PLACE_IDS[name] || {};
+  if (ids.kakao) item.kakaoId = ids.kakao;
+  if (ids.naver) item.naverId = ids.naver;
   if (cat !== "편의점·마트") {
     if (m) { item.menu = m[0]; item.menuSrc = { url: m[1], label: m[2], checked: m.length > 4 ? m[4] : CHECKED }; if (m[3]) item.menuNote = m[3]; }
     else { item.menu = []; item.menuNote = "대표메뉴 미확인"; }

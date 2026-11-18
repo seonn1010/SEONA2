@@ -41,6 +41,8 @@
    - 가격이 없는 곳: 쪽갈비대장, 갓성비, 메가MGC 상무중앙점·미즈피아점, 우지커피 (메뉴 이름만)
    - 점심 영업 미확인: 쪽갈비대장(카카오 17:00~04:00), 돈 고기집(네이버 17:00 시작)
    - `index.html` 안내 문구(메뉴 출처, 제외 10곳)도 2026-11-18에 고쳤다.
+   - 2026-11-18 사용자 요청: 가게 카드의 "출처·확인일" 표시를 지웠다(데이터의 `menuSrc`는 기록용으로 남김). 지도 버튼은 가게 페이지로 바로 연결(`kakaoId`, `naverId`). 카카오맵 번호가 없는 곳: 씨유 SK행복날개주유소점(네이버엔 "CU 현대일프로셀프점"으로 있음)
+   - GS25 상무평화점: 지도 앱 주소는 상무연하로 11(우리 데이터는 상무연하로 3). 같은 가게로 보고 번호를 넣었다
 
 ## 이미 해봤는데 안 된 것
 - **CARTO 지도(Positron/Voyager)**: 2026년 기준 무료 API 키가 필요하다. 키 없이 받으면 타일에 "API KEY REQUIRED"만 찍힌다.
@@ -59,6 +61,7 @@
 | `all_rows.json` | 후보 전체와 거리, 정확도(정확/보정/근사/미확인) |
 | `build_data.py` | 반경·제외(`BARS`)·업종/이름 바로잡기(`CAT_FIX`, `NAME_FIX`)·대표메뉴(`S` 가게별 → `M` 브랜드·키워드)를 적용해 `../data.js` 생성 |
 | `build_data_port.mjs` | `build_data.py`와 같은 규칙의 Node 버전 (Python 없는 컴퓨터용, `ego-browser nodejs`로 실행 가능) |
+| `place_ids.json` | 가게별 카카오맵·네이버 지도 고유번호. 지도 버튼이 검색창이 아니라 가게 페이지로 바로 가게 함 (2026-11-18 에고브라우저로 이름·주소 대조). 없으면 검색 링크로 대신함 |
 | `serve.ps1` | 미리보기용 로컬 웹서버 (PowerShell, http://localhost:8000). 데스크톱 앱에선 `.claude/launch.json`의 `lunch-map`으로 옆 패널에 띄운다 |
 | `make_artifact.py`, `embed.py`, `tiles.py` | 미리보기용 단일 HTML 만들기 (Leaflet은 `npm install leaflet@1.9.4`, 타일은 `tiles.py`로 다시 받기) |
 
