@@ -1,0 +1,597 @@
+[
+ {
+  "cat": "음식점",
+  "name": "BHC치킨 광주치평점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "아비꼬 광주상무점",
+  "n": 8,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "뼈대군국밥 광주상무점",
+  "n": 4,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "한솥도시락 광주치평점",
+  "n": 8,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "벌크커피 상무중앙점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "종가집설렁탕",
+  "n": 5,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "배가네동태탕찜전문점 상무점",
+  "n": 3,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "미풍해장국 광주상무점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "인생",
+  "n": 0,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": true,
+  "empty": true
+ },
+ {
+  "cat": "음식점",
+  "name": "경도 굴비정식 계절음식점",
+  "n": 3,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "오리궁뎅이 상무점",
+  "n": 8,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "미스터초밥 상무직영점",
+  "n": 6,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "대게나라 상무점",
+  "n": 1,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "뚜레쥬르 상무치평점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "청진동해장국",
+  "n": 7,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "영산강오리 광주본점",
+  "n": 2,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "브릭스",
+  "n": 4,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "텐퍼센트커피 광주상무중앙로점",
+  "n": 6,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "상무감자탕&등갈비",
+  "n": 5,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "떡보의하루 상무점",
+  "n": 3,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "식스박스커피",
+  "n": 6,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "이디야커피 광주상무중앙점",
+  "n": 3,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "BBQ 광주상무점",
+  "n": 4,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "라인대주분식",
+  "n": 0,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": true,
+  "empty": true
+ },
+ {
+  "cat": "음식점",
+  "name": "열평집밥 상무치평점",
+  "n": 2,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "금다연한정식",
+  "n": 2,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "마라키친 치평점",
+  "n": 2,
+  "nulls": [
+   "마라탕"
+  ],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "엘티디커피로스터스",
+  "n": 5,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "진가마솥나주곰탕",
+  "n": 3,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "강진한우식육식당",
+  "n": 7,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "오유김밥",
+  "n": 6,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "깐깐한족발 상무점",
+  "n": 0,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": true
+ },
+ {
+  "cat": "카페",
+  "name": "뚜레쥬르 상무점",
+  "n": 3,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "뒤파르크",
+  "n": 4,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "보울레시피",
+  "n": 4,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "태백명가",
+  "n": 7,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "걍오소",
+  "n": 6,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "카페체향",
+  "n": 6,
+  "nulls": [
+   "아메리카노",
+   "카페라떼",
+   "바닐라라떼",
+   "고구마라떼",
+   "딸기요거트스무디",
+   "베이글"
+  ],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "해산 상무지구본점",
+  "n": 3,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "벌크커피 치평점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "벌크커피 상무CGV점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "대교구내식당",
+  "n": 0,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": true,
+  "empty": true
+ },
+ {
+  "cat": "카페",
+  "name": "메가MGC커피 광주상무지구점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "요거프레소 광주상무병원점",
+  "n": 2,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "청년다방 광주상무점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "계절명가",
+  "n": 3,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "왕뼈사랑 상무점",
+  "n": 2,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "복호두 상무점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "요거트아이스크림의정석 광주치평점",
+  "n": 3,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "큰손닭강정 광주본점",
+  "n": 2,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "BHC치킨 광주상무점",
+  "n": 1,
+  "nulls": [],
+  "src": "카카오",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "피자스쿨 광주상무점",
+  "n": 7,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "고다미",
+  "n": 4,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "컴포즈커피 광주상무평화점",
+  "n": 5,
+  "nulls": [
+   "토피넛라떼",
+   "클래식딥라떼",
+   "커피클라우드라떼",
+   "고구마무스케이크스무디"
+  ],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "짬뽕관 광주상무점",
+  "n": 8,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "민들레",
+  "n": 3,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "뭉클돈 광주상무점",
+  "n": 7,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "미분당 광주상무점",
+  "n": 5,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "빨간정성 상무점",
+  "n": 4,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "커피베이 광주상무점",
+  "n": 6,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "상지국밥",
+  "n": 8,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "컴포즈커피 광주상무병원점",
+  "n": 5,
+  "nulls": [
+   "토피넛라떼",
+   "클래식딥라떼",
+   "커피클라우드라떼",
+   "고구마무스케이크스무디"
+  ],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "카페",
+  "name": "온클라우드나인 상무점",
+  "n": 6,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ },
+ {
+  "cat": "음식점",
+  "name": "데덴찌",
+  "n": 2,
+  "nulls": [],
+  "src": "네이버",
+  "noMenuPage": false,
+  "empty": false
+ }
+]

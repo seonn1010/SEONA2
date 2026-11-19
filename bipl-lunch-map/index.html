@@ -523,7 +523,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
           if(rest.length) menu += '<details class="more"><summary>메뉴 더보기 <span class="num">+'+rest.length+'</span></summary><div class="menus">' + rest.map(chipHtml).join("") + '</div></details>';
           if(s.menuNote) menu += '<div class="mnote">'+esc(s.menuNote)+'</div>';
         } else {
-          menu = '<div class="mnote">대표메뉴 미확인</div>';
+          menu = '<div class="mnote">'+esc(s.menuNote || "대표메뉴 미확인")+'</div>';
         }
       }
       return '<article class="card '+k[0]+'" data-id="'+esc(s.id)+'">'
@@ -645,7 +645,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     var menu = s.cat === "편의점·마트" ? "" : (s.menu && s.menu.length
       ? '<ul class="d-menu">' + s.menu.map(function(m){ return '<li><span class="mn">'+(m.rep?'<em>대표</em>':'')+esc(m.name)+((m.tags||[]).length?' <small>'+esc(m.tags.join(" · "))+'</small>':'')+'</span><span class="mp num">'+priceText(m)+'</span></li>'; }).join("") + '</ul>'
         + (s.menuSrc ? '<div class="mnote">메뉴 출처: '+esc(s.menuSrc.label)+' ('+esc(s.menuSrc.checked)+')'+(s.menuNote?' · '+esc(s.menuNote):'')+'</div>' : '')
-      : '<div class="mnote">대표메뉴 미확인</div>');
+      : '<div class="mnote">'+esc(s.menuNote || "대표메뉴 미확인")+'</div>');
     return '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
       + '<h2 class="name" id="dName">'+esc(s.name)+'</h2><div class="meta">'+esc(s.addr)+'</div>'
       + '<div class="badges">'+badges+'</div>' + menu

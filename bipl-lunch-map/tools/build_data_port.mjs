@@ -34,7 +34,7 @@ function finish(item, ids) {
   if (item.cat !== "편의점·마트") {
     const mm = MENUS[item.id];
     if (mm && mm.menu && mm.menu.length) { item.menu = mm.menu; item.menuSrc = mm.menuSrc; if (mm.menuNote) item.menuNote = mm.menuNote; }
-    else { item.menu = []; item.menuNote = "대표메뉴 미확인"; }
+    else { item.menu = []; item.menuNote = (mm && mm.menuNote) || "대표메뉴 미확인"; }
   }
   out.push(item);
 }

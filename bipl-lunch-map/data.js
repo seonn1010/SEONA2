@@ -3565,8 +3565,64 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1609826902",
   "naverId": "2047649307",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "뿌링클",
+    "price": 24000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "후라이드",
+    "price": 23000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "맛초킹",
+    "price": 24000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "HOT후라이드",
+    "price": 24000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "콰삭킹",
+    "price": 24000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/2047649307",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  },
+  "menuNote": "1마리 단위 메뉴예요"
  },
  {
   "id": "kakao-862389774",
@@ -3582,8 +3638,49 @@ window.STORES = [
   "dist": 140,
   "approx": false,
   "kakaoId": "862389774",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "AMERICANO",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "CAFE LATTE",
+    "price": 4800,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "GREENTEA LATTE",
+    "price": 5600,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "APPLE JUICE",
+    "price": 6500,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/862389774",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1146207522",
@@ -3599,8 +3696,38 @@ window.STORES = [
   "dist": 141,
   "approx": false,
   "kakaoId": "1146207522",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "그랑드카페 아이스아메리카노",
+    "price": 3800,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "오지치즈 포테이토 포카치아",
+    "price": 4500,
+    "kind": "dessert",
+    "tags": [],
+    "rep": true
+   },
+   {
+    "name": "BELT샌드위치",
+    "price": 7500,
+    "kind": "meal",
+    "tags": [
+     "가벼움"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1146207522",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-396623937",
@@ -3617,8 +3744,40 @@ window.STORES = [
   "approx": false,
   "kakaoId": "396623937",
   "naverId": "1466214147",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "내맘대로 요거트 아이스크림",
+    "price": 4500,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "베리베리 딸기의 정석",
+    "price": 14500,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "생딸기 애플파이의 정석",
+    "price": 12500,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1466214147",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-2009319812",
@@ -3635,8 +3794,91 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2009319812",
   "naverId": "1437925699",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "기본카레라이스",
+    "price": 8500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "포크카레라이스",
+    "price": 10800,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "튀김"
+    ],
+    "rep": true
+   },
+   {
+    "name": "기본카레우동",
+    "price": 8800,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "버섯카레라이스",
+    "price": 10300,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "허브치킨카레라이스",
+    "price": 10800,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "비프하야시라이스",
+    "price": 12300,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "가라아게마요동",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "튀김"
+    ],
+    "rep": false
+   },
+   {
+    "name": "왕돈까스정식",
+    "price": 12500,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1437925699",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-819823241",
@@ -3653,8 +3895,69 @@ window.STORES = [
   "approx": false,
   "kakaoId": "819823241",
   "naverId": "1482225106",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 2000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "시그니처라떼(414ml/아이스)",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "더티땅콩라떼(295ml/아이스)",
+    "price": 3900,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": 3500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "솔티드밀크카라멜(295ml/아이스)",
+    "price": 3800,
+    "kind": "drink",
+    "tags": [
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "진한 말차라떼",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/819823241",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-555437642",
@@ -3671,8 +3974,49 @@ window.STORES = [
   "approx": false,
   "kakaoId": "555437642",
   "naverId": "1234503450",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "명란아보카도비빔밥",
+    "price": 10900,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "치즈 김치볶음밥",
+    "price": 10900,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "명란 크림 파스타",
+    "price": 14900,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": true
+   },
+   {
+    "name": "마늘파스타",
+    "price": 13900,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1234503450",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-203984444",
@@ -3689,8 +4033,33 @@ window.STORES = [
   "approx": false,
   "kakaoId": "203984444",
   "naverId": "2026975831",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "[1인 세트] 11가지 맛 선택 닭다리살 닭강정",
+    "price": 15400,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "13가지맛 순살닭강정",
+    "price": 14900,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/2026975831",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-11579139",
@@ -3723,8 +4092,53 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1172209864",
   "naverId": "1691282410",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "암뽕국밥",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "순대만 국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "머리국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "왕뼈+공기",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1691282410",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-537678402",
@@ -3741,8 +4155,62 @@ window.STORES = [
   "approx": false,
   "kakaoId": "537678402",
   "naverId": "1063270730",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "뼈 해장국+솥밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "묵은지해장국+솥밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "우거지해장국",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "파김치해장국+솥밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "<특>뼈해장국+솥밥",
+    "price": 15000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/537678402",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-254417146",
@@ -3790,8 +4258,52 @@ window.STORES = [
   "dist": 241,
   "approx": false,
   "kakaoId": "1315489318",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "와이키키브라운 포케",
+    "price": 14500,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "가벼움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "코리안불고기 포케",
+    "price": 13100,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "알로하소바 포케",
+    "price": 12500,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "가벼움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "나만의레시피",
+    "price": 12500,
+    "kind": "meal",
+    "tags": [
+     "가벼움"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1315489318",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-13643414",
@@ -3807,8 +4319,24 @@ window.STORES = [
   "dist": 256,
   "approx": false,
   "kakaoId": "13643414",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "뿌링클",
+    "price": 21000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/13643414",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  },
+  "menuNote": "1마리 단위 메뉴예요"
  },
  {
   "id": "kakao-25977014",
@@ -3825,8 +4353,92 @@ window.STORES = [
   "approx": false,
   "kakaoId": "25977014",
   "naverId": "35807121",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "스페셜 숯불직화 진달래 도시락",
+    "price": 13200,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "스페셜 송정식 떡갈비 도시락",
+    "price": 12200,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "돈까스도련님",
+    "price": 6400,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "튀김"
+    ],
+    "rep": true
+   },
+   {
+    "name": "진달래 도시락",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "해바라기 도시락",
+    "price": 11500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "치킨마요 부대찌개 정식",
+    "price": 9300,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "국물"
+    ],
+    "rep": false
+   },
+   {
+    "name": "제육 돈까스 도련님",
+    "price": 6400,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "칠리 찹쌀탕수육도련님",
+    "price": 6200,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "튀김"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/35807121",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-8950247",
@@ -3843,8 +4455,36 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8950247",
   "naverId": "12811770",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "김밥떡도시락 1호",
+    "price": 6800,
+    "kind": "dessert",
+    "tags": [],
+    "rep": true
+   },
+   {
+    "name": "떡도시락 1호",
+    "price": 5500,
+    "kind": "dessert",
+    "tags": [],
+    "rep": true
+   },
+   {
+    "name": "소담 카스테라인절미 1호",
+    "price": 3000,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/8950247",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-129375895",
@@ -3861,8 +4501,80 @@ window.STORES = [
   "approx": false,
   "kakaoId": "129375895",
   "naverId": "1579388535",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "암소갈비탕",
+    "price": 15000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "생고기비빔밥(보통)",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "뚝배기불고기(뚝불)",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "익힌 비빔밥(보통)",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "한우사골우거지탕",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   },
+   {
+    "name": "사골떡국",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   },
+   {
+    "name": "전복갈비탕",
+    "price": 18000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1579388535",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-13055574",
@@ -3879,8 +4591,69 @@ window.STORES = [
   "approx": false,
   "kakaoId": "13055574",
   "naverId": "16057554",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "비프타코피자",
+    "price": 15900,
+    "kind": "meal",
+    "tags": [
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "치킨타코피자",
+    "price": 15900,
+    "kind": "meal",
+    "tags": [
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "치즈피자",
+    "price": 8900,
+    "kind": "meal",
+    "tags": [],
+    "rep": true
+   },
+   {
+    "name": "페퍼로니피자",
+    "price": 9900,
+    "kind": "meal",
+    "tags": [],
+    "rep": false
+   },
+   {
+    "name": "콤비네이션피자",
+    "price": 10900,
+    "kind": "meal",
+    "tags": [],
+    "rep": false
+   },
+   {
+    "name": "고구마피자",
+    "price": 10900,
+    "kind": "meal",
+    "tags": [],
+    "rep": false
+   },
+   {
+    "name": "불고기피자",
+    "price": 11900,
+    "kind": "meal",
+    "tags": [
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/16057554",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  },
+  "menuNote": "피자 한 판 단위 가격이에요"
  },
  {
   "id": "kakao-27575652",
@@ -3929,8 +4702,62 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1251075707",
   "naverId": "1361525771",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "복숭아 아이스티",
+    "price": 3000,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "밀크 마블티",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "레몬 아이스티",
+    "price": 3000,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "식혜(only ice)",
+    "price": 3000,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "돼지바 프라페",
+    "price": 4800,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1361525771",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1128630027",
@@ -3947,8 +4774,70 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1128630027",
   "naverId": "2037266885",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 2000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": 3000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "아인슈페너[ICE]",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "바닐라라떼",
+    "price": 3500,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "딸기라떼",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "수제 바스크 치즈 케이크",
+    "price": 5000,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1128630027",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-369771423",
@@ -3980,8 +4869,72 @@ window.STORES = [
   "dist": 334,
   "approx": false,
   "kakaoId": "942946435",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "돌판비빔밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "생고기비빔밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "김치찌개",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "애호박소고기찌개",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   },
+   {
+    "name": "제육볶음",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "등심불고기전골",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/942946435",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1501080324",
@@ -4014,8 +4967,51 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8685582",
   "naverId": "13183335",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "고다미특선A(1인분)",
+    "price": 15000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "특초밥(12p)",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "스페셜초밥(12p)",
+    "price": 25000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "고다미특선B(특초밥+튀김+알탕+음료수)",
+    "price": 23000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "튀김"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/13183335",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  },
+  "menuNote": "주문(포장·배달) 화면 기준 가격일 수 있어요"
  },
  {
   "id": "kakao-1517351478",
@@ -4047,8 +5043,59 @@ window.STORES = [
   "dist": 362,
   "approx": false,
   "kakaoId": "8514748",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "설렁탕",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "떡만두설렁탕",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "황태해장국",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "순두부찌개",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "설렁탕(특)",
+    "price": 15000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/8514748",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-828952257",
@@ -4065,8 +5112,42 @@ window.STORES = [
   "approx": false,
   "kakaoId": "828952257",
   "naverId": "1611671262",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 3200,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "ICED 가나 시그니처 초콜릿",
+    "price": 5200,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "ICED 가나 초코크림 오트",
+    "price": 5500,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/828952257",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-16893091",
@@ -4098,8 +5179,68 @@ window.STORES = [
   "dist": 365,
   "approx": false,
   "kakaoId": "1416969146",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "바닐라라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "고구마라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "딸기요거트스무디",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "베이글",
+    "price": null,
+    "kind": "dessert",
+    "tags": [],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/1416969146",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-686223825",
@@ -4116,8 +5257,61 @@ window.STORES = [
   "approx": false,
   "kakaoId": "686223825",
   "naverId": "1194541235",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 1500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "토피넛라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "클래식딥라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "커피클라우드라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "고구마무스케이크스무디",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1194541235",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-690088702",
@@ -4134,8 +5328,43 @@ window.STORES = [
   "approx": false,
   "kakaoId": "690088702",
   "naverId": "224099973",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "배가네동태탕",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "배가네알곤이탕",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "배가네모듬탕",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/224099973",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-16971357",
@@ -4152,8 +5381,54 @@ window.STORES = [
   "approx": false,
   "kakaoId": "16971357",
   "naverId": "1828469911",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "황금올리브치킨™양념",
+    "price": 24500,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "뿜치킹",
+    "price": 25000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "필크런치",
+    "price": 27000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "황올 반+BBQ양념 반",
+    "price": 24000,
+    "kind": "meal",
+    "tags": [
+     "튀김",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/16971357",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  },
+  "menuNote": "1마리 단위 메뉴예요"
  },
  {
   "id": "kakao-18396399",
@@ -4169,8 +5444,40 @@ window.STORES = [
   "dist": 388,
   "approx": false,
   "kakaoId": "18396399",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "생선구이or낚지덮밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "보리굴비정식",
+    "price": 22000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "특정식(점심)",
+    "price": 25000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/18396399",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1123346908",
@@ -4187,8 +5494,94 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1123346908",
   "naverId": "1805980296",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "짬뽕",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "짜장면",
+    "price": 7000,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": true
+   },
+   {
+    "name": "차돌짬뽕",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "순두부짬뽕",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "볶음짬뽕",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "짬뽕밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "국물",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "게살볶음밥",
+    "price": 9500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "잡채밥",
+    "price": 9500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1805980296",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1543504824",
@@ -4221,8 +5614,59 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1055216212",
   "naverId": "38262255",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "미풍해장국",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "소양해장국",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "소내장탕",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   },
+   {
+    "name": "한우곱창국밥",
+    "price": 15000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "해장국 (특)",
+    "price": 16000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/38262255",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-261958072",
@@ -4256,8 +5700,60 @@ window.STORES = [
   "approx": false,
   "kakaoId": "634094979",
   "naverId": "1356328407",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 2000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "달고나카페라떼",
+    "price": 4200,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "복숭아아이스티",
+    "price": 3500,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": 3500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "제주말차 라떼",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1356328407",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-12293828",
@@ -4290,8 +5786,41 @@ window.STORES = [
   "approx": false,
   "kakaoId": "23754176",
   "naverId": "13570486",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "간장게장",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "보리굴비정식",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "양념게장",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "매움"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/13570486",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1264994607",
@@ -4325,8 +5854,33 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2076752259",
   "naverId": "2019543084",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "김치찌개",
+    "price": 9500,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "참치찌개",
+    "price": 9500,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/2076752259",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1518923491",
@@ -4343,8 +5897,60 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1518923491",
   "naverId": "1544314166",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "[709ml] 아메리카노(ICE)",
+    "price": 2500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "블루베리품은요거트",
+    "price": 4700,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "딸기블라썸라떼(ONLY ICE)",
+    "price": 4300,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "제주말차라떼(ice)",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "딸기바나나주스",
+    "price": 6200,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1544314166",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1271052895",
@@ -4377,8 +5983,83 @@ window.STORES = [
   "approx": false,
   "kakaoId": "837473383",
   "naverId": "1583576059",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "청국장과직화불고기 솥밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기",
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "매콤생갈비찜&솥밥",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "돌판등갈비제육볶음된장찌개+솥밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "쟁반쫄면",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "들기름 막국수",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": false
+   },
+   {
+    "name": "물냉면",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": false
+   },
+   {
+    "name": "비빔냉면",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "매움"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1583576059",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-323701808",
@@ -4395,8 +6076,40 @@ window.STORES = [
   "approx": false,
   "kakaoId": "323701808",
   "naverId": "32573301",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "경도굴비",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "토란탕",
+    "price": 18000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "생대구탕.지리",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/32573301",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-8238221",
@@ -4413,8 +6126,32 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8238221",
   "naverId": "11862504",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "특 굴비정식",
+    "price": 26000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "약선전복삼계탕",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/8238221",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-16344465",
@@ -4432,7 +6169,7 @@ window.STORES = [
   "kakaoId": "16344465",
   "naverId": "1655737418",
   "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menuNote": "구내식당(한식뷔페)이에요. 가격은 미확인"
  },
  {
   "id": "kakao-398730022",
@@ -4449,8 +6186,68 @@ window.STORES = [
   "approx": false,
   "kakaoId": "398730022",
   "naverId": "1212356453",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "차돌양지 쌀국수",
+    "price": 12500,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "차돌양지힘줄 쌀국수",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "차돌박이 쌀국수",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "양지 쌀국수",
+    "price": 11500,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "힘줄 쌀국수",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1212356453",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-681075786",
@@ -4467,8 +6264,91 @@ window.STORES = [
   "approx": false,
   "kakaoId": "681075786",
   "naverId": "1138323766",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "오리불고기정식(점심특선)",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "오리탕(점심특선)",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "차돌된장뚝배기(점심특선)",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "고추장불고기정식(점심특선)",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "돌솥비빔밥(점심특선)",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "묵은지김치찌개(점심특선)",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "물냉면(점심특선)",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": false
+   },
+   {
+    "name": "비빔냉면(점심특선)",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "면",
+     "매움"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1138323766",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-2081364651",
@@ -4485,8 +6365,33 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2081364651",
   "naverId": "1925197599",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "마라탕",
+    "price": null,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "면",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "계란볶음밥",
+    "price": 6500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/2081364651",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-74361818",
@@ -4519,8 +6424,59 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1083776382",
   "naverId": "1740816960",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아이스아메리카노",
+    "price": 2000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "메가리카노",
+    "price": 3300,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "딸기라떼",
+    "price": 3700,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": 2900,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "콜드브루 오리지널",
+    "price": 3500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1740816960",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-27504922",
@@ -4537,8 +6493,54 @@ window.STORES = [
   "approx": false,
   "kakaoId": "27504922",
   "naverId": "1330190195",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "김치찌개",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "불맛나는쭈꾸미볶음(공기밥포함)",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "돼지찌개",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "삼겹살+쭈꾸미(공기밥포함)",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기",
+     "매움"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1330190195",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1739470075",
@@ -4571,8 +6573,68 @@ window.STORES = [
   "approx": false,
   "kakaoId": "392653986",
   "naverId": "1162144323",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "재주문1위 모둠초밥(10p)",
+    "price": 17500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "미초 1등초밥(10p)",
+    "price": 21500,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "시그니처 스테이크 초밥(8p)",
+    "price": 21000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "강추 연어초밥(8p)",
+    "price": 21000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "광어연어 반반초밥(8p)",
+    "price": 20000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "미스터비법 장어 초밥(8p)",
+    "price": 23000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1162144323",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-2112050665",
@@ -4589,8 +6651,60 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2112050665",
   "naverId": "1635495952",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "오렌지 콜드브루",
+    "price": 6500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "코코넛커피",
+    "price": 6300,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": 5000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "바닐라라떼",
+    "price": 5000,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/2112050665",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-10701523",
@@ -4607,8 +6721,31 @@ window.STORES = [
   "approx": false,
   "kakaoId": "10701523",
   "naverId": "33811658",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "콩고물 스노우 빙수",
+    "price": 9500,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "트리플 초코 스노우 빙수",
+    "price": 10800,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/33811658",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-2058464655",
@@ -4625,8 +6762,69 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2058464655",
   "naverId": "1003787609",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 3200,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼",
+    "price": 3700,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카푸치노",
+    "price": 3700,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "밀크티",
+    "price": 3700,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "베리베리스무벨라",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "미니허니브레드",
+    "price": 3500,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1003787609",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-27173394",
@@ -4643,8 +6841,22 @@ window.STORES = [
   "approx": false,
   "kakaoId": "27173394",
   "naverId": "37747118",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "해초정식(점심특선)",
+    "price": 25000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/37747118",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-2092625665",
@@ -4661,8 +6873,43 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2092625665",
   "naverId": "1511513915",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "한우곰탕",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "수육곰탕",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "한우곰탕(특)",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://place.map.kakao.com/2092625665",
+   "label": "카카오맵 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1733238151",
@@ -4679,8 +6926,64 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1733238151",
   "naverId": "1355033100",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "1인떡튀순떡볶이",
+    "price": 12500,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "1인떡볶이+찰순대+만두2개",
+    "price": 13500,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "1인떡튀순떡볶이 + 사이드튀김",
+    "price": 17500,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "튀김"
+    ],
+    "rep": false
+   },
+   {
+    "name": "1인차돌떡볶이 + 사이드튀김",
+    "price": 18500,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "1인오짱떡볶이 + 사이드튀김",
+    "price": 18500,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "튀김"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1355033100",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  },
+  "menuNote": "주문(포장·배달) 화면 기준 가격일 수 있어요"
  },
  {
   "id": "kakao-2027806841",
@@ -4697,8 +7000,93 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2027806841",
   "naverId": "1153856559",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "순대국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "암뽕국밥",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "우거지뼈해장국 (솥밥)",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "모듬국밥",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "머리국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "내장국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "선지국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "콩나물국밥",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1153856559",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-15284152",
@@ -4715,8 +7103,60 @@ window.STORES = [
   "approx": false,
   "kakaoId": "15284152",
   "naverId": "20973518",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 2500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페 라떼",
+    "price": 3000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "바닐라 라떼",
+    "price": 3500,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "딸기 스무디",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "자몽 에이드",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "논커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/20973518",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1259727003",
@@ -4733,8 +7173,81 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1259727003",
   "naverId": "2082694838",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "한우 육개장",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "한우 사골 곰탕",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "육회비빔밥",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "돌솥비빔밥",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "생고기비빔밥",
+    "price": 14000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "고기"
+    ],
+    "rep": false
+   },
+   {
+    "name": "익힘비빔밥",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "냉면정식(물/비빔)",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/2082694838",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1841441996",
@@ -4751,8 +7264,42 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1841441996",
   "naverId": "1706992441",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "낙지비빔밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "매움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "고등어구이+청국장",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "밥",
+     "국물"
+    ],
+    "rep": true
+   },
+   {
+    "name": "연포탕",
+    "price": 15000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1706992441",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-668785106",
@@ -4769,8 +7316,61 @@ window.STORES = [
   "approx": false,
   "kakaoId": "668785106",
   "naverId": "1921424475",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노",
+    "price": 1500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "토피넛라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "클래식딥라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "커피클라우드라떼",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "커피",
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "고구마무스케이크스무디",
+    "price": null,
+    "kind": "drink",
+    "tags": [
+     "논커피",
+     "달달함"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1921424475",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-15946823",
@@ -4787,8 +7387,82 @@ window.STORES = [
   "approx": false,
   "kakaoId": "15946823",
   "naverId": "33239974",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "순대국밥",
+    "price": 8000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "콩나물국밥",
+    "price": 7000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "뼈다귀해장국",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "황태해장국",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "국물"
+    ],
+    "rep": false
+   },
+   {
+    "name": "모듬국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "내장국밥",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   },
+   {
+    "name": "머리국밥",
+    "price": 9000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/33239974",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-134632078",
@@ -4837,8 +7511,73 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2030793143",
   "naverId": "2039515041",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "오유김밥",
+    "price": 5200,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "가벼움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "묵은지참치김밥",
+    "price": 7000,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "가벼움"
+    ],
+    "rep": true
+   },
+   {
+    "name": "치즈김밥",
+    "price": 6000,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "가벼움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "고추참치김밥",
+    "price": 7000,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "매움"
+    ],
+    "rep": false
+   },
+   {
+    "name": "모듬오뎅탕",
+    "price": 6600,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "분식"
+    ],
+    "rep": false
+   },
+   {
+    "name": "오유떡볶이",
+    "price": 7000,
+    "kind": "meal",
+    "tags": [
+     "분식",
+     "매움"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/2039515041",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1674797757",
@@ -4855,8 +7594,33 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1674797757",
   "naverId": "1270759546",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "왕뼈해장국+돌솥밥",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "콩나물국밥",
+    "price": 10000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "밥"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1270759546",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1683827068",
@@ -4873,8 +7637,67 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1683827068",
   "naverId": "1518153811",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "아메리카노(ICE)",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "카페라떼(ICE)",
+    "price": 4500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "콜드브루 아메리카노(ICE)",
+    "price": 5000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "콜드브루 라떼(ICE)",
+    "price": 5500,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   },
+   {
+    "name": "허니브레드(생크림)",
+    "price": 5500,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "바베큐 반미(1개)",
+    "price": 6600,
+    "kind": "meal",
+    "tags": [
+     "가벼움"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1518153811",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-1636911476",
@@ -4907,8 +7730,33 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1220261474",
   "naverId": "2027075035",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "황칠오리탕 1인",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "고기"
+    ],
+    "rep": true
+   },
+   {
+    "name": "들깨수제비",
+    "price": 11000,
+    "kind": "meal",
+    "tags": [
+     "국물",
+     "면"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/2027075035",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-2011295932",
@@ -4926,7 +7774,7 @@ window.STORES = [
   "kakaoId": "2011295932",
   "naverId": "37562322",
   "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menuNote": "족발·보쌈 전문점이라 1인 식사 메뉴가 없어요"
  },
  {
   "id": "kakao-1013155726",
@@ -4959,8 +7807,58 @@ window.STORES = [
   "approx": false,
   "kakaoId": "721724944",
   "naverId": "1455104168",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "앙버터 호두과자",
+    "price": 10000,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "청사과버터 호두과자",
+    "price": 13000,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": true
+   },
+   {
+    "name": "팥 호두과자",
+    "price": 8000,
+    "kind": "dessert",
+    "tags": [
+     "달달함"
+    ],
+    "rep": false
+   },
+   {
+    "name": "콜드브루 아메리카노",
+    "price": 3000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": true
+   },
+   {
+    "name": "콜드브루 라떼",
+    "price": 4000,
+    "kind": "drink",
+    "tags": [
+     "커피"
+    ],
+    "rep": false
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1455104168",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-966565517",
@@ -4977,8 +7875,31 @@ window.STORES = [
   "approx": false,
   "kakaoId": "966565517",
   "naverId": "1653185718",
-  "menu": [],
-  "menuNote": "대표메뉴 미확인"
+  "menu": [
+   {
+    "name": "회덮밥",
+    "price": 13000,
+    "kind": "meal",
+    "tags": [
+     "밥"
+    ],
+    "rep": true
+   },
+   {
+    "name": "명란 크림 우동",
+    "price": 12000,
+    "kind": "meal",
+    "tags": [
+     "면"
+    ],
+    "rep": true
+   }
+  ],
+  "menuSrc": {
+   "url": "https://map.naver.com/p/entry/place/1653185718",
+   "label": "네이버 지도 매장 메뉴",
+   "checked": "2026-11-19"
+  }
  },
  {
   "id": "kakao-15942998",

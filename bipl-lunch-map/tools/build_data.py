@@ -59,7 +59,7 @@ def finish(item, ids):
             item["menu"] = mm["menu"]; item["menuSrc"] = mm["menuSrc"]
             if mm.get("menuNote"): item["menuNote"] = mm["menuNote"]
         else:
-            item["menu"] = []; item["menuNote"] = "대표메뉴 미확인"
+            item["menu"] = []; item["menuNote"] = (mm or {}).get("menuNote") or "대표메뉴 미확인"
     out.append(item)
 
 for r in rows:
