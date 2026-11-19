@@ -31,6 +31,8 @@ function finish(item, ids) {
   // 고정 id: 후기(store_id)가 여기에 붙으므로 한 번 정한 id는 store_ids.json에 저장해 두고 절대 바꾸지 않는다
   if (!SID[item.name]) SID[item.name] = item.kakaoId ? "kakao-" + item.kakaoId : item.naverId ? "naver-" + item.naverId : slug(item.name);
   item.id = SID[item.name];
+  // 음식 분류(한식·중식 등, 검색용)도 menus.json에서 가져온다
+  if (MENUS[item.id] && (MENUS[item.id].cuisine || []).length) item.cuisine = MENUS[item.id].cuisine;
   if (item.cat !== "편의점·마트") {
     const mm = MENUS[item.id];
     if (mm && mm.menu && mm.menu.length) { item.menu = mm.menu; item.menuSrc = mm.menuSrc; if (mm.menuNote) item.menuNote = mm.menuNote; }

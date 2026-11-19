@@ -104,13 +104,6 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 .tab[aria-pressed="true"] .arrow{background:var(--ink);color:var(--ink-text)}
 
 /* 필터 */
-.opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
-.toggle{position:relative;display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer;user-select:none}
-.toggle input{position:absolute;opacity:0;pointer-events:none}
-.toggle .tick{width:16px;height:16px;border-radius:50%;border:1.5px solid #b5b5b0;display:grid;place-items:center;font-size:10px;color:transparent}
-.toggle:has(input:checked){background:var(--ink);color:var(--ink-text);border-color:var(--ink)}
-.toggle:has(input:checked) .tick{border-color:var(--ink-text);background:var(--ink-text);color:var(--ink)}
-.toggle:has(input:focus-visible){outline:2px solid var(--c-food);outline-offset:2px}
 
 /* 결제 수단 */
 .payseg{display:inline-flex;align-items:center;gap:2px;background:var(--field);border-radius:999px;padding:4px;margin-top:16px;max-width:100%}
@@ -199,6 +192,11 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 .walk{display:inline-flex;align-items:center;gap:4px;background:var(--surface);border-radius:999px;padding:4px 10px;font-size:12px;font-weight:600;white-space:nowrap}
 .name{font-weight:700;font-size:20px;margin:12px 0 2px;letter-spacing:-.02em}
 .meta{font-size:13px;color:var(--muted)}
+.rv{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 6px}
+.rv span{display:inline-flex;align-items:center;gap:3px;font-size:12px;border-radius:999px;padding:3px 10px;background:rgba(255,255,255,.7)}
+.rv-star b{color:#f5a400;font-size:13px}
+.rv-star .num{font-weight:700}
+.rv-star small{color:var(--muted);font-size:11px}
 .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .badge{font-size:11px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.55)}
 .badge.warn{background:#121212;color:#fff}
@@ -270,8 +268,6 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   .tab .lbl{font-size:12px;white-space:nowrap;letter-spacing:-.04em}
   .tab .n{font-size:20px;margin-top:4px}
   .tab .arrow{display:none}
-  .opts{flex-wrap:nowrap;gap:6px}
-  .toggle{padding:7px 10px;font-size:12px;white-space:nowrap}
   .blob{display:none}
 }
 @media (prefers-reduced-motion: reduce){.tab,.card{transition:none}.tab:hover,.card:hover{transform:none}}
@@ -299,7 +295,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
           </div>
           <label class="search">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input id="q" type="search" placeholder="메뉴·가게 검색 (예: 국수, 버거)" autocomplete="off" aria-label="메뉴·가게 검색">
+            <input id="q" type="search" placeholder="메뉴·가게·종류 검색 (예: 국수, 중식, 일식)" autocomplete="off" aria-label="메뉴·가게·음식 종류 검색">
             <button id="clear" type="button">지우기</button>
           </label>
         </div>
@@ -316,11 +312,6 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
           <button class="seg" type="button" data-pay="전체" aria-pressed="true">전체</button>
           <button class="seg" type="button" data-pay="비플식권" aria-pressed="false">비플식권</button>
           <button class="seg" type="button" data-pay="제로페이" aria-pressed="false">제로페이</button>
-        </div>
-
-        <div class="opts">
-          <label class="toggle"><input type="checkbox" id="onlyMenu"><span class="tick">✓</span>대표메뉴 있는 곳만</label>
-          <label class="toggle"><input type="checkbox" id="onlyTicket"><span class="tick">✓</span>'비플식권 사용처' 목록만</label>
         </div>
 
         <div class="pick">
@@ -479,7 +470,8 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   })();
 
   // 상태
-  var state = {cat:"전체", q:"", onlyMenu:false, onlyTicket:false, pay:"전체"};
+  var state = {cat:"전체", q:"", pay:"전체"};
+  var STATS = {};   // 가게 id → {sum, n(별점 참여 인원), comments(댓글 후기 수)}. 승인된 후기만 서버에서 내려온다
   var segs = Array.prototype.slice.call(document.querySelectorAll(".seg"));
   function payOk(s){ return state.pay === "전체" || (s.pay||[]).indexOf(state.pay) >= 0; }
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
@@ -487,12 +479,10 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 
   function matches(s, ignoreCat){
     if(!ignoreCat && state.cat !== "전체" && s.cat !== state.cat) return false;
-    if(state.onlyMenu && !(s.menu && s.menu.length)) return false;
-    if(state.onlyTicket && s.src.indexOf("비플식권") < 0) return false;
     if(!payOk(s)) return false;
     if(state.q){
       var q = state.q.replace(/\s/g,"").toLowerCase();
-      var hay = (s.name + " " + (s.menu||[]).map(function(m){ return m.name + " " + (m.tags||[]).join(" "); }).join(" ") + " " + s.cat).replace(/\s/g,"").toLowerCase();
+      var hay = (s.name + " " + (s.cuisine||[]).join(" ") + " " + (s.menu||[]).map(function(m){ return m.name + " " + (m.tags||[]).join(" "); }).join(" ") + " " + s.cat).replace(/\s/g,"").toLowerCase();
       if(hay.indexOf(q) < 0) return false;
     }
     return true;
@@ -527,8 +517,9 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
         }
       }
       return '<article class="card '+k[0]+'" data-id="'+esc(s.id)+'">'
-        + '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
+        + '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+((s.cuisine||[]).length?' · '+esc(s.cuisine.join("·")):'')+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
         + '<h3 class="name">'+esc(s.name)+'</h3>'
+        + reviewLine(s.id)
         + '<div class="meta">'+esc(s.addr)+'</div>'
         + '<div class="badges">'+badges+'</div>'
         + menu
@@ -616,8 +607,6 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   });
   qEl.addEventListener("input", function(){ state.q = qEl.value.trim(); render(); });
   document.getElementById("clear").addEventListener("click", function(e){ e.preventDefault(); qEl.value = ""; state.q = ""; render(); });
-  document.getElementById("onlyMenu").addEventListener("change", function(e){ state.onlyMenu = e.target.checked; render(); });
-  document.getElementById("onlyTicket").addEventListener("change", function(e){ state.onlyTicket = e.target.checked; render(); });
   listEl.addEventListener("click", function(e){
     if(e.target.closest("a")) return;
     var chip = e.target.closest(".mchip");
@@ -646,11 +635,36 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
       ? '<ul class="d-menu">' + s.menu.map(function(m){ return '<li><span class="mn">'+(m.rep?'<em>대표</em>':'')+esc(m.name)+((m.tags||[]).length?' <small>'+esc(m.tags.join(" · "))+'</small>':'')+'</span><span class="mp num">'+priceText(m)+'</span></li>'; }).join("") + '</ul>'
         + (s.menuSrc ? '<div class="mnote">메뉴 출처: '+esc(s.menuSrc.label)+' ('+esc(s.menuSrc.checked)+')'+(s.menuNote?' · '+esc(s.menuNote):'')+'</div>' : '')
       : '<div class="mnote">'+esc(s.menuNote || "대표메뉴 미확인")+'</div>');
-    return '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
+    return '<div class="row1"><span class="kind">'+k[1]+' '+esc(s.cat)+((s.cuisine||[]).length?' · '+esc(s.cuisine.join("·")):'')+'</span><span class="walk">🚶 <span class="num">'+walk(s.dist)+'</span>분 · <span class="num">'+s.dist+'</span>m</span></div>'
       + '<h2 class="name" id="dName">'+esc(s.name)+'</h2><div class="meta">'+esc(s.addr)+'</div>'
       + '<div class="badges">'+badges+'</div>' + menu
       + '<div class="links"><a class="btn naver" href="'+naverUrl(s)+'" target="_blank" rel="noopener"><span class="mk">N</span>네이버지도<span class="go">↗</span></a><a class="btn kakao" href="'+kakaoUrl(s)+'" target="_blank" rel="noopener"><span class="mk">K</span>카카오맵<span class="go">↗</span></a></div>';
   }
+  // 목록 카드용 별점 평균·후기 건수: 승인된 후기 전체를 한 번 받아 가게별로 센다 (RLS가 approved=true만 내려줌)
+  function reviewLine(id){
+    var st = STATS[id]; if(!st) return "";
+    var h = "";
+    if(st.n) h += '<span class="rv-star"><b>★</b> <span class="num">'+(st.sum/st.n).toFixed(1)+'</span> <small>('+st.n+'명)</small></span>';
+    if(st.comments) h += '<span class="rv-cnt">💬 후기가 '+st.comments+'건 있어요</span>';
+    return h ? '<div class="rv">'+h+'</div>' : "";
+  }
+  function loadStats(){
+    if(!SB.url || !SB.key) return;
+    fetch(SB.url + "/rest/v1/reviews?select=store_id,rating,comment&limit=10000", {headers: sbHeaders()})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(rows){
+        var m = {};
+        rows.forEach(function(x){
+          var st = m[x.store_id] || (m[x.store_id] = {sum:0, n:0, comments:0});
+          if(x.rating != null){ st.sum += x.rating; st.n++; }
+          if(x.comment) st.comments++;
+        });
+        STATS = m; render();
+      })
+      .catch(function(){ /* 후기 집계를 못 불러와도 목록은 그대로 */ });
+  }
+  loadStats();
+
   function loadReviews(id){
     var seq = ++loadSeq;
     dSummary.innerHTML = '<span class="ppl">후기를 불러오는 중…</span>'; dReviews.innerHTML = "";

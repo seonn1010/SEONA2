@@ -53,6 +53,8 @@ def finish(item, ids):
     if name not in SID:
         SID[name] = ("kakao-" + item["kakaoId"]) if item.get("kakaoId") else ("naver-" + item["naverId"]) if item.get("naverId") else slug(name)
     item["id"] = SID[name]
+    # 음식 분류(한식·중식 등, 검색용)도 menus.json에서 가져온다
+    if (MENUS.get(item["id"]) or {}).get("cuisine"): item["cuisine"] = MENUS[item["id"]]["cuisine"]
     if item["cat"] != "편의점·마트":
         mm = MENUS.get(item["id"])
         if mm and mm.get("menu"):

@@ -18,7 +18,7 @@
 
 ## 2026-11-19 추가한 기능 (사용자 요청 3가지 + 고정 id)
 - **고정 id**: 모든 가게에 `id`. 규칙은 kakaoId → `kakao-번호`, 없으면 naverId → `naver-번호`, 둘 다 없으면 `name-slug`. 한 번 정한 id는 `tools/store_ids.json`(이름 → id)에 저장해 두고 재사용한다. **후기 `store_id`가 이 id에 붙으므로 절대 바꾸지 말 것.** 가게 이름을 바꿀 때는 `store_ids.json`의 키도 같이 바꿔서 id가 유지되게 한다. 기존 54곳은 모두 `kakao-번호`
-- **결제 수단**(`pay` 필드, 배지·필터 "전체/비플식권/제로페이"): 기존 비플 목록은 `"비플식권"`. 제로페이는 아래 "제로페이 수집" 참고. 기존의 "'비플식권 사용처' 목록만" 토글(`src` 기준)은 그대로 남겼다
+- **결제 수단**(`pay` 필드, 배지·필터 "전체/비플식권/제로페이"): 기존 비플 목록은 `"비플식권"`. 제로페이는 아래 "제로페이 수집" 참고. "대표메뉴 있는 곳만"·"'비플식권 사용처' 목록만" 토글은 2026-11-19 사용자 요청으로 없앴다(데이터의 `src`는 기록용으로 남김)
 - **12,000원 점심 뽑기**(`index.html`의 `PICK`, `pickPool`): price가 있는 `kind=meal` 메뉴 + 200m 안 다른 가게의 `kind=drink` 메뉴, 합계 10,000~12,000원. 결제 수단 필터를 따른다. 메뉴 구조화 뒤(2026-11-19) 전체 기준 조건 맞는 조합 527개. 저장소에 reference.html은 없어서 새로 짰다
 - **후기(Supabase)**: 프로젝트 URL `https://ioxnnldfhqpehmvvnhjw.supabase.co`, 공개 키는 `index.html`의 `window.SUPABASE_ANON_KEY`. 테이블·RLS는 `supabase/reviews.sql`(사용자가 2026-11-19 실행). 승인은 사용자가 Table Editor에서 `approved`를 켠다. 관리자 페이지는 만들지 않는다(사용자 결정)
   - 2026-11-19 확인: 테스트 후기(닉네임 `테스트봇`, 진고집동해동태탕)를 사이트에서 등록 → 승인 전엔 사이트·anon 직접 조회(`approved=eq.false` 포함) 모두 빈 결과, anon 수정·삭제는 401 거절 → 사용자 승인 후 사이트에 "★ 5.0 (1명)"과 후기 표시. 테스트 후기는 사용자가 대시보드에서 지우기로 함
@@ -41,7 +41,7 @@
 
 | 바꾸고 싶은 것 | 고칠 파일 |
 |---|---|
-| 메뉴·가격·kind·tags·rep, 메뉴 출처, 메뉴 안내(menuNote) | `tools/menus.json` (키 = 가게 고정 id) |
+| 메뉴·가격·kind·tags·rep, 메뉴 출처, 메뉴 안내(menuNote), 음식 종류(cuisine) | `tools/menus.json` (키 = 가게 고정 id) |
 | 제외할 가게(술집 등), 업종·이름 바로잡기, 반경 | `tools/build_data.py` 위쪽 규칙(`BARS`, `NO_LUNCH`, `EXCLUDE`, `CAT_FIX`, `NAME_FIX`, `> 600`) |
 | 제로페이 가게(합칠 가게, 새 가게) | `tools/zeropay_merge.json` |
 | 가게 고정 id | `tools/store_ids.json` (새 가게만 자동 추가됨. 기존 값은 바꾸지 말 것) |
@@ -165,3 +165,8 @@
 - **2026-11-18부터 사용자 컴퓨터의 로컬 세션(Claude 데스크톱 앱, `D:\SEONA2`)에서만 작업한다** (사용자 결정). 예전의 클라우드/로컬 파일 분담 규칙은 없앴다. 끝나면 커밋하고, 푸시는 사용자에게 물어본다.
 - 이 컴퓨터엔 Python·Node가 따로 설치돼 있지 않다. Node가 필요하면 `ego-browser nodejs`를 쓴다(`tools/build_data_port.mjs` 참고).
 - (예전 기록) 클라우드 환경 이름 `SEONA2`(개인용). 허용 호스트: nominatim.openstreetmap.org, tile.openstreetmap.org, a~d.basemaps.cartocdn.com, 카카오·네이버 지도 관련 주소들
+
+## 2026-11-19 화면 추가 변경 (사용자 요청)
+- **목록 카드에 별점·후기 요약**: 페이지가 열릴 때 승인된 후기 전체(`store_id, rating, comment`)를 한 번 받아 가게별로 센다(`index.html`의 `loadStats`, `reviewLine`). 별점이 있으면 "★ 평균 (n명)", 댓글이 있으면 "💬 후기가 n건 있어요". 승인 전 후기는 RLS 때문에 내려오지 않으므로 숫자에 들어가지 않는다
+- **필터 토글 삭제**: "대표메뉴 있는 곳만", "'비플식권 사용처' 목록만"을 없앴다. 결제 수단(전체/비플식권/제로페이)과 카테고리 타일은 그대로
+- **음식 종류(cuisine)로 검색**: `menus.json`의 각 가게에 `cuisine` 배열(한식 41·분식 7·중식 3·일식 5·양식 5·아시안 1·패스트푸드 8 / 카페 26·베이커리 5·디저트 5, 르깜므·뒤파르크는 카페+양식). 가게 이름·메뉴·지도 앱 업종을 보고 메인 작업자가 붙였다(원본 `tools/menus_parts/cuisine_20261119.json`). 검색창에 "중식"처럼 치면 그 종류 가게가 나오고, 카드·상세의 종류 표시에 "음식점 · 한식"처럼 붙는다. 생성 스크립트가 `menus.json`의 `cuisine`을 `data.js`로 복사한다

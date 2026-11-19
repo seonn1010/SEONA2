@@ -20,6 +20,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8125665",
   "naverId": "16277608",
+  "cuisine": [
+   "베이커리"
+  ],
   "menu": [
    {
     "name": "후레쉬식빵",
@@ -62,6 +65,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1784943015",
   "naverId": "1719573143",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "동태탕",
@@ -116,6 +122,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1207665176",
   "naverId": "1203136900",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아이스아메리카노",
@@ -188,6 +197,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1754876219",
   "naverId": "1868182064",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [
    {
     "name": "봉구스밥버거",
@@ -283,6 +295,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1025382476",
   "naverId": "1047072870",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "댄싱커피",
@@ -362,6 +377,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1113376476",
   "naverId": "1595458919",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "파닭파닭치킨버거",
@@ -479,6 +497,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "933790811",
   "naverId": "1868162510",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "물냉면",
@@ -565,6 +586,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "19626816",
   "naverId": "32316842",
+  "cuisine": [
+   "양식"
+  ],
   "menu": [
    {
     "name": "베이컨 까르보나라(1인)",
@@ -668,6 +692,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1185391934",
   "naverId": "2025249037",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "아메리칸 치즈버거 세트",
@@ -746,6 +773,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "10417509",
   "naverId": "32061971",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "점심메뉴강추! 직화불고기쌈밥 1인분",
@@ -866,6 +896,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1655655146",
   "naverId": "1639754822",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "ICE 아메리카노",
@@ -939,6 +972,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1539196609",
   "naverId": "1134919514",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "갈비탕정식",
@@ -1048,6 +1084,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "850712337",
   "naverId": "20037459",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [
    {
     "name": "돼지고기상추튀김",
@@ -1163,6 +1202,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2010722896",
   "naverId": "2014921451",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [
    {
     "name": "탕수육 (간단하게)",
@@ -1269,6 +1311,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1265231932",
   "naverId": "1090179228",
+  "cuisine": [
+   "중식"
+  ],
   "menu": [
    {
     "name": "짬뽕",
@@ -1404,6 +1449,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1432145029",
   "naverId": "1603148864",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "Ice아메리카노",
@@ -1467,6 +1515,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2037976532",
   "naverId": "1842597387",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [
    {
     "name": "91라이스김밥",
@@ -1589,6 +1640,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1074323230",
   "naverId": "1123897907",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "치즈김치 갈비찜",
@@ -1685,6 +1739,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1269496616",
   "naverId": "2010895298",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "쌈밥정식",
@@ -1778,6 +1835,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "85778267",
   "naverId": "1808245580",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -1871,6 +1931,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "520695368",
   "naverId": "2084971709",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노(Ice)",
@@ -1951,6 +2014,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8596212",
   "naverId": "16055351",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "한우곰탕",
@@ -2006,6 +2072,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1285174598",
   "naverId": "2037418524",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "육회비빔밥",
@@ -2109,6 +2178,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "684084470",
   "naverId": "2096911190",
+  "cuisine": [
+   "디저트"
+  ],
   "menu": [
    {
     "name": "오리지널 글레이즈드",
@@ -2190,6 +2262,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8568359",
   "naverId": "16278724",
+  "cuisine": [
+   "베이커리"
+  ],
   "menu": [
    {
     "name": "아이스 아메리카노",
@@ -2280,6 +2355,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "759324156",
   "naverId": "2051131421",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "한식뷔페",
@@ -2315,6 +2393,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1254093742",
   "naverId": "1577852235",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "추어탕+돌솥밥",
@@ -2400,6 +2481,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1980019379",
   "naverId": "1513122510",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -2493,6 +2577,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "539808845",
   "naverId": "1080611018",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "점심 특선/돼지짜글이",
@@ -2567,6 +2654,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1223101662",
   "naverId": "2055213211",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -2647,6 +2737,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2031332494",
   "naverId": "1862592701",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "생선구이",
@@ -2720,6 +2813,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1692246032",
   "naverId": "2046902069",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "정성가득 25찬 식사",
@@ -2754,6 +2850,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "734599907",
   "naverId": "1252190774",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "햄·치즈·에그 샌드위치",
@@ -2829,6 +2928,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "127882219",
   "naverId": "2068729429",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "징거",
@@ -2943,6 +3045,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2007184488",
   "naverId": "1241945196",
+  "cuisine": [
+   "일식"
+  ],
   "menu": [
    {
     "name": "모둠초밥",
@@ -3087,6 +3192,10 @@ window.STORES = [
   "approx": true,
   "kakaoId": "739830216",
   "naverId": "1301408736",
+  "cuisine": [
+   "양식",
+   "카페"
+  ],
   "menu": [
    {
     "name": "머쉬룸 베이컨 크림파스타",
@@ -3176,6 +3285,9 @@ window.STORES = [
   "approx": true,
   "kakaoId": "26396481",
   "naverId": "36438958",
+  "cuisine": [
+   "베이커리"
+  ],
   "menu": [
    {
     "name": "아이스 아메리카노",
@@ -3303,6 +3415,9 @@ window.STORES = [
   "approx": true,
   "kakaoId": "849877912",
   "naverId": "2020086794",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노ICE",
@@ -3403,6 +3518,9 @@ window.STORES = [
   "approx": true,
   "kakaoId": "21534333",
   "naverId": "37392117",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "바닐라라떼",
@@ -3485,6 +3603,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "578855050",
   "naverId": "2083430445",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "송탄부대찌개(1인분)",
@@ -3565,6 +3686,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1609826902",
   "naverId": "2047649307",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "뿌링클",
@@ -3638,6 +3762,9 @@ window.STORES = [
   "dist": 140,
   "approx": false,
   "kakaoId": "862389774",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "AMERICANO",
@@ -3696,6 +3823,9 @@ window.STORES = [
   "dist": 141,
   "approx": false,
   "kakaoId": "1146207522",
+  "cuisine": [
+   "베이커리"
+  ],
   "menu": [
    {
     "name": "그랑드카페 아이스아메리카노",
@@ -3744,6 +3874,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "396623937",
   "naverId": "1466214147",
+  "cuisine": [
+   "디저트"
+  ],
   "menu": [
    {
     "name": "내맘대로 요거트 아이스크림",
@@ -3794,6 +3927,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2009319812",
   "naverId": "1437925699",
+  "cuisine": [
+   "일식"
+  ],
   "menu": [
    {
     "name": "기본카레라이스",
@@ -3895,6 +4031,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "819823241",
   "naverId": "1482225106",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -3974,6 +4113,10 @@ window.STORES = [
   "approx": false,
   "kakaoId": "555437642",
   "naverId": "1234503450",
+  "cuisine": [
+   "양식",
+   "카페"
+  ],
   "menu": [
    {
     "name": "명란아보카도비빔밥",
@@ -4033,6 +4176,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "203984444",
   "naverId": "2026975831",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "[1인 세트] 11가지 맛 선택 닭다리살 닭강정",
@@ -4092,6 +4238,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1172209864",
   "naverId": "1691282410",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "암뽕국밥",
@@ -4155,6 +4304,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "537678402",
   "naverId": "1063270730",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "뼈 해장국+솥밥",
@@ -4258,6 +4410,9 @@ window.STORES = [
   "dist": 241,
   "approx": false,
   "kakaoId": "1315489318",
+  "cuisine": [
+   "양식"
+  ],
   "menu": [
    {
     "name": "와이키키브라운 포케",
@@ -4319,6 +4474,9 @@ window.STORES = [
   "dist": 256,
   "approx": false,
   "kakaoId": "13643414",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "뿌링클",
@@ -4353,6 +4511,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "25977014",
   "naverId": "35807121",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "스페셜 숯불직화 진달래 도시락",
@@ -4455,6 +4616,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8950247",
   "naverId": "12811770",
+  "cuisine": [
+   "디저트"
+  ],
   "menu": [
    {
     "name": "김밥떡도시락 1호",
@@ -4501,6 +4665,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "129375895",
   "naverId": "1579388535",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "암소갈비탕",
@@ -4591,6 +4758,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "13055574",
   "naverId": "16057554",
+  "cuisine": [
+   "양식"
+  ],
   "menu": [
    {
     "name": "비프타코피자",
@@ -4702,6 +4872,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1251075707",
   "naverId": "1361525771",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "복숭아 아이스티",
@@ -4774,6 +4947,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1128630027",
   "naverId": "2037266885",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -4869,6 +5045,9 @@ window.STORES = [
   "dist": 334,
   "approx": false,
   "kakaoId": "942946435",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "돌판비빔밥",
@@ -4967,6 +5146,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8685582",
   "naverId": "13183335",
+  "cuisine": [
+   "일식"
+  ],
   "menu": [
    {
     "name": "고다미특선A(1인분)",
@@ -5043,6 +5225,9 @@ window.STORES = [
   "dist": 362,
   "approx": false,
   "kakaoId": "8514748",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "설렁탕",
@@ -5112,6 +5297,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "828952257",
   "naverId": "1611671262",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -5179,6 +5367,9 @@ window.STORES = [
   "dist": 365,
   "approx": false,
   "kakaoId": "1416969146",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -5257,6 +5448,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "686223825",
   "naverId": "1194541235",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -5328,6 +5522,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "690088702",
   "naverId": "224099973",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "배가네동태탕",
@@ -5381,6 +5578,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "16971357",
   "naverId": "1828469911",
+  "cuisine": [
+   "패스트푸드"
+  ],
   "menu": [
    {
     "name": "황금올리브치킨™양념",
@@ -5444,6 +5644,9 @@ window.STORES = [
   "dist": 388,
   "approx": false,
   "kakaoId": "18396399",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "생선구이or낚지덮밥",
@@ -5494,6 +5697,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1123346908",
   "naverId": "1805980296",
+  "cuisine": [
+   "중식"
+  ],
   "menu": [
    {
     "name": "짬뽕",
@@ -5614,6 +5820,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1055216212",
   "naverId": "38262255",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "미풍해장국",
@@ -5682,6 +5891,9 @@ window.STORES = [
   "dist": 399,
   "approx": false,
   "kakaoId": "261958072",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [],
   "menuNote": "대표메뉴 미확인"
  },
@@ -5700,6 +5912,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "634094979",
   "naverId": "1356328407",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -5786,6 +6001,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "23754176",
   "naverId": "13570486",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "간장게장",
@@ -5836,6 +6054,9 @@ window.STORES = [
   "dist": 409,
   "approx": false,
   "kakaoId": "1264994607",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [],
   "menuNote": "대표메뉴 미확인"
  },
@@ -5854,6 +6075,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2076752259",
   "naverId": "2019543084",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "김치찌개",
@@ -5897,6 +6121,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1518923491",
   "naverId": "1544314166",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "[709ml] 아메리카노(ICE)",
@@ -5983,6 +6210,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "837473383",
   "naverId": "1583576059",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "청국장과직화불고기 솥밥",
@@ -6076,6 +6306,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "323701808",
   "naverId": "32573301",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "경도굴비",
@@ -6126,6 +6359,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "8238221",
   "naverId": "11862504",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "특 굴비정식",
@@ -6168,6 +6404,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "16344465",
   "naverId": "1655737418",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [],
   "menuNote": "구내식당(한식뷔페)이에요. 가격은 미확인"
  },
@@ -6186,6 +6425,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "398730022",
   "naverId": "1212356453",
+  "cuisine": [
+   "아시안"
+  ],
   "menu": [
    {
     "name": "차돌양지 쌀국수",
@@ -6264,6 +6506,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "681075786",
   "naverId": "1138323766",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "오리불고기정식(점심특선)",
@@ -6365,6 +6610,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2081364651",
   "naverId": "1925197599",
+  "cuisine": [
+   "중식"
+  ],
   "menu": [
    {
     "name": "마라탕",
@@ -6424,6 +6672,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1083776382",
   "naverId": "1740816960",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아이스아메리카노",
@@ -6493,6 +6744,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "27504922",
   "naverId": "1330190195",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "김치찌개",
@@ -6573,6 +6827,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "392653986",
   "naverId": "1162144323",
+  "cuisine": [
+   "일식"
+  ],
   "menu": [
    {
     "name": "재주문1위 모둠초밥(10p)",
@@ -6651,6 +6908,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2112050665",
   "naverId": "1635495952",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -6721,6 +6981,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "10701523",
   "naverId": "33811658",
+  "cuisine": [
+   "디저트"
+  ],
   "menu": [
    {
     "name": "콩고물 스노우 빙수",
@@ -6762,6 +7025,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2058464655",
   "naverId": "1003787609",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -6841,6 +7107,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "27173394",
   "naverId": "37747118",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "해초정식(점심특선)",
@@ -6873,6 +7142,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2092625665",
   "naverId": "1511513915",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "한우곰탕",
@@ -6926,6 +7198,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1733238151",
   "naverId": "1355033100",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [
    {
     "name": "1인떡튀순떡볶이",
@@ -7000,6 +7275,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2027806841",
   "naverId": "1153856559",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "순대국밥",
@@ -7103,6 +7381,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "15284152",
   "naverId": "20973518",
+  "cuisine": [
+   "베이커리"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -7173,6 +7454,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1259727003",
   "naverId": "2082694838",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "한우 육개장",
@@ -7264,6 +7548,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1841441996",
   "naverId": "1706992441",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "낙지비빔밥",
@@ -7316,6 +7603,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "668785106",
   "naverId": "1921424475",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노",
@@ -7387,6 +7677,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "15946823",
   "naverId": "33239974",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "순대국밥",
@@ -7511,6 +7804,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2030793143",
   "naverId": "2039515041",
+  "cuisine": [
+   "분식"
+  ],
   "menu": [
    {
     "name": "오유김밥",
@@ -7594,6 +7890,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1674797757",
   "naverId": "1270759546",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "왕뼈해장국+돌솥밥",
@@ -7637,6 +7936,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1683827068",
   "naverId": "1518153811",
+  "cuisine": [
+   "카페"
+  ],
   "menu": [
    {
     "name": "아메리카노(ICE)",
@@ -7730,6 +8032,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "1220261474",
   "naverId": "2027075035",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [
    {
     "name": "황칠오리탕 1인",
@@ -7773,6 +8078,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "2011295932",
   "naverId": "37562322",
+  "cuisine": [
+   "한식"
+  ],
   "menu": [],
   "menuNote": "족발·보쌈 전문점이라 1인 식사 메뉴가 없어요"
  },
@@ -7807,6 +8115,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "721724944",
   "naverId": "1455104168",
+  "cuisine": [
+   "디저트"
+  ],
   "menu": [
    {
     "name": "앙버터 호두과자",
@@ -7875,6 +8186,9 @@ window.STORES = [
   "approx": false,
   "kakaoId": "966565517",
   "naverId": "1653185718",
+  "cuisine": [
+   "일식"
+  ],
   "menu": [
    {
     "name": "회덮밥",
