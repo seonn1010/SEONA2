@@ -170,3 +170,10 @@
 - **목록 카드에 별점·후기 요약**: 페이지가 열릴 때 승인된 후기 전체(`store_id, rating, comment`)를 한 번 받아 가게별로 센다(`index.html`의 `loadStats`, `reviewLine`). 별점이 있으면 "★ 평균 (n명)", 댓글이 있으면 "💬 후기가 n건 있어요". 승인 전 후기는 RLS 때문에 내려오지 않으므로 숫자에 들어가지 않는다
 - **필터 토글 삭제**: "대표메뉴 있는 곳만", "'비플식권 사용처' 목록만"을 없앴다. 결제 수단(전체/비플식권/제로페이)과 카테고리 타일은 그대로
 - **음식 종류(cuisine)로 검색**: `menus.json`의 각 가게에 `cuisine` 배열(한식 41·분식 7·중식 3·일식 5·양식 5·아시안 1·패스트푸드 8 / 카페 26·베이커리 5·디저트 5, 르깜므·뒤파르크는 카페+양식). 가게 이름·메뉴·지도 앱 업종을 보고 메인 작업자가 붙였다(원본 `tools/menus_parts/cuisine_20261119.json`). 검색창에 "중식"처럼 치면 그 종류 가게가 나오고, 카드·상세의 종류 표시에 "음식점 · 한식"처럼 붙는다. 생성 스크립트가 `menus.json`의 `cuisine`을 `data.js`로 복사한다
+
+## 2026-11-19 후기 즉시 공개로 변경 (사용자 요청)
+- 그 전: 후기는 `approved = false`로 들어가고 사용자가 대시보드에서 켜야 공개
+- 지금: `supabase/2026-11-19_auto_publish.sql`(사용자가 실행) → `approved` 기본값 true, anon INSERT 정책을 `anon_insert_approved`(`with check (approved = true)`)로 교체. anon은 `approved` 칸에 쓰기 권한이 없어서 항상 기본값 true로 들어간다. SELECT 정책(`approved = true`만)과 UPDATE/DELETE 불가는 그대로
+- 화면: 등록 안내는 "등록됐어요! 🙌". 등록 직후 그 가게 후기 목록(`loadReviews`)과 목록 카드 요약(`loadStats`)을 다시 불러와 바로 보이게 함
+- 숨기기: Table Editor에서 그 행의 `approved`를 false로
+- 2026-11-19 확인: 진고집동해동태탕에 테스트 후기(`테스트봇2`, 별점 4) 등록 → (a) 상세 창·별점 요약 "★ 4.0 (1명)"·목록 카드·anon 직접 조회 모두 바로 보임 → 사용자가 approved를 끔 → (b) anon 조회 빈 결과, 사이트 카드·상세 창에서도 사라짐. anon이 approved=false를 직접 넣거나 수정·삭제하는 요청은 모두 401로 거절

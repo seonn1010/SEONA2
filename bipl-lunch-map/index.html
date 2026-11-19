@@ -413,7 +413,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   // 카카오맵 JavaScript 키 (페이지에 공개되는 키. 카카오 디벨로퍼스에 등록한 도메인에서만 동작)
   window.KAKAO_JS_KEY = "f5391b1b8738068a0151cec083b77a5b";
   // Supabase 후기 저장소. 공개용 anon(publishable) 키만 넣는다. service_role 키는 절대 넣지 말 것
-  // 승인 전 후기는 RLS 정책 때문에 이 키로는 조회되지 않는다 (supabase/reviews.sql 참고)
+  // 후기는 등록 즉시 공개되고, 관리자가 approved를 끈 후기는 RLS 정책 때문에 이 키로 조회되지 않는다 (supabase/ 폴더 SQL 참고)
   window.SUPABASE_URL = "https://ioxnnldfhqpehmvvnhjw.supabase.co";
   window.SUPABASE_ANON_KEY = "sb_publishable_JZAfLQF6A-ucVgbWRjAE7A_T4cu9Y36";
 </script>
@@ -495,7 +495,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
 
   // 상태
   var state = {cat:"전체", q:"", pay:"전체"};
-  var STATS = {};   // 가게 id → {sum, n(별점 참여 인원), comments(댓글 후기 수)}. 승인된 후기만 서버에서 내려온다
+  var STATS = {};   // 가게 id → {sum, n(별점 참여 인원), comments(댓글 후기 수)}. 공개(approved = true) 후기만 서버에서 내려온다
   var segs = Array.prototype.slice.call(document.querySelectorAll(".seg"));
   function payOk(s){ return state.pay === "전체" || (s.pay||[]).indexOf(state.pay) >= 0; }
   var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
@@ -708,7 +708,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   });
 
   // ── 가게 상세 + 후기 (Supabase) ──
-  // 승인된 후기만 서버에서 내려온다: RLS 정책(approved = true)이 막으므로 프론트에서 숨기는 처리는 없다
+  // 공개(approved = true) 후기만 서버에서 내려온다(관리자가 approved를 끄면 숨김): RLS 정책이 막으므로 프론트에서 숨기는 처리는 없다
   var SB = {url: window.SUPABASE_URL, key: window.SUPABASE_ANON_KEY};
   var detailEl = document.getElementById("detail"), dimEl = document.getElementById("dimmer");
   var dHead = document.getElementById("dHead"), dSummary = document.getElementById("dSummary"), dReviews = document.getElementById("dReviews");
@@ -731,7 +731,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
       + '<div class="badges">'+badges+'</div>' + menu
       + '<div class="links"><a class="btn naver" href="'+naverUrl(s)+'" target="_blank" rel="noopener"><span class="mk">N</span>네이버지도<span class="go">↗</span></a><a class="btn kakao" href="'+kakaoUrl(s)+'" target="_blank" rel="noopener"><span class="mk">K</span>카카오맵<span class="go">↗</span></a></div>';
   }
-  // 목록 카드용 별점 평균·후기 건수: 승인된 후기 전체를 한 번 받아 가게별로 센다 (RLS가 approved=true만 내려줌)
+  // 목록 카드용 별점 평균·후기 건수: 공개된 후기 전체를 한 번 받아 가게별로 센다 (RLS가 approved=true만 내려줌)
   function reviewLine(id){
     var st = STATS[id]; if(!st) return "";
     var h = "";
@@ -815,7 +815,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     var body = {store_id: cur.id, nickname: nick || "익명", rating: rating, comment: comment || null};
     fSubmit.disabled = true; fMsg.className = "f-msg"; fMsg.textContent = "등록하는 중…";
     fetch(SB.url + "/rest/v1/reviews", {method:"POST", headers: sbHeaders({"Content-Type":"application/json", "Prefer":"return=minimal"}), body: JSON.stringify(body)})
-      .then(function(r){ if(!r.ok) throw new Error(r.status); resetForm(); fMsg.className = "f-msg ok"; fMsg.textContent = "등록됐어요! 관리자 승인 후 보여요 🙌"; })
+      .then(function(r){ if(!r.ok) throw new Error(r.status); resetForm(); fMsg.className = "f-msg ok"; fMsg.textContent = "등록됐어요! 🙌"; loadReviews(body.store_id); loadStats(); })
       .catch(function(){ fMsg.className = "f-msg err"; fMsg.textContent = "등록하지 못했어요. 잠시 후 다시 시도해 주세요."; syncSubmit(); });
   });
 
