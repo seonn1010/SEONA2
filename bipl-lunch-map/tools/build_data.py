@@ -80,6 +80,7 @@ for r in rows:
 for z in ZP["rows"]:
     item = {"id": None, "name": z["name"], "addr": z["addr"], "cat": z["cat"], "src": [], "pay": ["제로페이"],
             "lat": z["lat"], "lon": z["lon"], "dist": z["dist"], "approx": False}
+    if z.get("check", True): item["zpCheck"] = True  # 제로페이에만 있는 가게: 결제 가능 여부 확인 필요
     finish(item, {"kakao": z.get("kakaoId"), "naver": z.get("naverId")})
 
 ids_all = [x["id"] for x in out]

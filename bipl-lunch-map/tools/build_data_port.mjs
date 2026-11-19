@@ -47,7 +47,7 @@ for (const r of rows) {
     pay: ["비플식권", ...(ZP_BOTH.has(name) ? ["제로페이"] : [])], lat: r.lat, lon: r.lon, dist: r.dist, approx: r.acc === "근사" }, PLACE_IDS[name] || {});
 }
 for (const z of ZP.rows) {
-  finish({ id: null, name: z.name, addr: z.addr, cat: z.cat, src: [], pay: ["제로페이"], lat: z.lat, lon: z.lon, dist: z.dist, approx: false },
+  finish({ id: null, name: z.name, addr: z.addr, cat: z.cat, src: [], pay: ["제로페이"], lat: z.lat, lon: z.lon, dist: z.dist, approx: false, ...(z.check !== false ? { zpCheck: true } : {}) },
     { kakao: z.kakaoId, naver: z.naverId });
 }
 const dup = out.map(x => x.id).filter((v, i, a) => a.indexOf(v) !== i);

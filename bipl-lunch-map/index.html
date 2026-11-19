@@ -345,7 +345,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
           <ul>
             <li>거리는 아카데미에서 가게까지의 <b>직선거리</b>예요. 실제 걷는 길은 더 길 수 있어요. 도보 시간은 분속 67m(시속 약 4km)로 계산했어요.</li>
             <li><b>위치 근사</b> 표시가 있는 가게는 지도에 건물 번호가 없어서 도로 위치로 추정했어요(약 ±150m).</li>
-            <li>가게 목록: <b>비플식권</b>은 비플페이 앱의 '전체 가맹점 사용처'·'비플식권 사용처' 화면을 옮겨 적었고(정리일 <span id="checked"></span>), <b>제로페이</b>는 <a href="https://www.zeropay.or.kr/UI_HP_009_03.act" target="_blank" rel="noopener">제로페이 가맹점 찾기</a>에서 모았어요(2026-11-19). 두 목록에 같은 가게가 있으면 하나로 합치고 배지를 둘 다 붙였어요. 결제 가능 여부는 바뀔 수 있으니 가게에서 확인해 주세요.</li>
+            <li>가게 목록: <b>비플식권</b>은 비플페이 앱의 '전체 가맹점 사용처'·'비플식권 사용처' 화면을 옮겨 적었고(정리일 <span id="checked"></span>), <b>제로페이</b>는 <a href="https://www.zeropay.or.kr/UI_HP_009_03.act" target="_blank" rel="noopener">제로페이 가맹점 찾기</a>에서 모았어요(2026-11-19). 두 목록에 같은 가게가 있으면 하나로 합치고 배지를 둘 다 붙였어요. 비플 목록에는 없고 제로페이에만 있는 가게는 <b>제로페이(확인필요)</b>로 표시했어요. 결제 전에 가게에서 확인해 주세요. 결제 가능 여부는 바뀔 수 있으니 가게에서 확인해 주세요.</li>
             <li>메뉴와 가격은 가게마다 네이버 지도(일부는 카카오맵) 매장 메뉴 페이지를 직접 열어 확인했어요(2026-11-19). 음식점은 1인분 식사, 카페는 대표 음료 위주예요. 카드엔 대표메뉴만 보이고 "메뉴 더보기"로 나머지를 볼 수 있어요. 가격은 가게 사정에 따라 바뀔 수 있어요.</li>
             <li>술집·유흥주점·저녁 장사 위주인 곳과 점심에 열지 않는 곳은 뺐어요. 위치를 확인하지 못한 가게(예: 이마트 상무점)도 뺐어요.</li>
             <li>지도 © Kakao (카카오맵)</li>
@@ -434,6 +434,13 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   document.getElementById("checked").textContent = META.checked;
 
   // 메뉴 형식: {name, price(원 또는 null), kind: meal|drink|dessert, tags: [...], rep: 카드 대표 여부}
+  // 결제 수단 배지. 제로페이에만 있는 가게(zpCheck)는 실제 결제 가능 여부를 가게에서 확인해야 해서 '제로페이(확인필요)'
+  function payBadges(s){
+    return (s.pay||[]).map(function(x){
+      var label = x === "제로페이" && s.zpCheck ? "제로페이(확인필요)" : x;
+      return '<span class="badge '+(x==="제로페이"?"zp":"bp")+'"'+(label!==x?' title="제로페이 가맹점 목록에는 있지만 실제 결제 가능 여부는 가게에서 확인해 주세요"':'')+'>'+esc(label)+'</span>';
+    }).join("");
+  }
   function repMenus(s){ return (s.menu||[]).filter(function(m){ return m.rep; }); }
   function priceText(m){ return m.price != null ? won(m.price) + "원" : "가격 미확인"; }
   function chipHtml(m){ return '<button class="mchip" type="button" data-m="'+esc(m.name)+'">'+esc(m.name)+' <b class="num">'+(m.price != null ? won(m.price)+'원' : '')+'</b></button>'; }
@@ -526,7 +533,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
     if(!shown.length){ listEl.innerHTML = '<p class="empty">조건에 맞는 가게가 없어요 🥲</p>'; return; }
     listEl.innerHTML = shown.map(function(s){
       var k = KIND[s.cat];
-      var badges = (s.pay||[]).map(function(x){return '<span class="badge '+(x==="제로페이"?"zp":"bp")+'">'+esc(x)+'</span>'}).join("");
+      var badges = payBadges(s);
       if(s.approx) badges += '<span class="badge warn">위치 근사</span>';
       var menu = "";
       if(s.cat !== "편의점·마트"){
@@ -721,7 +728,7 @@ h2.sec .dim{color:#a9a9a4;font-weight:600;margin-left:4px}
   function fmtDate(t){ var d = new Date(t); return d.getFullYear() + "." + (d.getMonth()+1) + "." + d.getDate(); }
   function headHtml(s){
     var k = KIND[s.cat];
-    var badges = (s.pay||[]).map(function(x){return '<span class="badge '+(x==="제로페이"?"zp":"bp")+'">'+esc(x)+'</span>'}).join("");
+    var badges = payBadges(s);
     var menu = s.cat === "편의점·마트" ? "" : (s.menu && s.menu.length
       ? '<ul class="d-menu">' + s.menu.map(function(m){ return '<li><span class="mn">'+(m.rep?'<em>대표</em>':'')+esc(m.name)+((m.tags||[]).length?' <small>'+esc(m.tags.join(" · "))+'</small>':'')+'</span><span class="mp num">'+priceText(m)+'</span></li>'; }).join("") + '</ul>'
         + (s.menuSrc ? '<div class="mnote">메뉴 출처: '+esc(s.menuSrc.label)+' ('+esc(s.menuSrc.checked)+')'+(s.menuNote?' · '+esc(s.menuNote):'')+'</div>' : '')

@@ -3637,6 +3637,7 @@ window.STORES = [
   "lon": 126.8491502,
   "dist": 80,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1983197482",
   "naverId": "1807635177"
  },
@@ -3653,6 +3654,7 @@ window.STORES = [
   "lon": 126.8478361,
   "dist": 99,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1545243183"
  },
  {
@@ -3668,6 +3670,7 @@ window.STORES = [
   "lon": 126.8499448,
   "dist": 126,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1748234504",
   "naverId": "1038724969"
  },
@@ -3684,6 +3687,7 @@ window.STORES = [
   "lon": 126.8503436,
   "dist": 136,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1609826902",
   "naverId": "2047649307",
   "cuisine": [
@@ -3761,6 +3765,7 @@ window.STORES = [
   "lon": 126.8504483,
   "dist": 140,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "862389774",
   "cuisine": [
    "카페"
@@ -3822,6 +3827,7 @@ window.STORES = [
   "lon": 126.847649,
   "dist": 141,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1146207522",
   "cuisine": [
    "베이커리"
@@ -3872,6 +3878,7 @@ window.STORES = [
   "lon": 126.847649,
   "dist": 141,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "396623937",
   "naverId": "1466214147",
   "cuisine": [
@@ -3913,110 +3920,6 @@ window.STORES = [
   }
  },
  {
-  "id": "kakao-2009319812",
-  "name": "아비꼬 광주상무점",
-  "addr": "광주 서구 상무연하로 19 1층",
-  "cat": "음식점",
-  "src": [],
-  "pay": [
-   "제로페이"
-  ],
-  "lat": 35.1499921,
-  "lon": 126.8500285,
-  "dist": 142,
-  "approx": false,
-  "kakaoId": "2009319812",
-  "naverId": "1437925699",
-  "cuisine": [
-   "일식"
-  ],
-  "menu": [
-   {
-    "name": "기본카레라이스",
-    "price": 8500,
-    "kind": "meal",
-    "tags": [
-     "밥"
-    ],
-    "rep": true
-   },
-   {
-    "name": "포크카레라이스",
-    "price": 10800,
-    "kind": "meal",
-    "tags": [
-     "밥",
-     "튀김"
-    ],
-    "rep": true
-   },
-   {
-    "name": "기본카레우동",
-    "price": 8800,
-    "kind": "meal",
-    "tags": [
-     "면",
-     "국물"
-    ],
-    "rep": true
-   },
-   {
-    "name": "버섯카레라이스",
-    "price": 10300,
-    "kind": "meal",
-    "tags": [
-     "밥"
-    ],
-    "rep": false
-   },
-   {
-    "name": "허브치킨카레라이스",
-    "price": 10800,
-    "kind": "meal",
-    "tags": [
-     "밥",
-     "고기"
-    ],
-    "rep": false
-   },
-   {
-    "name": "비프하야시라이스",
-    "price": 12300,
-    "kind": "meal",
-    "tags": [
-     "밥",
-     "고기"
-    ],
-    "rep": false
-   },
-   {
-    "name": "가라아게마요동",
-    "price": 11000,
-    "kind": "meal",
-    "tags": [
-     "밥",
-     "튀김"
-    ],
-    "rep": false
-   },
-   {
-    "name": "왕돈까스정식",
-    "price": 12500,
-    "kind": "meal",
-    "tags": [
-     "튀김",
-     "고기"
-    ],
-    "rep": false
-   }
-  ],
-  "menuSrc": {
-   "url": "https://map.naver.com/p/entry/place/1437925699",
-   "label": "네이버 지도 매장 메뉴",
-   "checked": "2026-11-19"
-  }
- },
- {
   "id": "kakao-819823241",
   "name": "텐퍼센트커피 광주상무중앙로점",
   "addr": "광주 서구 치평로 32 1층",
@@ -4029,6 +3932,7 @@ window.STORES = [
   "lon": 126.8475876,
   "dist": 149,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "819823241",
   "naverId": "1482225106",
   "cuisine": [
@@ -4111,6 +4015,7 @@ window.STORES = [
   "lon": 126.8505045,
   "dist": 153,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "555437642",
   "naverId": "1234503450",
   "cuisine": [
@@ -4174,6 +4079,7 @@ window.STORES = [
   "lon": 126.8478472,
   "dist": 169,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "203984444",
   "naverId": "2026975831",
   "cuisine": [
@@ -4220,6 +4126,7 @@ window.STORES = [
   "lon": 126.849932,
   "dist": 189,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "11579139",
   "naverId": "1730576694"
  },
@@ -4236,6 +4143,7 @@ window.STORES = [
   "lon": 126.8494049,
   "dist": 189,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1172209864",
   "naverId": "1691282410",
   "cuisine": [
@@ -4302,6 +4210,7 @@ window.STORES = [
   "lon": 126.8509436,
   "dist": 190,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "537678402",
   "naverId": "1063270730",
   "cuisine": [
@@ -4377,6 +4286,7 @@ window.STORES = [
   "lon": 126.8490444,
   "dist": 211,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "254417146",
   "naverId": "37874773"
  },
@@ -4393,6 +4303,7 @@ window.STORES = [
   "lon": 126.8512392,
   "dist": 217,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1457973735",
   "naverId": "1619964895"
  },
@@ -4409,6 +4320,7 @@ window.STORES = [
   "lon": 126.8489386,
   "dist": 241,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1315489318",
   "cuisine": [
    "양식"
@@ -4473,6 +4385,7 @@ window.STORES = [
   "lon": 126.8478491,
   "dist": 256,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "13643414",
   "cuisine": [
    "패스트푸드"
@@ -4509,6 +4422,7 @@ window.STORES = [
   "lon": 126.8476251,
   "dist": 259,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "25977014",
   "naverId": "35807121",
   "cuisine": [
@@ -4614,6 +4528,7 @@ window.STORES = [
   "lon": 126.8477263,
   "dist": 264,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "8950247",
   "naverId": "12811770",
   "cuisine": [
@@ -4663,6 +4578,7 @@ window.STORES = [
   "lon": 126.8492103,
   "dist": 268,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "129375895",
   "naverId": "1579388535",
   "cuisine": [
@@ -4756,6 +4672,7 @@ window.STORES = [
   "lon": 126.8476255,
   "dist": 279,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "13055574",
   "naverId": "16057554",
   "cuisine": [
@@ -4838,6 +4755,7 @@ window.STORES = [
   "lon": 126.8479724,
   "dist": 281,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "27575652",
   "naverId": "37492427"
  },
@@ -4854,6 +4772,7 @@ window.STORES = [
   "lon": 126.851312,
   "dist": 297,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "116833580",
   "naverId": "1943628141"
  },
@@ -4870,6 +4789,7 @@ window.STORES = [
   "lon": 126.8475995,
   "dist": 299,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1251075707",
   "naverId": "1361525771",
   "cuisine": [
@@ -4945,6 +4865,7 @@ window.STORES = [
   "lon": 126.8476347,
   "dist": 304,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1128630027",
   "naverId": "2037266885",
   "cuisine": [
@@ -5028,6 +4949,7 @@ window.STORES = [
   "lon": 126.8511815,
   "dist": 331,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "369771423",
   "naverId": "1285622944"
  },
@@ -5044,6 +4966,7 @@ window.STORES = [
   "lon": 126.8506024,
   "dist": 334,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "942946435",
   "cuisine": [
    "한식"
@@ -5128,6 +5051,7 @@ window.STORES = [
   "lon": 126.8523903,
   "dist": 355,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1501080324",
   "naverId": "11625311"
  },
@@ -5144,6 +5068,7 @@ window.STORES = [
   "lon": 126.8528763,
   "dist": 361,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "8685582",
   "naverId": "13183335",
   "cuisine": [
@@ -5208,6 +5133,7 @@ window.STORES = [
   "lon": 126.8493844,
   "dist": 362,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1517351478",
   "naverId": "2046928479"
  },
@@ -5224,6 +5150,7 @@ window.STORES = [
   "lon": 126.8527894,
   "dist": 362,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "8514748",
   "cuisine": [
    "한식"
@@ -5295,6 +5222,7 @@ window.STORES = [
   "lon": 126.8477735,
   "dist": 362,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "828952257",
   "naverId": "1611671262",
   "cuisine": [
@@ -5350,6 +5278,7 @@ window.STORES = [
   "lon": 126.8499903,
   "dist": 365,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "16893091",
   "naverId": "13378382"
  },
@@ -5366,6 +5295,7 @@ window.STORES = [
   "lon": 126.8527634,
   "dist": 365,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1416969146",
   "cuisine": [
    "카페"
@@ -5446,6 +5376,7 @@ window.STORES = [
   "lon": 126.8528904,
   "dist": 371,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "686223825",
   "naverId": "1194541235",
   "cuisine": [
@@ -5520,6 +5451,7 @@ window.STORES = [
   "lon": 126.8492078,
   "dist": 378,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "690088702",
   "naverId": "224099973",
   "cuisine": [
@@ -5576,6 +5508,7 @@ window.STORES = [
   "lon": 126.8475932,
   "dist": 384,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "16971357",
   "naverId": "1828469911",
   "cuisine": [
@@ -5643,6 +5576,7 @@ window.STORES = [
   "lon": 126.8531785,
   "dist": 388,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "18396399",
   "cuisine": [
    "한식"
@@ -5695,6 +5629,7 @@ window.STORES = [
   "lon": 126.8531873,
   "dist": 389,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1123346908",
   "naverId": "1805980296",
   "cuisine": [
@@ -5802,6 +5737,7 @@ window.STORES = [
   "lon": 126.8532189,
   "dist": 394,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1543504824",
   "naverId": "1221694690"
  },
@@ -5818,6 +5754,7 @@ window.STORES = [
   "lon": 126.8532761,
   "dist": 399,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1055216212",
   "naverId": "38262255",
   "cuisine": [
@@ -5890,6 +5827,7 @@ window.STORES = [
   "lon": 126.8458614,
   "dist": 399,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "261958072",
   "cuisine": [
    "분식"
@@ -5910,6 +5848,7 @@ window.STORES = [
   "lon": 126.8533272,
   "dist": 404,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "634094979",
   "naverId": "1356328407",
   "cuisine": [
@@ -5983,6 +5922,7 @@ window.STORES = [
   "lon": 126.8532551,
   "dist": 409,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "12293828",
   "naverId": "16277057"
  },
@@ -5999,6 +5939,7 @@ window.STORES = [
   "lon": 126.8532769,
   "dist": 409,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "23754176",
   "naverId": "13570486",
   "cuisine": [
@@ -6053,6 +5994,7 @@ window.STORES = [
   "lon": 126.8533161,
   "dist": 409,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1264994607",
   "cuisine": [
    "한식"
@@ -6073,6 +6015,7 @@ window.STORES = [
   "lon": 126.8478384,
   "dist": 411,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2076752259",
   "naverId": "2019543084",
   "cuisine": [
@@ -6119,6 +6062,7 @@ window.STORES = [
   "lon": 126.8513336,
   "dist": 416,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1518923491",
   "naverId": "1544314166",
   "cuisine": [
@@ -6192,6 +6136,7 @@ window.STORES = [
   "lon": 126.8520763,
   "dist": 419,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1271052895",
   "naverId": "1620460974"
  },
@@ -6208,6 +6153,7 @@ window.STORES = [
   "lon": 126.8534955,
   "dist": 419,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "837473383",
   "naverId": "1583576059",
   "cuisine": [
@@ -6304,6 +6250,7 @@ window.STORES = [
   "lon": 126.8533746,
   "dist": 440,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "323701808",
   "naverId": "32573301",
   "cuisine": [
@@ -6357,6 +6304,7 @@ window.STORES = [
   "lon": 126.8504765,
   "dist": 443,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "8238221",
   "naverId": "11862504",
   "cuisine": [
@@ -6402,6 +6350,7 @@ window.STORES = [
   "lon": 126.8488737,
   "dist": 447,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "16344465",
   "naverId": "1655737418",
   "cuisine": [
@@ -6423,6 +6372,7 @@ window.STORES = [
   "lon": 126.8475701,
   "dist": 449,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "398730022",
   "naverId": "1212356453",
   "cuisine": [
@@ -6504,6 +6454,7 @@ window.STORES = [
   "lon": 126.853895,
   "dist": 455,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "681075786",
   "naverId": "1138323766",
   "cuisine": [
@@ -6608,6 +6559,7 @@ window.STORES = [
   "lon": 126.8475699,
   "dist": 462,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2081364651",
   "naverId": "1925197599",
   "cuisine": [
@@ -6654,6 +6606,7 @@ window.STORES = [
   "lon": 126.8499316,
   "dist": 464,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "74361818",
   "naverId": "2002893024"
  },
@@ -6670,6 +6623,7 @@ window.STORES = [
   "lon": 126.8498174,
   "dist": 465,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1083776382",
   "naverId": "1740816960",
   "cuisine": [
@@ -6742,6 +6696,7 @@ window.STORES = [
   "lon": 126.8494967,
   "dist": 472,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "27504922",
   "naverId": "1330190195",
   "cuisine": [
@@ -6809,6 +6764,7 @@ window.STORES = [
   "lon": 126.8510249,
   "dist": 479,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1739470075",
   "naverId": "1103283203"
  },
@@ -6825,6 +6781,7 @@ window.STORES = [
   "lon": 126.8508974,
   "dist": 488,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "392653986",
   "naverId": "1162144323",
   "cuisine": [
@@ -6906,6 +6863,7 @@ window.STORES = [
   "lon": 126.8542668,
   "dist": 488,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2112050665",
   "naverId": "1635495952",
   "cuisine": [
@@ -6979,6 +6937,7 @@ window.STORES = [
   "lon": 126.8539747,
   "dist": 495,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "10701523",
   "naverId": "33811658",
   "cuisine": [
@@ -7023,6 +6982,7 @@ window.STORES = [
   "lon": 126.8521362,
   "dist": 500,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2058464655",
   "naverId": "1003787609",
   "cuisine": [
@@ -7105,6 +7065,7 @@ window.STORES = [
   "lon": 126.8545258,
   "dist": 512,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "27173394",
   "naverId": "37747118",
   "cuisine": [
@@ -7140,6 +7101,7 @@ window.STORES = [
   "lon": 126.8545258,
   "dist": 512,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2092625665",
   "naverId": "1511513915",
   "cuisine": [
@@ -7196,6 +7158,7 @@ window.STORES = [
   "lon": 126.8477884,
   "dist": 515,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1733238151",
   "naverId": "1355033100",
   "cuisine": [
@@ -7273,6 +7236,7 @@ window.STORES = [
   "lon": 126.8499834,
   "dist": 516,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2027806841",
   "naverId": "1153856559",
   "cuisine": [
@@ -7379,6 +7343,7 @@ window.STORES = [
   "lon": 126.8476567,
   "dist": 517,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "15284152",
   "naverId": "20973518",
   "cuisine": [
@@ -7452,6 +7417,7 @@ window.STORES = [
   "lon": 126.8544098,
   "dist": 524,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1259727003",
   "naverId": "2082694838",
   "cuisine": [
@@ -7546,6 +7512,7 @@ window.STORES = [
   "lon": 126.8501188,
   "dist": 527,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1841441996",
   "naverId": "1706992441",
   "cuisine": [
@@ -7601,6 +7568,7 @@ window.STORES = [
   "lon": 126.8544094,
   "dist": 531,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "668785106",
   "naverId": "1921424475",
   "cuisine": [
@@ -7675,6 +7643,7 @@ window.STORES = [
   "lon": 126.8461236,
   "dist": 540,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "15946823",
   "naverId": "33239974",
   "cuisine": [
@@ -7770,6 +7739,7 @@ window.STORES = [
   "lon": 126.8465154,
   "dist": 544,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "134632078",
   "naverId": "2001267879"
  },
@@ -7786,6 +7756,7 @@ window.STORES = [
   "lon": 126.8502596,
   "dist": 552,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "846637381",
   "naverId": "1122138055"
  },
@@ -7802,6 +7773,7 @@ window.STORES = [
   "lon": 126.8500797,
   "dist": 552,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2030793143",
   "naverId": "2039515041",
   "cuisine": [
@@ -7888,6 +7860,7 @@ window.STORES = [
   "lon": 126.8527591,
   "dist": 555,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1674797757",
   "naverId": "1270759546",
   "cuisine": [
@@ -7934,6 +7907,7 @@ window.STORES = [
   "lon": 126.8527591,
   "dist": 555,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1683827068",
   "naverId": "1518153811",
   "cuisine": [
@@ -8014,6 +7988,7 @@ window.STORES = [
   "lon": 126.8495751,
   "dist": 560,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1636911476",
   "naverId": "1935063324"
  },
@@ -8030,6 +8005,7 @@ window.STORES = [
   "lon": 126.8534134,
   "dist": 569,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1220261474",
   "naverId": "2027075035",
   "cuisine": [
@@ -8076,6 +8052,7 @@ window.STORES = [
   "lon": 126.8532072,
   "dist": 569,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "2011295932",
   "naverId": "37562322",
   "cuisine": [
@@ -8097,6 +8074,7 @@ window.STORES = [
   "lon": 126.8525918,
   "dist": 570,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "1013155726",
   "naverId": "1288146014"
  },
@@ -8113,6 +8091,7 @@ window.STORES = [
   "lon": 126.8479674,
   "dist": 570,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "721724944",
   "naverId": "1455104168",
   "cuisine": [
@@ -8184,6 +8163,7 @@ window.STORES = [
   "lon": 126.8477874,
   "dist": 571,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "966565517",
   "naverId": "1653185718",
   "cuisine": [
@@ -8228,6 +8208,7 @@ window.STORES = [
   "lon": 126.8539721,
   "dist": 578,
   "approx": false,
+  "zpCheck": true,
   "kakaoId": "15942998",
   "naverId": "21855349"
  }
